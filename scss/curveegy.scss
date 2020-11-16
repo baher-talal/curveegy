@@ -9,6 +9,7 @@ body {
   height: 100%;
 }
 
+/*********Start Header *********/
 header {
   background: $whiteCol;
 
@@ -18,6 +19,8 @@ header {
     }
   }
 }
+
+/********* End Header *********/
 
 main {
   .cardImg {
@@ -103,7 +106,26 @@ main {
   }
 }
 
-/*********End Header *********/
-
 /********* Start Footer *********/
-/*********End Footer *********/
+footer {
+  background: $whiteCol;
+  position: fixed;
+  bottom: 0;
+
+  .mapouter {
+    position: relative;
+    text-align: right;
+    height: 200px;
+    width: 250px;
+    margin: 0 auto;
+  }
+
+  .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 200px;
+    width: 250px;
+  }
+}
+
+/********* End Footer *********/

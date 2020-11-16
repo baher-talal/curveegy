@@ -4,6 +4,7 @@ body {
   height: 100%;
 }
 
+/*********Start Header *********/
 header {
   background: #fff;
 }
@@ -11,6 +12,7 @@ header .link_logo img {
   width: 15%;
 }
 
+/********* End Header *********/
 main .cardImg {
   width: 40%;
   position: relative;
@@ -80,8 +82,26 @@ main .dFlex:nth-child(even) {
   margin: -10% 0;
 }
 
-/*********End Header *********/
 /********* Start Footer *********/
-/*********End Footer *********/
+footer {
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+}
+footer .mapouter {
+  position: relative;
+  text-align: right;
+  height: 200px;
+  width: 250px;
+  margin: 0 auto;
+}
+footer .gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 200px;
+  width: 250px;
+}
+
+/********* End Footer *********/
 
 /*# sourceMappingURL=curveegy.css.map */
