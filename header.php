@@ -10,6 +10,12 @@
   <meta name="description" content="Place the meta description text here.">
   <meta name="title" content="">
 
+
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
   <!-- Bootstrap CSS-->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <!-- Font Awesome -->
@@ -20,6 +26,7 @@
   <!-- <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css"> -->
   <!-- curveegy CSS-->
+  <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
   <link rel="stylesheet" type="text/css" href="css/curveegy.css">
 </head>
 

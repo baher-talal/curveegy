@@ -4,17 +4,102 @@ $menuCol: #25252594;
 
 
 body {
-  background: $menuCol;
+  background: $blackCol;
   width: 100%;
   height: 100%;
 }
 
 header {
   background: $whiteCol;
+
   .link_logo {
     img {
       width: 15%;
     }
+  }
+}
+
+main {
+  .cardImg {
+    width: 40%;
+    position: relative;
+
+    img {
+      border-radius: 0.5rem;
+    }
+
+    .cardImg_logo {
+      img {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+      }
+    }
+
+    .hoveBackground {
+      border-radius: 0.5rem;
+      background-color: #1d1c1bc2;
+      display: block;
+
+      img {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+      }
+
+      .hoveBackground_parent {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+
+        p {
+          color: $whiteCol;
+        }
+      }
+    }
+
+    .more_details {
+      color: $blackCol;
+      background: $whiteCol;
+      width: 30%;
+      position: absolute;
+      top: 93%;
+      left: 84%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+    }
+
+
+  }
+
+  .dFlex:nth-child(odd) {
+    display: flex;
+    justify-content: flex-start;
+    margin: 5% 0;
+  }
+
+  .dFlex:nth-child(even) {
+    display: flex;
+    justify-content: flex-end;
+    margin: -10% 0;
   }
 }
 

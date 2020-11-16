@@ -1,5 +1,5 @@
 body {
-  background: #25252594;
+  background: #000;
   width: 100%;
   height: 100%;
 }
@@ -9,6 +9,75 @@ header {
 }
 header .link_logo img {
   width: 15%;
+}
+
+main .cardImg {
+  width: 40%;
+  position: relative;
+}
+main .cardImg img {
+  border-radius: 0.5rem;
+}
+main .cardImg .cardImg_logo img {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+main .cardImg .hoveBackground {
+  border-radius: 0.5rem;
+  background-color: #1d1c1bc2;
+  display: block;
+}
+main .cardImg .hoveBackground img {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+main .cardImg .hoveBackground .hoveBackground_parent {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+main .cardImg .hoveBackground .hoveBackground_parent p {
+  color: #fff;
+}
+main .cardImg .more_details {
+  color: #000;
+  background: #fff;
+  width: 30%;
+  position: absolute;
+  top: 93%;
+  left: 84%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+main .dFlex:nth-child(odd) {
+  display: flex;
+  justify-content: flex-start;
+  margin: 5% 0;
+}
+main .dFlex:nth-child(even) {
+  display: flex;
+  justify-content: flex-end;
+  margin: -10% 0;
 }
 
 /*********End Header *********/
