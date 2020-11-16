@@ -1,0 +1,24 @@
+$whiteCol: #fff;
+$blackCol: #000;
+$menuCol: #25252594;
+
+
+body {
+  background: $menuCol;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  background: $whiteCol;
+  .link_logo {
+    img {
+      width: 15%;
+    }
+  }
+}
+
+/*********End Header *********/
+
+/********* Start Footer *********/
+/*********End Footer *********/
