@@ -8,6 +8,8 @@ body {
   background: $blackCol;
   width: 100%;
   height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 /*********Start Header *********/
@@ -161,6 +163,50 @@ footer {
     }
   }
 
+  .subscribe {
+    ul {
+      li {
+        .subscribe_mail {
+          label {
+            font-size: 0.9rem;
+          }
+
+          .input_icon {
+            .input_icon_bg {
+              background-color: $bejCol;
+
+              i {
+                color: $whiteCol;
+              }
+            }
+
+            input {
+
+              &:focus,
+              &:hover {
+                box-shadow: 0 0 0 0.2rem $bejCol !important;
+                border-color: $whiteCol;
+                border-bottom-left-radius: 0.25rem;
+                border-top-left-radius: 0.25rem;
+              }
+            }
+
+          }
+        }
+
+        .google_play {
+          display: grid;
+          justify-content: flex-end;
+        }
+
+        .applestore {
+          display: grid;
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+
   #location_modal {
     .modal-content {
       .modal-header {}
@@ -196,6 +242,100 @@ footer {
   }
 }
 
+.social_media {
+  position: fixed;
+  top: 30%;
+  right: -200px;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.social_media:hover {
+  right: 0px;
+}
+
+.social {
+  display: block;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.social a {
+  box-sizing: border-box;
+  display: block;
+  width: 50px;
+  height: 50px;
+  float: left;
+  font-size: 10px;
+  font-size: 1.5rem;
+  line-height: 50px;
+  text-align: center;
+  color: white;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.social .fa {
+  vertical-align: middle;
+}
+
+.social .facebook {
+  background: #3b5998;
+}
+
+.social .facebook:hover,
+.social .facebook:focus {
+  color: #3b5998;
+  background: #fefefe;
+  border-color: #3b5998;
+}
+
+.social .twitter {
+  background: #55acee;
+}
+
+.social .twitter:hover,
+.social .twitter:focus {
+  color: #55acee;
+  background: #fefefe;
+  border-color: #55acee;
+}
+
+.social .linkedin {
+  background: #007bb5;
+}
+
+.social .linkedin:hover,
+.social .linkedin:focus {
+  color: #007bb5;
+  background: #fefefe;
+  border-color: #007bb5;
+}
+
+.social .whatsapp {
+  background: #25D366;
+}
+
+.social .whatsapp:hover,
+.social :focus {
+  color: #25D366;
+  background: #fefefe;
+  border-color: #25D366;
+}
+
+.social .instagram {
+  background: #125688;
+}
+
+.social .instagram:hover,
+.social .instagram:focus {
+  color: #125688;
+  background: #fefefe;
+  border-color: #125688;
+}
+
 /********* End Footer *********/
 
 figure {
@@ -211,6 +351,7 @@ figure {
   background: #3085a3;
   text-align: center;
   cursor: pointer;
+
 }
 
 figure img {
