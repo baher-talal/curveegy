@@ -1,75 +1,55 @@
-<!-- header -->
-<?php include 'header.php'; ?>
-<!-- end header-->
+<?php
 
-<main class="">
-  <div class="container">
-    <div class="dFlex">
-      <figure class="effect-julia">
-        <img src="img/curve/2.jpg" class="img-fluid " alt="curve">
-        <figcaption>
-          <img src="img/curve/curve_logo.png" class="img-fluid curve_logo" alt="curve">
-          <div class="more_desc">
-            <p class="text-capitalize">New Cairo</p>
-            <p class="text-capitalize">10% Down Payment</p>
-            <p class="text-capitalize">8 Installment</p>
-          </div>
-          <!-- <a href="#0" class="text-capitalize btn more_details">more details</a> -->
-        </figcaption>
-        <a href="#0" class="btn text-capitalize btn more_details">more details</a>
-      </figure>
-    </div>
+use Illuminate\Contracts\Http\Kernel;
+use Illuminate\Http\Request;
 
-    <div class="dFlex">
-      <figure class="effect-julia">
-        <img src="img/curve/1.jpg" class="img-fluid " alt="curve">
-        <figcaption>
-          <img src="img/curve/curve_logo.png" class="img-fluid curve_logo" alt="curve">
-          <div class="more_desc">
-            <p class="text-capitalize">New Cairo</p>
-            <p class="text-capitalize">10% Down Payment</p>
-            <p class="text-capitalize">8 Installment</p>
-          </div>
-          <!-- <a href="#0" class="text-capitalize btn more_details">more details</a> -->
-        </figcaption>
-        <a href="#0" class="btn text-capitalize btn more_details">more details</a>
-      </figure>
-    </div>
+define('LARAVEL_START', microtime(true));
 
-    <div class="dFlex">
-      <figure class="effect-julia">
-        <img src="img/curve/2.jpg" class="img-fluid " alt="curve">
-        <figcaption>
-          <img src="img/curve/curve_logo.png" class="img-fluid curve_logo" alt="curve">
-          <div class="more_desc">
-            <p class="text-capitalize">New Cairo</p>
-            <p class="text-capitalize">10% Down Payment</p>
-            <p class="text-capitalize">8 Installment</p>
-          </div>
-          <!-- <a href="#0" class="text-capitalize btn more_details">more details</a> -->
-        </figcaption>
-        <a href="#0" class="btn text-capitalize btn more_details">more details</a>
-      </figure>
-    </div>
+/*
+|--------------------------------------------------------------------------
+| Check If Application Is Under Maintenance
+|--------------------------------------------------------------------------
+|
+| If the application is maintenance / demo mode via the "down" command we
+| will require this file so that any prerendered template can be shown
+| instead of starting the framework, which could cause an exception.
+|
+*/
 
-    <div class="dFlex">
-      <figure class="effect-julia">
-        <img src="img/curve/1.jpg" class="img-fluid " alt="curve">
-        <figcaption>
-          <img src="img/curve/curve_logo.png" class="img-fluid curve_logo" alt="curve">
-          <div class="more_desc">
-            <p class="text-capitalize">New Cairo</p>
-            <p class="text-capitalize">10% Down Payment</p>
-            <p class="text-capitalize">8 Installment</p>
-          </div>
-          <!-- <a href="#0" class="text-capitalize btn more_details">more details</a> -->
-        </figcaption>
-        <a href="#0" class="btn text-capitalize btn more_details">more details</a>
-      </figure>
-    </div>
-  </div>
-</main>
+if (file_exists(__DIR__.'/storage/framework/maintenance.php')) {
+    require __DIR__.'/storage/framework/maintenance.php';
+}
 
-<!-- footer -->
-<?php include 'footer.php'; ?>
-<!-- end footer-->
+/*
+|--------------------------------------------------------------------------
+| Register The Auto Loader
+|--------------------------------------------------------------------------
+|
+| Composer provides a convenient, automatically generated class loader for
+| this application. We just need to utilize it! We'll simply require it
+| into the script here so we don't need to manually load our classes.
+|
+*/
+
+require __DIR__.'/vendor/autoload.php';
+
+/*
+|--------------------------------------------------------------------------
+| Run The Application
+|--------------------------------------------------------------------------
+|
+| Once we have the application, we can handle the incoming request using
+| the application's HTTP kernel. Then, we will send the response back
+| to this client's browser, allowing them to enjoy our application.
+|
+*/
+
+$app = require_once __DIR__.'/bootstrap/app.php';
+
+$kernel = $app->make(Kernel::class);
+
+$response = tap($kernel->handle(
+    $request = Request::capture()
+))->send();
+
+$kernel->terminate($request, $response);
