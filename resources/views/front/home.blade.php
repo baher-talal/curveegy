@@ -6,12 +6,12 @@
   <!-- banner -->
   <div class="w3ls-banner">
 
-    <video id="myVideo" class="video-fluid" poster="images/2.jpg" autoplay loop>
+    <video id="myVideo" class="video-fluid" poster="images/2.jpg" autoplay loop muted>
       <source src="images/slider.mp4" type="video/mp4" autoplay />
     </video>
 
     <!-- banner-text -->
-    <div class="banner-text banner_slider">
+    <div class="banner-text banner_slider d-none d-md-none d-lg-none d-xl-block">
       <div class="flexslider">
         <ul class="slides">
           <li>
@@ -35,7 +35,7 @@
   <div class="container">
     <div class="dFlex">
       <figure class="effect-julia rounded">
-        <a href="#0" class="btn text-capitalize more_details">
+        <a href="{{url('/landing')}}" class="btn text-capitalize more_details">
           <img src="images/2.jpg" class="img-fluid " alt="curve">
 
           <figcaption>
@@ -54,7 +54,7 @@
 
     <div class="dFlex">
       <figure class="effect-julia rounded">
-        <a href="#0" class="btn text-capitalize more_details">
+        <a href="{{url('/landing')}}" class="btn text-capitalize more_details">
           <img src="images/2.jpg" class="img-fluid " alt="curve">
 
           <figcaption>
@@ -73,7 +73,7 @@
 
     <div class="dFlex">
       <figure class="effect-julia rounded">
-        <a href="#0" class="btn text-capitalize more_details">
+        <a href="{{url('/landing')}}" class="btn text-capitalize more_details">
           <img src="images/2.jpg" class="img-fluid " alt="curve">
 
           <figcaption>
@@ -92,7 +92,7 @@
 
     <div class="dFlex">
       <figure class="effect-julia rounded">
-        <a href="#0" class="btn text-capitalize more_details">
+        <a href="{{url('/landing')}}" class="btn text-capitalize more_details">
           <img src="images/2.jpg" class="img-fluid " alt="curve">
 
           <figcaption>
@@ -111,15 +111,16 @@
   </div>
 </main>
 
-
-<!-- bootstrap-pop-up -->
+<!-- Modal -->
 <div id="modalImg">
-  <div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
+  <div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          Prefab
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
         <section>
           <div class="modal-body">
@@ -136,10 +137,12 @@
             <a class="btn btn_download" href="images/3.jpg" download>Download</a>
           </div>
         </section>
+        <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
       </div>
     </div>
   </div>
 </div>
-
-
 @endsection

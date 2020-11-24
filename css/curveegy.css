@@ -9,11 +9,12 @@ body {
 }
 
 /*********Start Header *********/
-header .w3-agiletop .img_logo {
-  width: 30%;
+header .w3-agiletop .head_logo .img_logo {
+  width: 60%;
 }
 header .w3-agiletop .social_head {
   text-align: right;
+  margin-top: 3%;
 }
 header .w3-agiletop .social_head ul {
   padding: 0;
@@ -31,7 +32,7 @@ header .w3-agiletop .social_head ul li:nth-child(even) {
 header .w3-agiletop .social_head ul li a {
   color: #333;
   text-align: center;
-  font-size: 1.75rem;
+  font-size: 1.3rem;
 }
 header .w3-agiletop .social_head ul li a i.fa.fa-whatsapp {
   height: 40px;
@@ -193,6 +194,7 @@ main .dFlex:nth-child(even) {
 }
 .landing_page .form_landing .your_data {
   color: #fff;
+  font-size: 1.25rem;
 }
 .landing_page .form_landing .form_submit {
   color: #FFFFFF;
@@ -238,14 +240,30 @@ main .dFlex:nth-child(even) {
 }
 
 #modalImg #myModal .modal-dialog {
-  width: 90%;
+  max-width: 97%;
 }
 #modalImg #myModal .modal-dialog .modal-content .modal-body .btn_download {
   background-color: #2ebaef;
   color: #fff;
   margin: 0 auto;
   display: block;
-  width: 10%;
+  width: 25%;
+}
+
+.fade:not(.show) {
+  opacity: 1;
+}
+
+.modal-backdrop {
+  background-color: transparent;
+}
+
+.modal.fade .modal-dialog {
+  transform: unset;
+  -webkit-transform: unset;
+  -moz-transform: unset;
+  -ms-transform: unset;
+  -o-transform: unset;
 }
 
 /********* Start Footer *********/
@@ -346,9 +364,11 @@ figure figcaption > a {
 
 figure figcaption .curve_logo {
   width: 100%;
+  max-width: unset !important;
+  min-height: unset !important;
   height: unset !important;
   position: absolute;
-  bottom: 36%;
+  bottom: 72%;
   left: -24%;
 }
 

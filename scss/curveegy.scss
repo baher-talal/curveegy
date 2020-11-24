@@ -17,12 +17,16 @@ body {
 /*********Start Header *********/
 header {
   .w3-agiletop {
-    .img_logo {
-      width: 30%;
+    .head_logo {
+      .img_logo {
+        width: 60%;
+      }
     }
+
 
     .social_head {
       text-align: right;
+      margin-top: 3%;
 
       ul {
         padding: 0;
@@ -42,7 +46,7 @@ header {
           a {
             color: #333;
             text-align: center;
-            font-size: 1.75rem;
+            font-size: 1.3rem;
 
             i {
               &.fa.fa-whatsapp {
@@ -244,6 +248,7 @@ main {
 
     .your_data {
       color: $whiteCol;
+      font-size: 1.25rem;
     }
 
     .form_submit {
@@ -300,7 +305,7 @@ main {
 #modalImg {
   #myModal {
     .modal-dialog {
-      width: 90%;
+      max-width: 97%;
 
       .modal-content {
         .modal-body {
@@ -309,12 +314,28 @@ main {
             color: $whiteCol;
             margin: 0 auto;
             display: block;
-            width: 10%;
+            width: 25%;
           }
         }
       }
     }
   }
+}
+
+.fade:not(.show) {
+  opacity: 1;
+}
+
+.modal-backdrop {
+  background-color: transparent;
+}
+
+.modal.fade .modal-dialog {
+  transform: unset;
+  -webkit-transform: unset;
+  -moz-transform: unset;
+  -ms-transform: unset;
+  -o-transform: unset;
 }
 
 /********* Start Footer *********/
@@ -433,9 +454,11 @@ figure figcaption>a {
 
 figure figcaption .curve_logo {
   width: 100%;
+  max-width: unset !important;
+  min-height: unset !important;
   height: unset !important;
   position: absolute;
-  bottom: 36%;
+  bottom: 72%;
   left: -24%;
 }
 

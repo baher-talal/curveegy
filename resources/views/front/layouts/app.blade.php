@@ -5,7 +5,7 @@
   <title>Curve Egy Real Estate</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="keywords" content="Prefab Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+  <meta name="keywords" content="Prefab Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
 	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
   <script type="application/x-javascript">
     addEventListener("load", function() {
@@ -26,8 +26,7 @@
   <!-- //Custom Theme files -->
   <!-- font -->
   <link href="//fonts.googleapis.com/css?family=Oswald:300,400,700&amp;subset=latin-ext" rel="stylesheet">
-  <link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
-    rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
   <!-- //font -->
 
 </head>
@@ -37,23 +36,22 @@
     <div class="top-nav w3-agiletop">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
-            <div class="navbar-header w3llogo">
-              <a href="#0">
+          <div class="col-md-6 col-lg-6 col-xl-6 col-12">
+            <div class="navbar-header head_logo">
+              <a href="{{url('/')}}">
                 <img class="img_logo" src="images/curve_logo.png" alt="">
               </a>
             </div>
           </div>
 
-
-          <div class="col-lg-6">
+          <div class="col-md-6 col-lg-6 col-xl-6 col-12 d-none d-md-none d-lg-none d-xl-block">
             <div class="social_head">
               <ul>
-                <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://wa.me/+201005721414"><i class="fa fa-whatsapp"></i></a></li>
+                <li><a href="https://www.facebook.com/Curve-104326978133886/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/curve.realestateco/?igshid=18yvkdv78idlf"><i class="fa fa-instagram"></i></a></li>
+                <!-- <li><a href="#"><i class="fa fa-linkedin"></i></a></li> -->
+                <!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
               </ul>
             </div>
           </div>
@@ -77,14 +75,13 @@
                 <p><i class="fa fa-map-marker i_icons"></i>The fifth settlement south of Academy Property 281 First
                   Floor </p>
                 <p class="phone">
-                  <span><a href="tel:+19666"><i class="fa fa-phone i_icons"></i> 19666</a></span>
+                  <span><a href="tel:+201005721414"><i class="fa fa-phone i_icons"></i> 01005721414</a> / <a href="tel:+201006268989"> 01006268989</a></span>
                   <span><a href="mailto:admin@curveegy.com"><i class="fa fa-envelope-o i_icons"></i>
                       admin@curveegy.com</a></span>
                   <span><a class="text-lowercase" href="http://www.curveegy.com/"><i class="fa fa-globe i_icons"></i>
                       Curveegy.com</a></span>
                 </p>
-                <button type=" button" class="location_btn btn text-capitalize" data-toggle="modal"
-                  data-target="#exampleModalCenter">location</button>
+                <button type=" button" class="location_btn btn text-capitalize" data-toggle="modal" data-target="#exampleModalCenter">location</button>
               </div>
             </div>
           </div>
@@ -113,11 +110,11 @@
               </div>
               <div class="social">
                 <ul>
-                  <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
-                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="https://wa.me/+201005721414"><i class="fa fa-whatsapp"></i></a></li>
+                  <li><a href="https://www.facebook.com/Curve-104326978133886/"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="https://www.instagram.com/curve.realestateco/?igshid=18yvkdv78idlf"><i class="fa fa-instagram"></i></a></li>
+                  <!-- <li><a href="#"><i class="fa fa-linkedin"></i></a></li> -->
+                  <!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
                 </ul>
               </div>
             </div>
@@ -139,8 +136,7 @@
 
   <div id="location_modal">
     <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -153,10 +149,7 @@
               <ul class="list-unstyled">
                 <li>
                   <div class="mapouter">
-                    <div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas"
-                        src="https://maps.google.com/maps?q=fifth%20settlement&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
-                        href="https://fmovies2.org"></a></div>
+                    <div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=fifth%20settlement&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies2.org"></a></div>
                   </div>
                 </li>
 
@@ -181,26 +174,26 @@
   <script>
     const myVideo = document.getElementById('myVideo');
 
-  // Not all browsers return promise from .play().
-  const playPromise = myVideo.play() || Promise.reject('');
-  playPromise.then(() => {
-    // Video could be autoplayed, do nothing.
-  }).catch(err => {
-    // Video couldn't be autoplayed because of autoplay policy. Mute it and play.
-    myVideo.muted = true;
-    myVideo.play();
-  });
+    // Not all browsers return promise from .play().
+    const playPromise = myVideo.play() || Promise.reject('');
+    playPromise.then(() => {
+      // Video could be autoplayed, do nothing.
+    }).catch(err => {
+      // Video couldn't be autoplayed because of autoplay policy. Mute it and play.
+      myVideo.muted = true;
+      myVideo.play();
+    });
   </script>
 
   <script type="text/javascript">
     $(window).load(function() {
-    $('.flexslider').flexslider({
-      animation: "slide",
-      start: function(slider) {
-        $('body').removeClass('loading');
-      }
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider) {
+          $('body').removeClass('loading');
+        }
+      });
     });
-  });
   </script>
 
   <!-- End-slider-script -->
@@ -208,41 +201,45 @@
   <!-- start-smooth-scrolling -->
   <script type="text/javascript" src="{{url('js/move-top.js')}}"></script>
   <script type="text/javascript" src="{{url('js/easing.js')}}"></script>
+
+
+
   <script type="text/javascript">
     jQuery(document).ready(function($) {
-    $(".scroll").click(function(event) {
-      event.preventDefault();
+      $(".scroll").click(function(event) {
+        event.preventDefault();
 
-      $('html,body').animate({
-        scrollTop: $(this.hash).offset().top
-      }, 1000);
+        $('html,body').animate({
+          scrollTop: $(this.hash).offset().top
+        }, 1000);
+      });
     });
-  });
   </script>
   <!-- //end-smooth-scrolling -->
   <!-- smooth-scrolling-of-move-up -->
   <script type="text/javascript">
     $(document).ready(function() {
-    /*
-    var defaults = {
-    	containerID: 'toTop', // fading element id
-    	containerHoverID: 'toTopHover', // fading element hover id
-    	scrollSpeed: 1200,
-    	easingType: 'linear' 
-    };
-    */
+      /*
+      var defaults = {
+      	containerID: 'toTop', // fading element id
+      	containerHoverID: 'toTopHover', // fading element hover id
+      	scrollSpeed: 1200,
+      	easingType: 'linear'
+      };
+      */
 
-    $().UItoTop({
-      easingType: 'easeOutQuart'
+      $().UItoTop({
+        easingType: 'easeOutQuart'
+      });
+
     });
-
-  });
   </script>
   <!-- //smooth-scrolling-of-move-up -->
   <!-- Bootstrap core JavaScript
     ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="{{url('js/bootstrap.js')}}"></script>
+
 </body>
 
 </html>
