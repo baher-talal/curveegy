@@ -158,12 +158,12 @@ img.img-responsive {
 /*-- footer --*/
 .w3-agile-footer {
   /* background: #fff; */
-  background: rgb(255 255 255 / 0.1);
+  background: rgb(255 255 255 / 0.3);
   padding: 5em 0;
 }
 
 .footer-grid-heading h4 {
-  color: #ffffff;
+  color: #2ebaef;
   font-size: 25px;
   margin: 0;
   text-transform: uppercase;
@@ -173,32 +173,32 @@ img.img-responsive {
 .footer-grid-info,
 .social {
   margin: 1.5em 0 0 0;
+  color: #FFF;
 }
 
-.footer-grids p {
+.footer-grids {
   margin: 0;
   font-size: 14px;
-  color: #BBBBBB;
+  color: #FFF;
   line-height: 1.8em;
   text-transform: capitalize;
 }
 
 .footer-grids .i_icons {
-  padding-right: 2%;
+  /* padding-right: 2%; */
 }
 
-.footer-grids p span {
-  display: block;
-}
 
-.footer-grids p span a {
-  color: #BBBBBB;
+.footer-grid-info .foot_link {
+  color: #fff;
   text-decoration: none;
 }
 
-.footer-grids p span a:hover {
+
+.footer-grid-info .foot_link:hover {
   color: #2ebaef;
 }
+
 
 .social-grid {
   margin: 1em 0 0 0;

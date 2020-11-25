@@ -65,180 +65,214 @@
   <div class="w3-agile-footer">
     <div class="container">
       <div class="footer-grids">
-        <div class="row">
-          <div class="col-md-4 col-xl-4 footer-grid">
+        <div class="row m-0">
+          <div class="col-md-4 col-lg-4 col-xl-4 col-12 p-0 footer-grid">
             <div class="foot-top-w3">
               <div class="footer-grid-heading">
                 <h4>Get In Touch</h4>
               </div>
               <div class="footer-grid-info">
-                <p><i class="fa fa-map-marker i_icons"></i>The fifth settlement south of Academy Property 281 First
-                  Floor </p>
-                <p class="phone">
-                  <span><a href="tel:+201005721414"><i class="fa fa-phone i_icons"></i> 01005721414</a> / <a href="tel:+201006268989"> 01006268989</a></span>
-                  <span><a href="mailto:admin@curveegy.com"><i class="fa fa-envelope-o i_icons"></i>
-                      admin@curveegy.com</a></span>
-                  <span><a class="text-lowercase" href="http://www.curveegy.com/"><i class="fa fa-globe i_icons"></i>
-                      Curveegy.com</a></span>
-                </p>
-                <button type=" button" class="location_btn btn text-capitalize" data-toggle="modal" data-target="#exampleModalCenter">location</button>
-              </div>
-            </div>
-          </div>
+                <div class="row">
+                  <div class="foot_link">
+                    <div class="col-xl-1">
+                      <p><i class="fa fa-map-marker i_icons"></i></p>
+                    </div>
 
-          <div class="col-md-4 col-xl-4 footer-grid">
-            <div class="foot-top-w3">
-              <div class="footer-grid-heading">
-                <h4>Newsletter</h4>
-              </div>
-              <div class="footer-grid-info">
-                <p>AND ALWAYS STAY INFORMED OF THE LATEST COMPANY NEWS AND EVENTS!</p>
-              </div>
-              <div class="w3-agileits-subscribe-form">
-                <form action="#" method="post">
-                  <input type="text" placeholder="Email" name="email" required="">
-                  <button class="btn1">Subscribe</button>
-                </form>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 col-xl-4 footer-grid">
-            <div class="foot-top-w3">
-              <div class="footer-grid-heading">
-                <h4>Follow Us</h4>
-              </div>
-              <div class="social">
-                <ul>
-                  <li><a href="https://wa.me/+201005721414"><i class="fa fa-whatsapp"></i></a></li>
-                  <li><a href="https://www.facebook.com/Curve-104326978133886/"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="https://www.instagram.com/curve.realestateco/?igshid=18yvkdv78idlf"><i class="fa fa-instagram"></i></a></li>
-                  <!-- <li><a href="#"><i class="fa fa-linkedin"></i></a></li> -->
-                  <!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="clearfix"> </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- //footer -->
-
-  <!-- copy rights start here -->
-  <div class="copy-w3right">
-    <div class="container">
-      <p>© 2020 Curve Egy. All Rights Reserved | Design by <a href="#0">B&Y</a> </p>
-    </div>
-  </div>
-  <!-- //copy right end here -->
-
-  <div id="location_modal">
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="my_location">
-              <ul class="list-unstyled">
-                <li>
-                  <div class="mapouter">
-                    <div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=fifth%20settlement&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies2.org"></a></div>
+                    <div class="col-xl-11">
+                      <p>The fifth settlement south of Academy Property 281 FirstFloor</p>
+                    </div>
                   </div>
-                </li>
 
-              </ul>
+                  <div class="foot_link">
+                    <div class="col-xl-1">
+                      <i class="fa fa-phone i_icons"></i>
+                    </div>
+
+                    <div class="col-xl-11">
+                      <a href="tel:+201005721414"> 01005721414</a> / <a href="tel:+201006268989"> 01006268989</a>
+                    </div>
+                  </div>
+
+                  <div class="foot_link">
+                    <div class="col-xl-1">
+                      <i class="fa fa-envelope-o i_icons"></i>
+                    </div>
+
+                    <div class="col-xl-11">
+                      <a href="mailto:admin@curveegy.com">admin@curveegy.com</a>
+                    </div>
+                  </div>
+
+                  <div class="foot_link">
+                    <div class="col-xl-1">
+                      <i class="fa fa-globe i_icons"></i>
+                    </div>
+
+                    <div class="col-xl-11">
+                      <a class="text-lowercase" href="http://www.curveegy.com/">Curveegy.com</a>
+                    </div>
+                    <div class="foot_link">
+
+
+                      <button type=" button" class="location_btn btn text-capitalize" data-toggle="modal" data-target="#exampleModalCenter">location</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-lg-4 col-xl-4 col-12 p-0 footer-grid">
+                <div class="foot-top-w3">
+                  <div class="footer-grid-heading">
+                    <h4>Newsletter</h4>
+                  </div>
+                  <div class="footer-grid-info">
+                    <p>AND ALWAYS STAY INFORMED OF THE LATEST COMPANY NEWS AND EVENTS!</p>
+                  </div>
+                  <div class="w3-agileits-subscribe-form">
+                    <form action="#" method="post">
+                      <input type="text" placeholder="Email" name="email" required="">
+                      <button class="btn1">Subscribe</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-lg-4 col-xl-4 col-12 p-0 footer-grid">
+                <div class="foot-top-w3">
+                  <div class="footer-grid-heading">
+                    <h4>Follow Us</h4>
+                  </div>
+                  <div class="social">
+                    <ul>
+                      <li><a href="https://wa.me/+201005721414"><i class="fa fa-whatsapp"></i></a></li>
+                      <li><a href="https://www.facebook.com/Curve-104326978133886/"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="https://www.instagram.com/curve.realestateco/?igshid=18yvkdv78idlf"><i class="fa fa-instagram"></i></a></li>
+                      <!-- <li><a href="#"><i class="fa fa-linkedin"></i></a></li> -->
+                      <!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix"> </div>
             </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn x_modal" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
-    </div>
-  </div>
+      <!-- //footer -->
+
+      <!-- copy rights start here -->
+      <div class="copy-w3right">
+        <div class="container">
+          <p>© 2020 Curve Egy. All Rights Reserved | Powered by <a class="text-capitalize" href="http://www.ideagroupegypt.com/">idea group</a> </p>
+        </div>
+      </div>
+      <!-- //copy right end here -->
+
+      <div id="location_modal">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="my_location">
+                  <ul class="list-unstyled">
+                    <li>
+                      <div class="mapouter">
+                        <div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=fifth%20settlement&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies2.org"></a></div>
+                      </div>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn x_modal" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
 
-  <!-- //bootstrap-pop-up -->
-  <script type="text/javascript" src="{{url('js/jquery-2.1.4.min.js')}}"></script>
-  <!-- js -->
-  <!-- FlexSlider -->
-  <script defer src="{{url('js/jquery.flexslider.js')}}"></script>
-  <script>
-    const myVideo = document.getElementById('myVideo');
+      <!-- //bootstrap-pop-up -->
+      <script type="text/javascript" src="{{url('js/jquery-2.1.4.min.js')}}"></script>
+      <!-- js -->
+      <!-- FlexSlider -->
+      <script defer src="{{url('js/jquery.flexslider.js')}}"></script>
+      <script>
+        const myVideo = document.getElementById('myVideo');
 
-    // Not all browsers return promise from .play().
-    const playPromise = myVideo.play() || Promise.reject('');
-    playPromise.then(() => {
-      // Video could be autoplayed, do nothing.
-    }).catch(err => {
-      // Video couldn't be autoplayed because of autoplay policy. Mute it and play.
-      myVideo.muted = true;
-      myVideo.play();
-    });
-  </script>
+        // Not all browsers return promise from .play().
+        const playPromise = myVideo.play() || Promise.reject('');
+        playPromise.then(() => {
+          // Video could be autoplayed, do nothing.
+        }).catch(err => {
+          // Video couldn't be autoplayed because of autoplay policy. Mute it and play.
+          myVideo.muted = true;
+          myVideo.play();
+        });
+      </script>
 
-  <script type="text/javascript">
-    $(window).load(function() {
-      $('.flexslider').flexslider({
-        animation: "slide",
-        start: function(slider) {
-          $('body').removeClass('loading');
-        }
-      });
-    });
-  </script>
+      <script type="text/javascript">
+        $(window).load(function() {
+          $('.flexslider').flexslider({
+            animation: "slide",
+            start: function(slider) {
+              $('body').removeClass('loading');
+            }
+          });
+        });
+      </script>
 
-  <!-- End-slider-script -->
-  <!-- <script src="js/SmoothScroll.min.js"></script> -->
-  <!-- start-smooth-scrolling -->
-  <script type="text/javascript" src="{{url('js/move-top.js')}}"></script>
-  <script type="text/javascript" src="{{url('js/easing.js')}}"></script>
+      <!-- End-slider-script -->
+      <!-- <script src="js/SmoothScroll.min.js"></script> -->
+      <!-- start-smooth-scrolling -->
+      <script type="text/javascript" src="{{url('js/move-top.js')}}"></script>
+      <script type="text/javascript" src="{{url('js/easing.js')}}"></script>
 
 
 
-  <script type="text/javascript">
-    jQuery(document).ready(function($) {
-      $(".scroll").click(function(event) {
-        event.preventDefault();
+      <script type="text/javascript">
+        jQuery(document).ready(function($) {
+          $(".scroll").click(function(event) {
+            event.preventDefault();
 
-        $('html,body').animate({
-          scrollTop: $(this.hash).offset().top
-        }, 1000);
-      });
-    });
-  </script>
-  <!-- //end-smooth-scrolling -->
-  <!-- smooth-scrolling-of-move-up -->
-  <script type="text/javascript">
-    $(document).ready(function() {
-      /*
-      var defaults = {
-      	containerID: 'toTop', // fading element id
-      	containerHoverID: 'toTopHover', // fading element hover id
-      	scrollSpeed: 1200,
-      	easingType: 'linear'
-      };
-      */
+            $('html,body').animate({
+              scrollTop: $(this.hash).offset().top
+            }, 1000);
+          });
+        });
+      </script>
+      <!-- //end-smooth-scrolling -->
+      <!-- smooth-scrolling-of-move-up -->
+      <script type="text/javascript">
+        $(document).ready(function() {
+          /*
+          var defaults = {
+          	containerID: 'toTop', // fading element id
+          	containerHoverID: 'toTopHover', // fading element hover id
+          	scrollSpeed: 1200,
+          	easingType: 'linear'
+          };
+          */
 
-      $().UItoTop({
-        easingType: 'easeOutQuart'
-      });
+          $().UItoTop({
+            easingType: 'easeOutQuart'
+          });
 
-    });
-  </script>
-  <!-- //smooth-scrolling-of-move-up -->
-  <!-- Bootstrap core JavaScript
+        });
+      </script>
+      <!-- //smooth-scrolling-of-move-up -->
+      <!-- Bootstrap core JavaScript
     ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="{{url('js/bootstrap.js')}}"></script>
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="{{url('js/bootstrap.js')}}"></script>
 
 </body>
 
