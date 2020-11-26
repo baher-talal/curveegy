@@ -6,8 +6,8 @@
   <!-- banner -->
   <div class="w3ls-banner">
 
-    <video id="myVideo" class="video-fluid" poster="images/2.jpg" autoplay loop muted>
-      <source src="images/slider.mp4" type="video/mp4" autoplay />
+    <video id="myVideo" class="video-fluid" poster="images/2.jpg" loop muted playsinline >
+      <source src="images/slider.mp4" type="video/mp4"/>
     </video>
 
     <!-- banner-text -->

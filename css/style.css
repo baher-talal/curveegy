@@ -54,9 +54,10 @@ img.img-responsive {
 }
 
 .banner_slider .flexslider {
-  position: absolute;
-  top: 24%;
-  width: 100%;
+  width: 90%;
+  background: rgb(255 255 255 / 0.3);
+  padding: 2% 0;
+  margin: 0 auto;
 }
 
 .banner-text h2,
@@ -189,13 +190,15 @@ img.img-responsive {
 }
 
 
-.footer-grid-info .foot_link {
+.footer-grid-info p,
+.footer-grid-info a{
   color: #fff;
   text-decoration: none;
 }
 
 
-.footer-grid-info .foot_link:hover {
+.footer-grid-info p:hover,
+.footer-grid-info a:hover {
   color: #2ebaef;
 }
 
