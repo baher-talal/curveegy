@@ -201,7 +201,7 @@
   <!-- js -->
   <!-- FlexSlider -->
   <script defer src="{{url('js/jquery.flexslider.js')}}"></script>
-  <script>
+  <!-- <script>
     const myVideo = document.getElementById('myVideo');
 
     // Not all browsers return promise from .play().
@@ -213,9 +213,9 @@
       myVideo.muted = true;
       myVideo.play();
     });
-  </script>
+  </script> -->
 
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
     $(window).load(function() {
       $('.flexslider').flexslider({
         animation: "slide",
@@ -224,7 +224,7 @@
         }
       });
     });
-  </script>
+  </script> -->
 
   <!-- End-slider-script -->
   <!-- <script src="js/SmoothScroll.min.js"></script> -->
@@ -234,7 +234,7 @@
 
 
 
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
     jQuery(document).ready(function($) {
       $(".scroll").click(function(event) {
         event.preventDefault();
@@ -244,10 +244,10 @@
         }, 1000);
       });
     });
-  </script>
+  </script> -->
   <!-- //end-smooth-scrolling -->
   <!-- smooth-scrolling-of-move-up -->
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
     $(document).ready(function() {
       /*
       var defaults = {
@@ -263,14 +263,14 @@
       });
 
     });
-  </script>
+  </script> -->
   <!-- //smooth-scrolling-of-move-up -->
   <!-- Bootstrap core JavaScript
     ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="{{url('js/bootstrap.js')}}"></script>
   <script src="{{url('js/script.js')}}"></script>
-
+  @yield('script')
 </body>
 
 </html>

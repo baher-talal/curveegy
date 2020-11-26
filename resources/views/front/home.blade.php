@@ -6,8 +6,8 @@
   <!-- banner -->
   <div class="w3ls-banner">
 
-    <video id="myVideo" class="video-fluid" poster="images/2.jpg" loop muted playsinline >
-      <source src="images/slider.mp4" type="video/mp4"/>
+    <video id="myVideo" class="video-fluid" poster="images/2.jpg" loop muted playsinline>
+      <source src="images/slider.mp4" type="video/mp4" />
     </video>
 
     <!-- banner-text -->
@@ -141,4 +141,20 @@
     </div>
   </div>
 </div>
+@endsection
+
+@section('script')
+<script>
+  const myVideo = document.getElementById('myVideo');
+
+  // Not all browsers return promise from .play().
+  const playPromise = myVideo.play() || Promise.reject('');
+  playPromise.then(() => {
+    // Video could be autoplayed, do nothing.
+  }).catch(err => {
+    // Video couldn't be autoplayed because of autoplay policy. Mute it and play.
+    myVideo.muted = true;
+    myVideo.play();
+  });
+</script>
 @endsection

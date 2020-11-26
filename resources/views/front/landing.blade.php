@@ -3,7 +3,7 @@
 @section('content')
 
 <section class="landing_page">
-  <div class="container">
+  <div class="container_views">
     <form class="form_landing" action="#0">
       <p class="your_data">
         <span class="d-block text-center font-weight-bold">سجل بياناتك لمزيد من المعلومات</span>
@@ -34,11 +34,11 @@
     </form>
 
     <div class="landing_desc rounded">
-      <p>نبذه عن</p>
+      <p class="about_pro">نبذه عن</p>
 
-      <h5>مشروع كاسيل لاند مارك</h5>
+      <h5 class="title_pro">مشروع كاسيل لاند مارك</h5>
 
-      <p class="landing_desc_p">
+      <p class="landing_desc_p mb-0">
         كاسيل لاندمارك هو وجهتك لتجربة حياة إستثنائية وفريدة من نوعها بمنطقة R7 المتميزة وبجانب جامعة كوفنتري البريطانية
         بالعاصمة الإدارية <br>
         تبلغ مساحة كاسيل لاندمارك ٤٣ فداناً مع ٨١٪ مساحات خضراء، حيث يبعد حوالي خمسة دقائق عن النهر الأخضر
@@ -90,7 +90,7 @@
     </div>
   </div>
 
-  <div class="container">
+  <div class="container_views">
     <form class="form_landing" action="#0">
       <p class="your_data">
         <span class="d-block text-center font-weight-bold">سجل بياناتك لمزيد من المعلومات</span>

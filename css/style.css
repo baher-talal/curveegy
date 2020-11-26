@@ -411,31 +411,6 @@ button.btn1:focus {
 }
 
 /*-- //footer --*/
-/*-- copy-w3right --*/
-.copy-w3right {
-  /* background: #191919; */
-  padding: 1.5em 0;
-  text-align: center;
-}
-
-.copy-w3right p {
-  color: #fff;
-  text-align: center;
-  letter-spacing: 2px;
-}
-
-.copy-w3right p a {
-  color: #2ebaef;
-  -webkit-transition: 0.5s all;
-  -moz-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-.copy-w3right p a:hover {
-  color: #fff;
-}
-
-/*-- //copy-w3right --*/
 /*-- icons --*/
 .codes a {
   color: #999;
@@ -1616,7 +1591,7 @@ p.b_label {
   }
 
   .footer-grid:nth-child(2) {
-    margin: 2em 0;
+    /* margin: 2em 0; */
   }
 
   .w3-agile-footer {
@@ -1792,10 +1767,6 @@ p.b_label {
 @media(max-width:667px) {
   .banner-text {
     padding: 8em 0 10em;
-  }
-
-  .copy-w3right p {
-    letter-spacing: 1px;
   }
 
   .services-top {
