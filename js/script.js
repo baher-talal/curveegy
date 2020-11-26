@@ -1,47 +1,18 @@
-'use strict'
-
-class SideNav {
-  constructor() {
-    this.sideNavEl = document.querySelector('.js-side-nav');
-    this.sideNavContainerEl = document.querySelector('.js-side-nav-container');
-    this.showButtonEl = document.querySelector('.js-menu-open');
-    this.closeButtonEl = document.querySelector('.js-menu-close');
-
-    this.openSideNav = this.openSideNav.bind(this);
-    this.closeSideNav = this.closeSideNav.bind(this);
-    this.blockClicks = this.blockClicks.bind(this);
-    this.onTransitionEnd = this.onTransitionEnd.bind(this);
-
-    this.addEventListeners();
+/* Start container & container-fluid */
+$(document).ready(function () {
+  function checkWidth() {
+    var windowSize = $(window).width();
+    if (windowSize <= 1024) {
+      $('.container_views').addClass('container-phone');
+      $('.container_views').removeClass('container');
+    } else {
+      $('.container_views').addClass('container');
+      $('.container_views').removeClass('container-phone');
+    }
   }
-
-  addEventListeners() {
-    this.showButtonEl.addEventListener('click', this.openSideNav);
-    this.closeButtonEl.addEventListener('click', this.closeSideNav);
-    this.sideNavEl.addEventListener('click', this.blockClicks);
-    this.sideNavContainerEl.addEventListener('click', this.closeSideNav);
-  }
-
-  blockClicks(evt) {
-    evt.stopPropagation();
-  }
-
-  onTransitionEnd(evt) {
-    this.sideNavContainerEl.classList.remove('side-nav-animatable');
-    this.sideNavContainerEl.removeEventListener('transitionend', this.onTransitionEnd);
-  }
-
-  openSideNav() {
-    this.sideNavContainerEl.classList.add('side-nav-animatable');
-    this.sideNavContainerEl.classList.add('side-nav-visible');
-    this.sideNavContainerEl.addEventListener('transitionend', this.onTransitionEnd);
-  }
-
-  closeSideNav() {
-    this.sideNavContainerEl.classList.add('side-nav-animatable');
-    this.sideNavContainerEl.classList.remove('side-nav-visible');
-    this.sideNavContainerEl.addEventListener('transitionend', this.onTransitionEnd);
-  }
-}
-
-new SideNav();
+  // Execute on load
+  checkWidth();
+  // Bind event listener
+  $(window).resize(checkWidth);
+});
+/* End container & container-fluid */

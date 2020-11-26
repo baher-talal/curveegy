@@ -11,7 +11,7 @@
     </video>
 
     <!-- banner-text -->
-    <div class="banner-text banner_slider d-none d-md-none d-lg-none d-xl-block">
+    <div class="banner-text banner_slider rounded">
       <div class="flexslider">
         <ul class="slides">
           <li>
@@ -32,14 +32,13 @@
     <!-- //banner-text -->
   </div>
   <!-- //banner -->
-  <div class="container">
+  <div class="container_views">
     <div class="dFlex">
       <figure class="effect-julia rounded">
         <a href="{{url('/landing')}}" class="btn text-capitalize more_details">
           <img src="images/2.jpg" class="img-fluid " alt="curve">
 
           <figcaption>
-            <img src="images/curve_logo.png" class="img-fluid curve_logo" alt="curve">
             <div class="more_desc">
               <p class="text-capitalize">New Cairo</p>
               <p class="text-capitalize">10% Down Payment</p>
@@ -58,7 +57,6 @@
           <img src="images/2.jpg" class="img-fluid " alt="curve">
 
           <figcaption>
-            <img src="images/curve_logo.png" class="img-fluid curve_logo" alt="curve">
             <div class="more_desc">
               <p class="text-capitalize">New Cairo</p>
               <p class="text-capitalize">10% Down Payment</p>
@@ -77,7 +75,6 @@
           <img src="images/2.jpg" class="img-fluid " alt="curve">
 
           <figcaption>
-            <img src="images/curve_logo.png" class="img-fluid curve_logo" alt="curve">
             <div class="more_desc">
               <p class="text-capitalize">New Cairo</p>
               <p class="text-capitalize">10% Down Payment</p>
@@ -96,7 +93,6 @@
           <img src="images/2.jpg" class="img-fluid " alt="curve">
 
           <figcaption>
-            <img src="images/curve_logo.png" class="img-fluid curve_logo" alt="curve">
             <div class="more_desc">
               <p class="text-capitalize">New Cairo</p>
               <p class="text-capitalize">10% Down Payment</p>

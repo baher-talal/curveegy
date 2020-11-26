@@ -8,6 +8,19 @@ body {
   background-attachment: inherit;
 }
 
+.container-phone {
+  padding-right: 5px;
+  padding-left: 5px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.noPadding {
+  padding-right: 0;
+  padding-left: 0;
+}
+
 /*********Start Header *********/
 header .w3-agiletop .head_logo .img_logo {
   width: 60%;
@@ -152,7 +165,7 @@ header .w3-agiletop .social_head ul li a i.fa.fa-linkedin:hover {
 
 /********* End Header *********/
 main {
-  padding-bottom: 27rem !important;
+  padding-bottom: 8%;
 }
 main .w3ls-banner .video-fluid {
   object-fit: fill;
@@ -240,7 +253,9 @@ main .dFlex:nth-child(even) {
 }
 
 #modalImg #myModal .modal-dialog {
-  max-width: 97%;
+  width: 97%;
+  margin: 0 auto;
+  display: block;
 }
 #modalImg #myModal .modal-dialog .modal-content .modal-body .btn_download {
   background-color: #2ebaef;
@@ -318,13 +333,11 @@ main .dFlex:nth-child(even) {
 /********* End Footer *********/
 figure {
   position: relative;
-  float: left;
   overflow: hidden;
   margin: 10px 1%;
   min-width: 320px;
   max-width: 480px;
   max-height: 360px;
-  width: 48%;
   height: auto;
   background: #3085a3;
   text-align: center;
@@ -336,7 +349,7 @@ figure img {
   display: block;
   min-height: 100%;
   max-width: 100%;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 figure figcaption {
@@ -360,16 +373,6 @@ figure figcaption > a {
   left: 0;
   width: 100%;
   height: 100%;
-}
-
-figure figcaption .curve_logo {
-  width: 100%;
-  max-width: unset !important;
-  min-height: unset !important;
-  height: unset !important;
-  position: absolute;
-  bottom: 72%;
-  left: -24%;
 }
 
 /* Anchor will cover the whole item by default */
@@ -410,6 +413,7 @@ figure.effect-julia {
 }
 
 figure.effect-julia img {
+  width: 100%;
   max-width: none;
   height: 400px;
   -webkit-transition: opacity 1s, -webkit-transform 1s;
@@ -488,5 +492,51 @@ figure.effect-julia:hover p {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
+
+/* Start Media Query */
+@media (min-width: 320px) and (max-width: 359.9px) {
+  header .top-nav {
+    text-align: center;
+  }
+
+  main .w3ls-banner .banner-text {
+    padding: 3% 0;
+    width: 99%;
+  }
+  main .w3ls-banner .banner-text .flexslider .flex-direction-nav {
+    display: none;
+  }
+  main .w3ls-banner .banner-text .flexslider .flex-control-nav {
+    bottom: -8%;
+  }
+  main .dFlex:nth-child(odd), main .dFlex:nth-child(even) {
+    justify-content: unset;
+    display: block;
+    margin: 10% 0;
+  }
+  main .dFlex:nth-child(odd) figure, main .dFlex:nth-child(even) figure {
+    min-width: 100%;
+    margin: 0;
+  }
+  main .dFlex:nth-child(odd) figure.effect-julia img, main .dFlex:nth-child(even) figure.effect-julia img {
+    height: 300px;
+  }
+
+  .w3-agile-footer .footer-grids .foot-top-w3 {
+    border-left: none;
+    border-bottom: 1px solid #2ebaef;
+  }
+  .w3-agile-footer .footer-grids .foot-top-w3 .footer-grid-heading {
+    text-align: center;
+  }
+  .w3-agile-footer .footer-grids .foot-top-w3 .w3-agileits-subscribe-form form .btn1 {
+    margin-bottom: 4%;
+  }
+
+  #modalImg #myModal .modal-dialog .modal-content .modal-body .btn_download {
+    width: 35%;
+  }
+}
+/* End Media Query */
 
 /*# sourceMappingURL=curveegy.css.map */

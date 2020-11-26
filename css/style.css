@@ -48,12 +48,6 @@ img.img-responsive {
 
 .banner-text {
   text-align: center;
-  /* padding: 18em 0; */
-
-
-}
-
-.banner_slider .flexslider {
   width: 90%;
   background: rgb(255 255 255 / 0.3);
   padding: 2% 0;
@@ -2132,7 +2126,7 @@ p.b_label {
   }
 
   .banner-text {
-    padding: 3em 0 4em;
+    /* padding: 3em 0 4em; */
   }
 
   .welcome-left {

@@ -34,7 +34,7 @@
 <body>
   <header>
     <div class="top-nav w3-agiletop">
-      <div class="container">
+      <div class="container_views">
         <div class="row">
           <div class="col-md-6 col-lg-6 col-xl-6 col-12">
             <div class="navbar-header head_logo">
@@ -63,7 +63,7 @@
   @yield('content')
   <!-- footer -->
   <div class="w3-agile-footer">
-    <div class="container">
+    <div class="container_views">
       <div class="footer-grids">
         <div class="row m-0">
           <div class="col-md-4 col-lg-4 col-xl-4 col-12 p-0 footer-grid">
@@ -73,40 +73,40 @@
               </div>
               <div class="footer-grid-info">
                 <div class="row">
-                  <div class="col-xl-1">
+                  <div class="col-xl-1 col-1 noPadding">
                     <i class="fa fa-map-marker i_icons"></i>
                   </div>
 
-                  <div class="col-xl-11">
+                  <div class="col-xl-11 col-11 noPadding">
                     <p>The fifth settlement south of Academy Property 281 FirstFloor</p>
                   </div>
 
-                  <div class="col-xl-1">
+                  <div class="col-xl-1 col-1 noPadding">
                     <i class="fa fa-phone i_icons"></i>
                   </div>
 
-                  <div class="col-xl-11">
+                  <div class="col-xl-11 col-11 noPadding">
                     <a href="tel:+201005721414"> 01005721414</a> / <a href="tel:+201006268989"> 01006268989</a>
                   </div>
 
-                  <div class="col-xl-1">
+                  <div class="col-xl-1 col-1 noPadding">
                     <i class="fa fa-envelope-o i_icons"></i>
                   </div>
 
-                  <div class="col-xl-11">
+                  <div class="col-xl-11 col-11 noPadding">
                     <a href="mailto:admin@curveegy.com">admin@curveegy.com</a>
                   </div>
 
-                  <div class="col-xl-1">
+                  <div class="col-xl-1 col-1 noPadding">
                     <i class="fa fa-globe i_icons"></i>
                   </div>
 
-                  <div class="col-xl-11">
+                  <div class="col-xl-11 col-11 noPadding">
                     <a class="text-lowercase" href="http://www.curveegy.com/">Curveegy.com</a>
                   </div>
 
                   <div class="col-xl-12">
-                    <button type=" button" class="location_btn btn text-capitalize" data-toggle="modal" data-target="#exampleModalCenter">location</button>
+                    <button type="button" class="location_btn btn text-capitalize" data-toggle="modal" data-target="#exampleModalCenter">location</button>
                   </div>
 
                 </div>
@@ -125,7 +125,7 @@
               <div class="w3-agileits-subscribe-form">
                 <form action="#" method="post">
                   <input type="text" placeholder="Email" name="email" required="">
-                  <button class="btn1">Subscribe</button>
+                  <button type="button" class="btn1">Subscribe</button>
                 </form>
               </div>
             </div>
@@ -157,7 +157,7 @@
 
   <!-- copy rights start here -->
   <div class="copy-w3right">
-    <div class="container">
+    <div class="container_views">
       <p>© 2020 Curve Egy. All Rights Reserved | Powered by <a class="text-capitalize" href="http://www.ideagroupegypt.com/">idea group</a> </p>
     </div>
   </div>
@@ -269,6 +269,7 @@
     ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="{{url('js/bootstrap.js')}}"></script>
+  <script src="{{url('js/script.js')}}"></script>
 
 </body>
 
