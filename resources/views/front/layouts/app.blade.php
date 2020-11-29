@@ -123,9 +123,10 @@
                 <p>AND ALWAYS STAY INFORMED OF THE LATEST COMPANY NEWS AND EVENTS!</p>
               </div>
               <div class="w3-agileits-subscribe-form">
-                <form action="#" method="post">
-                  <input type="text" placeholder="Email" name="email" required="">
-                  <button type="button" class="btn1">Subscribe</button>
+                <form action="{{url('dashboard/newsletterStore')}}" method="post">
+                  @csrf
+                  <input type="text" placeholder="Email" name="mail" required="">
+                  <button type="submit" class="btn1">Subscribe</button>
                 </form>
               </div>
             </div>

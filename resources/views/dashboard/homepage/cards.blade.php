@@ -5,45 +5,52 @@
 <div class="container">
 
     <h3>Cards</h3>
+    @if (session()->has('success'))
+    <div class="card mb-4 py-3 border-bottom-success">
+        <div class="card-body">
+            {{session('success')}}
+        </div>
+    </div>
+    @endif    
 
     <hr>
 
-    <form action="{{url('dashboard/cards')}}" method="post" enctype="multipart/form-data">
+    <form action="{{url('dashboard/cardsStore')}}" method="post" enctype="multipart/form-data">
         @csrf
 
         <div class="input-group mb-3">
             <div class="input-group-prepend">
               <span class="input-group-text" id="basic-addon1">title</span>
             </div>
-            <input type="text" class="form-control" placeholder="title" aria-label="title" aria-describedby="basic-addon1">
+            <input type="text" class="form-control" placeholder="title" name="title" aria-label="title" aria-describedby="basic-addon1">
           </div>
 
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <span class="input-group-text" id="basic-addon1">city</span>
             </div>
-            <input type="text" class="form-control" placeholder="city" aria-label="city" aria-describedby="basic-addon1">
+            <input type="text" class="form-control" placeholder="city" name="city" aria-label="city" aria-describedby="basic-addon1">
           </div>
 
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <span class="input-group-text" id="basic-addon1">installment</span>
             </div>
-            <input type="text" class="form-control" placeholder="installment" aria-label="installment" aria-describedby="basic-addon1">
+            <input type="text" class="form-control" placeholder="installment" name="installment" aria-label="installment" aria-describedby="basic-addon1">
           </div>
 
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <span class="input-group-text" id="basic-addon1">downpayment</span>
             </div>
-            <input type="text" class="form-control" placeholder="downpayment" aria-label="downpayment" aria-describedby="basic-addon1">
+            <input type="text" class="form-control" placeholder="downpayment" name="downpayment" aria-label="downpayment" aria-describedby="basic-addon1">
           </div>
 
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <span class="input-group-text" id="basic-addon1">Description</span>
             </div>
-            <textarea type="text" class="form-control" placeholder="Description" aria-label="Description" aria-describedby="basic-addon1"></textarea>
+            <textarea type="text" class="form-control" placeholder="Description" name="description" aria-label="Description" aria-describedby="basic-addon1"></textarea>
           </div>
 
         <div class="input-group mb-3">
@@ -51,7 +58,7 @@
                 <span class="input-group-text">Image</span>
             </div>
             <div class="custom-file">
-                <input type="file" class="custom-file-input" name="image" id="image" accept=".egp">
+                <input type="file" class="custom-file-input" name="image" id="image">
                 <label class="custom-file-label" for="image">Choose file</label>
             </div>
         </div>

@@ -5,7 +5,13 @@
 <div class="container">
 
     <h3>Header Video</h3>
-
+    @if (session()->has('success'))
+    <div class="card mb-4 py-3 border-bottom-success">
+        <div class="card-body">
+            {{session('success')}}
+        </div>
+    </div>
+    @endif    
     <hr>
 
     <form action="{{url('dashboard/headervideoStore')}}" method="post" enctype="multipart/form-data">
@@ -24,6 +30,10 @@
         <input type="submit" value="save">
 
     </form>
+
+    <hr>
+
+    <video width="600px" src="{{url("uploads/$header_video->value")}}" controls></video>
 
 </div>
 

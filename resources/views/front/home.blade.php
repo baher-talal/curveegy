@@ -7,7 +7,7 @@
   <div class="w3ls-banner">
 
     <video id="myVideo" class="video-fluid" poster="images/2.jpg" loop muted playsinline>
-      <source src="images/slider.mp4" type="video/mp4" />
+      <source src="{{url("uploads/$header_video->value")}}" type="video/mp4" />
     </video>
 
     <!-- banner-text -->
@@ -33,23 +33,8 @@
   </div>
   <!-- //banner -->
   <div class="container_views">
-    <div class="dFlex">
-      <figure class="effect-julia rounded">
-        <a href="{{url('/landing')}}" class="btn text-capitalize more_details">
-          <img src="images/2.jpg" class="img-fluid " alt="curve">
 
-          <figcaption>
-            <div class="more_desc">
-              <p class="text-capitalize">New Cairo</p>
-              <p class="text-capitalize">10% Down Payment</p>
-              <p class="text-capitalize">8 Installment</p>
-            </div>
-            <!-- <a href="#0" class="text-capitalize btn more_details">more details</a> -->
-          </figcaption>
-        </a>
-        <a href="#0" class="btn text-capitalize read_more" data-toggle="modal" data-target="#myModal">Read More</a>
-      </figure>
-    </div>
+    @foreach ($cards as $card)
 
     <div class="dFlex">
       <figure class="effect-julia rounded">
@@ -69,47 +54,15 @@
       </figure>
     </div>
 
-    <div class="dFlex">
-      <figure class="effect-julia rounded">
-        <a href="{{url('/landing')}}" class="btn text-capitalize more_details">
-          <img src="images/2.jpg" class="img-fluid " alt="curve">
-
-          <figcaption>
-            <div class="more_desc">
-              <p class="text-capitalize">New Cairo</p>
-              <p class="text-capitalize">10% Down Payment</p>
-              <p class="text-capitalize">8 Installment</p>
-            </div>
-            <!-- <a href="#0" class="text-capitalize btn more_details">more details</a> -->
-          </figcaption>
-        </a>
-        <a href="#0" class="btn text-capitalize read_more" data-toggle="modal" data-target="#myModal">Read More</a>
-      </figure>
-    </div>
-
-    <div class="dFlex">
-      <figure class="effect-julia rounded">
-        <a href="{{url('/landing')}}" class="btn text-capitalize more_details">
-          <img src="images/2.jpg" class="img-fluid " alt="curve">
-
-          <figcaption>
-            <div class="more_desc">
-              <p class="text-capitalize">New Cairo</p>
-              <p class="text-capitalize">10% Down Payment</p>
-              <p class="text-capitalize">8 Installment</p>
-            </div>
-            <!-- <a href="#0" class="text-capitalize btn more_details">more details</a> -->
-          </figcaption>
-        </a>
-        <a href="#0" class="btn text-capitalize read_more" data-toggle="modal" data-target="#myModal">Read More</a>
-      </figure>
-    </div>
+    @endforeach
   </div>
 </main>
 
 <!-- Modal -->
+@foreach ($cards as $card)
 <div id="modalImg">
-  <div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -141,6 +94,7 @@
     </div>
   </div>
 </div>
+@endforeach
 @endsection
 
 @section('script')

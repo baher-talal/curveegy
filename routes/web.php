@@ -30,6 +30,7 @@ Route::prefix('dashboard')->group(function () {
     Route::get('cards', [App\Http\Controllers\Dashboard\HomePageController::class, 'cards']);
     Route::post('cardsStore', [App\Http\Controllers\Dashboard\HomePageController::class, 'cardsStore']);
     
+    Route::post('newsletterStore', [App\Http\Controllers\Dashboard\HomePageController::class, 'newsletterStore']);
 });
 
 
