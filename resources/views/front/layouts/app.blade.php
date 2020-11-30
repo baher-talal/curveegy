@@ -67,7 +67,7 @@
       <div class="footer-grids">
         <div class="row m-0">
           <div class="col-md-4 col-lg-4 col-xl-4 col-12 p-0 footer-grid">
-            <div class="foot-top-w3">
+            <div class="foot-top-w3 borderBottom">
               <div class="footer-grid-heading">
                 <h4>Get In Touch</h4>
               </div>
@@ -115,7 +115,7 @@
           </div>
 
           <div class="col-md-4 col-lg-4 col-xl-4 col-12 p-0 footer-grid">
-            <div class="foot-top-w3">
+            <div class="foot-top-w3 borderBottom">
               <div class="footer-grid-heading">
                 <h4>Newsletter</h4>
               </div>

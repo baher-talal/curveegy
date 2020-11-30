@@ -65,15 +65,15 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+          <h5 class="modal-title" id="exampleModalCenterTitle">New Cairo</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <section>
           <div class="modal-body">
-            <img src="images/3.jpg" alt=" " class="img-responsive" />
-            <p>Ut enim ad minima veniam, quis nostrum
+            <img src="images/3.jpg" alt=" " class="img-responsive rounded"/>
+            <p class="modalDesc">Ut enim ad minima veniam, quis nostrum
               exercitationem ullam corporis suscipit laboriosam,
               nisi ut aliquid ex ea commodi consequatur? Quis autem
               vel eum iure reprehenderit qui in ea voluptate velit

@@ -318,12 +318,25 @@ main {
 #modalImg {
   #myModal {
     .modal-dialog {
-      width: 97%;
+      width: 99%;
+      max-width: 100%;
       margin: 0 auto;
       display: block;
 
       .modal-content {
+        .modal-header {
+          .close {
+            &:focus {
+              outline: 0;
+            }
+          }
+        }
+
         .modal-body {
+          .modalDesc {
+            padding: 1.5% 4% 0;
+          }
+
           .btn_download {
             background-color: $bejCol;
             color: $whiteCol;
@@ -679,11 +692,10 @@ figure.effect-julia:hover p {
     .footer-grids {
       .foot-top-w3 {
         border-left: none;
-        border-bottom: 1px solid $bejCol;
-        margin-top: 3%;
 
-        &:nth-child(2) {
-          border-bottom: none;
+        &.borderBottom {
+          border-bottom: 1px solid $bejCol;
+          margin-bottom: 4%;
         }
 
         .footer-grid-heading {
@@ -823,7 +835,11 @@ figure.effect-julia:hover p {
     .footer-grids {
       .foot-top-w3 {
         border-left: none;
-        border-bottom: 1px solid $bejCol;
+
+        &.borderBottom {
+          border-bottom: 1px solid $bejCol;
+          margin-bottom: 3%;
+        }
 
         .footer-grid-heading {
           text-align: center;
@@ -962,7 +978,11 @@ figure.effect-julia:hover p {
     .footer-grids {
       .foot-top-w3 {
         border-left: none;
-        border-bottom: 1px solid $bejCol;
+
+        &.borderBottom {
+          border-bottom: 1px solid $bejCol;
+          margin-bottom: 4%;
+        }
 
         .footer-grid-heading {
           text-align: center;
@@ -1101,7 +1121,11 @@ figure.effect-julia:hover p {
     .footer-grids {
       .foot-top-w3 {
         border-left: none;
-        border-bottom: 1px solid $bejCol;
+
+        &.borderBottom {
+          border-bottom: 1px solid $bejCol;
+          margin-bottom: 4%;
+        }
 
         .footer-grid-heading {
           text-align: center;
