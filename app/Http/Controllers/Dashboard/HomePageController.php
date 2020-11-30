@@ -13,7 +13,7 @@ class HomePageController extends Controller
 {
     public function headervideo()
     {
-        $header_video = Homepage::where('key', 'header_video')->first();
+        $header_video = Homepage::where('key', 'header_video')->get()->last();
         return view('dashboard.homepage.headervideo', compact('header_video'));
     }
 

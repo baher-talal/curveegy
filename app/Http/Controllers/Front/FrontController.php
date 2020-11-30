@@ -11,7 +11,7 @@ class FrontController extends Controller
 {
     public function index()
     {
-        $header_video = Homepage::where('key', 'header_video')->first();
+        $header_video = Homepage::where('key', 'header_video')->get()->last();
         $cards = Card::all();
         return view('front.home', compact('header_video', 'cards'));
     }
