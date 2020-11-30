@@ -44,7 +44,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-6 col-xl-6 col-12 d-none d-md-none d-lg-none d-xl-block">
+          <div class="col-md-6 col-lg-6 col-xl-6 col-12 d-none d-md-block d-lg-block d-xl-block">
             <div class="social_head">
               <ul>
                 <li><a href="https://wa.me/+201005721414"><i class="fa fa-whatsapp"></i></a></li>

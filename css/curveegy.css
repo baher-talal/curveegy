@@ -165,7 +165,7 @@ header .w3-agiletop .social_head ul li a i.fa.fa-linkedin:hover {
 
 /********* End Header *********/
 main {
-  padding-bottom: 8%;
+  padding-bottom: 10%;
 }
 main .w3ls-banner .video-fluid {
   object-fit: fill;
@@ -842,13 +842,17 @@ figure.effect-julia:hover p {
   header .top-nav {
     text-align: center;
   }
+  header .w3-agiletop .head_logo .img_logo {
+    width: 80%;
+  }
 
   main .w3ls-banner .banner-text {
     padding: 3% 0;
     width: 99%;
   }
-  main .w3ls-banner .banner-text .flexslider .flex-direction-nav {
-    display: none;
+  main .w3ls-banner .banner-text .flexslider .flex-direction-nav .flex-prev,
+main .w3ls-banner .banner-text .flexslider .flex-direction-nav .flex-next {
+    top: 42%;
   }
   main .w3ls-banner .banner-text .flexslider .flex-control-nav {
     bottom: -8%;
@@ -909,13 +913,29 @@ figure.effect-julia:hover p {
   header .top-nav {
     text-align: center;
   }
+  header .w3-agiletop .head_logo .img_logo {
+    width: 80%;
+  }
+  header .w3-agiletop .social_head {
+    text-align: center;
+    margin-top: 5%;
+  }
 
   main .w3ls-banner .banner-text {
     padding: 3% 0;
     width: 99%;
   }
-  main .w3ls-banner .banner-text .flexslider .flex-direction-nav {
-    display: none;
+  main .w3ls-banner .banner-text .flexslider .flex-direction-nav .flex-prev,
+main .w3ls-banner .banner-text .flexslider .flex-direction-nav .flex-next {
+    top: 42%;
+  }
+  main .w3ls-banner .banner-text .flexslider .flex-direction-nav .flex-prev.flex-prev,
+main .w3ls-banner .banner-text .flexslider .flex-direction-nav .flex-next.flex-prev {
+    left: 2%;
+  }
+  main .w3ls-banner .banner-text .flexslider .flex-direction-nav .flex-prev.flex-next,
+main .w3ls-banner .banner-text .flexslider .flex-direction-nav .flex-next.flex-next {
+    right: 2%;
   }
   main .w3ls-banner .banner-text .flexslider .flex-control-nav {
     bottom: -8%;
