@@ -26,29 +26,29 @@ $(document).ready(function () {
 });
 /* End container & container-fluid */
 
-$(document).ready(function ($) {
-  $(".scroll").click(function (event) {
-    event.preventDefault();
+// $(document).ready(function ($) {
+//   $(".scroll").click(function (event) {
+//     event.preventDefault();
 
-    $('html,body').animate({
-      scrollTop: $(this.hash).offset().top
-    }, 1000);
-  });
+//     $('html,body').animate({
+//       scrollTop: $(this.hash).offset().top
+//     }, 1000);
+//   });
+// });
+
+/* ===== Start Scroll to Top ==== */
+$(window).scroll(function () {
+  if ($(this).scrollTop() >= 50) { // If page is scrolled more than 50px
+    $('#return-to-top').fadeIn(200); // Fade in the arrow
+  } else {
+    $('#return-to-top').fadeOut(200); // Else fade out the arrow
+  }
 });
 
-
-$(document).ready(function () {
-  /*
-  var defaults = {
-  	containerID: 'toTop', // fading element id
-  	containerHoverID: 'toTopHover', // fading element hover id
-  	scrollSpeed: 1200,
-  	easingType: 'linear'
-  };
-  */
-
-  $().UItoTop({
-    easingType: 'easeOutQuart'
-  });
-
+$('#return-to-top').click(function () { // When arrow is clicked
+  $('body,html').animate({
+    scrollTop: 0 // Scroll to top of body
+  }, 500);
 });
+/* ===== End Scroll to Top ==== */
+

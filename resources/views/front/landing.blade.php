@@ -9,25 +9,26 @@
         <span class="d-block text-center font-weight-bold">سجل بياناتك لمزيد من المعلومات</span>
         <span class="d-block text-center font-weight-bold">هنكلمك و نقولك افضل الاختيارات</span>
       </p>
-      <div class="input-group mb-3">
+
+      <div class="all_group input-group mb-3">
         <div class="input-group-prepend">
-          <span class="input-group-text" id="basic-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
+          <span class="span_icon input-group-text" id="basic-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
         </div>
-        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" required>
+        <input type="text" class="form-control" placeholder="أسم المستخدم" aria-label="Username" aria-describedby="basic-addon1" required>
       </div>
 
-      <div class="input-group mb-3">
+      <div class="all_group input-group mb-3">
         <div class="input-group-prepend">
-          <span class="input-group-text" id="basic-addon2"><i class="fa fa-phone" aria-hidden="true"></i></span>
+          <span class="span_icon input-group-text" id="basic-addon2"><i class="fa fa-phone" aria-hidden="true"></i></span>
         </div>
-        <input type="phone" class="form-control" placeholder="Phone Number" aria-label="phoneNumber" aria-describedby="basic-addon2" required>
+        <input type="phone" class="form-control" placeholder="رقم التليفون" aria-label="phoneNumber" aria-describedby="basic-addon2" required>
       </div>
 
-      <div class="input-group mb-3">
+      <div class="all_group input-group mb-3">
         <div class="input-group-prepend">
-          <span class="input-group-text" id="basic-addon3"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+          <span class="span_icon input-group-text" id="basic-addon3"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
         </div>
-        <input type="email" class="form-control" placeholder="Email [Optional]" aria-label="phoneNumber" aria-describedby="basic-addon3">
+        <input type="email" class="form-control" placeholder="الايميل [اختياري]" aria-label="phoneNumber" aria-describedby="basic-addon3">
       </div>
 
       <button class="btn text-capitalize form_submit" type="submit">submit</button>
@@ -96,25 +97,26 @@
         <span class="d-block text-center font-weight-bold">سجل بياناتك لمزيد من المعلومات</span>
         <span class="d-block text-center font-weight-bold">هنكلمك و نقولك افضل الاختيارات</span>
       </p>
-      <div class="input-group mb-3">
+
+      <div class="all_group input-group mb-3">
         <div class="input-group-prepend">
-          <span class="input-group-text" id="basic-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
+          <span class="span_icon input-group-text" id="basic-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
         </div>
-        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" required>
+        <input type="text" class="form-control" placeholder="أسم المستخدم" aria-label="Username" aria-describedby="basic-addon1" required>
       </div>
 
-      <div class="input-group mb-3">
+      <div class="all_group input-group mb-3">
         <div class="input-group-prepend">
-          <span class="input-group-text" id="basic-addon2"><i class="fa fa-phone" aria-hidden="true"></i></span>
+          <span class="span_icon input-group-text" id="basic-addon2"><i class="fa fa-phone" aria-hidden="true"></i></span>
         </div>
-        <input type="phone" class="form-control" placeholder="Phone Number" aria-label="phoneNumber" aria-describedby="basic-addon2" required>
+        <input type="phone" class="form-control" placeholder="رقم التليفون" aria-label="phoneNumber" aria-describedby="basic-addon2" required>
       </div>
 
-      <div class="input-group mb-3">
+      <div class="all_group input-group mb-3">
         <div class="input-group-prepend">
-          <span class="input-group-text" id="basic-addon3"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+          <span class="span_icon input-group-text" id="basic-addon3"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
         </div>
-        <input type="email" class="form-control" placeholder="Email [Optional]" aria-label="phoneNumber" aria-describedby="basic-addon3">
+        <input type="email" class="form-control" placeholder="الايميل [اختياري]" aria-label="phoneNumber" aria-describedby="basic-addon3">
       </div>
 
       <button class="btn text-capitalize form_submit" type="submit">submit</button>

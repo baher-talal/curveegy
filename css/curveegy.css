@@ -22,6 +22,169 @@ body {
 }
 
 /*********Start Header *********/
+header {
+  height: 0;
+}
+header .head_logo {
+  position: relative;
+}
+header .head_logo img {
+  z-index: 99999;
+  width: 40%;
+  position: absolute;
+  top: 70px;
+  left: 12%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+header .head_social {
+  position: relative;
+}
+header .head_social ul {
+  padding: 0;
+  margin: 0;
+  z-index: 99999;
+  position: absolute;
+  top: 70px;
+  right: 5%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+header .head_social ul li {
+  display: inline-block;
+}
+header .head_social ul li:nth-child(odd) {
+  margin: 0 0.25em;
+}
+header .head_social ul li:nth-child(even) {
+  margin: 0 0.25em;
+}
+header .head_social ul li a {
+  color: #333;
+  text-align: center;
+  font-size: 1.3rem;
+}
+header .head_social ul li a i.fa.fa-whatsapp {
+  height: 40px;
+  width: 40px;
+  background: #000;
+  line-height: 40px;
+  color: #FFF;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+}
+header .head_social ul li a i.fa.fa-whatsapp:hover {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  background: #25D366;
+}
+header .head_social ul li a i.fa.fa-facebook {
+  height: 40px;
+  width: 40px;
+  background: #000;
+  line-height: 40px;
+  color: #FFF;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+}
+header .head_social ul li a i.fa.fa-facebook:hover {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  background: #3b5999;
+}
+header .head_social ul li a i.fa.fa-twitter {
+  height: 40px;
+  width: 40px;
+  background: #000;
+  line-height: 40px;
+  color: #FFF;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+}
+header .head_social ul li a i.fa.fa-twitter:hover {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  background: #55acee;
+}
+header .head_social ul li a i.fa.fa-instagram {
+  height: 40px;
+  width: 40px;
+  background: #000;
+  line-height: 40px;
+  color: #FFF;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+}
+header .head_social ul li a i.fa.fa-instagram:hover {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  background: #e4405f;
+}
+header .head_social ul li a i.fa.fa-linkedin {
+  height: 40px;
+  width: 40px;
+  background: #000;
+  line-height: 40px;
+  color: #FFF;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+}
+header .head_social ul li a i.fa.fa-linkedin:hover {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  background: #0077B5;
+}
 header .w3-agiletop .head_logo .img_logo {
   width: 60%;
 }
@@ -50,7 +213,7 @@ header .w3-agiletop .social_head ul li a {
 header .w3-agiletop .social_head ul li a i.fa.fa-whatsapp {
   height: 40px;
   width: 40px;
-  background: #2ebaef;
+  background: #000;
   line-height: 40px;
   color: #FFF;
   border-radius: 50%;
@@ -73,7 +236,7 @@ header .w3-agiletop .social_head ul li a i.fa.fa-whatsapp:hover {
 header .w3-agiletop .social_head ul li a i.fa.fa-facebook {
   height: 40px;
   width: 40px;
-  background: #2ebaef;
+  background: #000;
   line-height: 40px;
   color: #FFF;
   border-radius: 50%;
@@ -96,7 +259,7 @@ header .w3-agiletop .social_head ul li a i.fa.fa-facebook:hover {
 header .w3-agiletop .social_head ul li a i.fa.fa-twitter {
   height: 40px;
   width: 40px;
-  background: #2ebaef;
+  background: #000;
   line-height: 40px;
   color: #FFF;
   border-radius: 50%;
@@ -119,7 +282,7 @@ header .w3-agiletop .social_head ul li a i.fa.fa-twitter:hover {
 header .w3-agiletop .social_head ul li a i.fa.fa-instagram {
   height: 40px;
   width: 40px;
-  background: #2ebaef;
+  background: #000;
   line-height: 40px;
   color: #FFF;
   border-radius: 50%;
@@ -142,7 +305,7 @@ header .w3-agiletop .social_head ul li a i.fa.fa-instagram:hover {
 header .w3-agiletop .social_head ul li a i.fa.fa-linkedin {
   height: 40px;
   width: 40px;
-  background: #2ebaef;
+  background: #000;
   line-height: 40px;
   color: #FFF;
   border-radius: 50%;
@@ -171,22 +334,29 @@ main .w3ls-banner .video-fluid {
   object-fit: fill;
   width: 100%;
 }
+main .dFlex .effect-julia .dFlex_title h6 {
+  margin-bottom: 0;
+  color: #fff;
+}
 main .dFlex .more_details {
   padding: 0;
   border: 0;
 }
 main .dFlex .read_more {
   color: #fff;
-  background: #2ebaef;
+  background: #000;
   width: 30%;
   position: absolute;
-  top: 95%;
+  top: 95.45%;
   left: 85%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
+}
+main .dFlex .read_more:focus {
+  box-shadow: 0 0 0 0.2rem #fff !important;
 }
 main .dFlex:nth-child(odd) {
   display: flex;
@@ -204,19 +374,32 @@ main .dFlex:nth-child(even) {
   margin: 0 auto;
   display: block;
   padding: 3% 0;
+  direction: rtl;
 }
 .landing_page .form_landing .your_data {
   color: #fff;
   font-size: 1.25rem;
 }
+.landing_page .form_landing .all_group .span_icon {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.landing_page .form_landing .all_group input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
 .landing_page .form_landing .form_submit {
-  color: #FFFFFF;
+  color: #000;
   font-size: 0.9em;
-  border: solid 1px #2ebaef;
+  border: solid 1px #000;
   padding: 1em 2em;
   text-align: center;
   text-decoration: none;
-  background: #2ebaef;
+  background: #fff;
   transition: 0.5s all;
   -webkit-transition: 0.5s all;
   -moz-transition: 0.5s all;
@@ -231,10 +414,8 @@ main .dFlex:nth-child(even) {
   display: block;
 }
 .landing_page .form_landing .form_submit:hover, .landing_page .form_landing .form_submit:focus {
-  background: none;
-  border: solid 1px #2ebaef;
-  color: #2ebaef;
   outline: 0;
+  box-shadow: 0 0 0 0.2rem #fff;
 }
 .landing_page .landing_desc {
   color: #fff;
@@ -252,24 +433,24 @@ main .dFlex:nth-child(even) {
   margin: 0 auto;
 }
 
-#modalImg #myModal .modal-dialog {
+.modalImg .myModal .modal-dialog {
   width: 99%;
   max-width: 100%;
   margin: 0 auto;
   display: block;
 }
-#modalImg #myModal .modal-dialog .modal-content .modal-header .close:focus {
+.modalImg .myModal .modal-dialog .modal-content .modal-header .close:focus {
   outline: 0;
 }
-#modalImg #myModal .modal-dialog .modal-content .modal-body .modalDesc {
+.modalImg .myModal .modal-dialog .modal-content .modal-body .modalDesc {
   padding: 1.5% 4% 0;
 }
-#modalImg #myModal .modal-dialog .modal-content .modal-body .btn_download {
-  background-color: #2ebaef;
+.modalImg .myModal .modal-dialog .modal-content .modal-body .btn_download {
+  background-color: #000;
   color: #fff;
   margin: 0 auto;
   display: block;
-  width: 25%;
+  width: 15%;
 }
 
 .fade:not(.show) {
@@ -304,36 +485,38 @@ main .dFlex:nth-child(even) {
   -moz-border-radius: 0.5rem;
   -ms-border-radius: 0.5rem;
   -o-border-radius: 0.5rem;
-  background: #2ebaef;
+  background: #000;
   color: #fff;
   margin: 5% auto;
   display: block;
 }
 .location_btn:hover, .location_btn:focus {
   background: none;
-  border: solid 1px #2ebaef;
-  color: #2ebaef;
+  border: 0;
+  color: #000;
   outline: 0;
+  box-shadow: 0 0 0 0.2rem #fff !important;
+  font-weight: bold;
 }
 
-#location_modal .modal-content .modal-body .my_location .mapouter {
+.location_modal .modal-content .modal-body .my_location .mapouter {
   position: relative;
   text-align: right;
   height: 300px;
   width: 100%;
   margin: 0 auto;
 }
-#location_modal .modal-content .modal-body .my_location .gmap_canvas {
+.location_modal .modal-content .modal-body .my_location .gmap_canvas {
   overflow: hidden;
   background: none !important;
   height: 300px;
   width: 100%;
 }
-#location_modal .modal-content .modal-footer {
+.location_modal .modal-content .modal-footer {
   justify-content: flex-start;
 }
-#location_modal .modal-content .modal-footer .x_modal {
-  background-color: #2ebaef;
+.location_modal .modal-content .modal-footer .x_modal {
+  background-color: #000;
   color: #fff;
 }
 
@@ -348,13 +531,42 @@ main .dFlex:nth-child(even) {
   margin-bottom: 0;
 }
 .copy-w3right p a {
-  color: #2ebaef;
+  color: #fff;
+  text-decoration: underline;
   -webkit-transition: 0.5s all;
   -moz-transition: 0.5s all;
   transition: 0.5s all;
 }
 .copy-w3right p a:hover {
   color: #fff;
+}
+
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  left: 95%;
+  background-color: #fff;
+  width: 35px;
+  height: 35px;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+#return-to-top i {
+  color: #000;
+  margin: 0;
+  position: relative;
+  left: 14%;
+  top: 8%;
+  font-size: 30px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 /********* End Footer *********/
@@ -364,9 +576,9 @@ figure {
   margin: 10px 1%;
   min-width: 320px;
   max-width: 480px;
-  max-height: 360px;
+  max-height: 440px;
   height: auto;
-  background: #3085a3;
+  background: #000;
   text-align: center;
   cursor: pointer;
 }
@@ -436,7 +648,7 @@ figure p {
 /***** Julia *****/
 /*---------------*/
 figure.effect-julia {
-  background: #2f3238;
+  background: #000;
 }
 
 figure.effect-julia img {
@@ -563,7 +775,7 @@ figure.effect-julia:hover p {
     border-left: none;
   }
   .w3-agile-footer .footer-grids .foot-top-w3.borderBottom {
-    border-bottom: 1px solid #2ebaef;
+    border-bottom: 1px solid #000;
     margin-bottom: 4%;
   }
   .w3-agile-footer .footer-grids .foot-top-w3 .footer-grid-heading {
@@ -581,7 +793,7 @@ figure.effect-julia:hover p {
     letter-spacing: 1px;
   }
 
-  #modalImg #myModal .modal-dialog .modal-content .modal-body .btn_download {
+  .modalImg .myModal .modal-dialog .modal-content .modal-body .btn_download {
     width: 35%;
   }
 
@@ -646,7 +858,7 @@ figure.effect-julia:hover p {
     border-left: none;
   }
   .w3-agile-footer .footer-grids .foot-top-w3.borderBottom {
-    border-bottom: 1px solid #2ebaef;
+    border-bottom: 1px solid #000;
     margin-bottom: 3%;
   }
   .w3-agile-footer .footer-grids .foot-top-w3 .footer-grid-heading {
@@ -664,7 +876,7 @@ figure.effect-julia:hover p {
     letter-spacing: 1px;
   }
 
-  #modalImg #myModal .modal-dialog .modal-content .modal-body .btn_download {
+  .modalImg .myModal .modal-dialog .modal-content .modal-body .btn_download {
     width: 35%;
   }
 
@@ -729,7 +941,7 @@ figure.effect-julia:hover p {
     border-left: none;
   }
   .w3-agile-footer .footer-grids .foot-top-w3.borderBottom {
-    border-bottom: 1px solid #2ebaef;
+    border-bottom: 1px solid #000;
     margin-bottom: 4%;
   }
   .w3-agile-footer .footer-grids .foot-top-w3 .footer-grid-heading {
@@ -747,7 +959,7 @@ figure.effect-julia:hover p {
     letter-spacing: 1px;
   }
 
-  #modalImg #myModal .modal-dialog .modal-content .modal-body .btn_download {
+  .modalImg .myModal .modal-dialog .modal-content .modal-body .btn_download {
     width: 35%;
   }
 
@@ -812,7 +1024,7 @@ figure.effect-julia:hover p {
     border-left: none;
   }
   .w3-agile-footer .footer-grids .foot-top-w3.borderBottom {
-    border-bottom: 1px solid #2ebaef;
+    border-bottom: 1px solid #000;
     margin-bottom: 4%;
   }
   .w3-agile-footer .footer-grids .foot-top-w3 .footer-grid-heading {
@@ -830,7 +1042,7 @@ figure.effect-julia:hover p {
     letter-spacing: 1px;
   }
 
-  #modalImg #myModal .modal-dialog .modal-content .modal-body .btn_download {
+  .modalImg .myModal .modal-dialog .modal-content .modal-body .btn_download {
     width: 35%;
   }
 
@@ -901,7 +1113,7 @@ main .w3ls-banner .banner-text .flexslider .flex-direction-nav .flex-next {
     letter-spacing: 1px;
   }
 
-  #modalImg #myModal .modal-dialog .modal-content .modal-body .btn_download {
+  .modalImg .myModal .modal-dialog .modal-content .modal-body .btn_download {
     width: 35%;
   }
 
@@ -984,7 +1196,7 @@ main .w3ls-banner .banner-text .flexslider .flex-direction-nav .flex-next.flex-n
     letter-spacing: 1px;
   }
 
-  #modalImg #myModal .modal-dialog .modal-content .modal-body .btn_download {
+  .modalImg .myModal .modal-dialog .modal-content .modal-body .btn_download {
     width: 35%;
   }
 

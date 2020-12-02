@@ -33,7 +33,22 @@
 
 <body>
   <header>
-    <div class="top-nav w3-agiletop">
+    <div class="head_logo">
+      <a href="{{url('/')}}">
+        <img class="img_logo" src="images/curve_logo.png" alt="">
+      </a>
+    </div>
+
+    <div class="head_social">
+      <ul>
+        <li><a href="https://wa.me/+201005721414"><i class="fa fa-whatsapp"></i></a></li>
+        <li><a href="https://www.facebook.com/Curve-104326978133886/"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://www.instagram.com/curve.realestateco/?igshid=18yvkdv78idlf"><i class="fa fa-instagram"></i></a></li>
+        <!-- <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
+      </ul>
+    </div>
+    <!-- <div class="top-nav w3-agiletop">
       <div class="container_views">
         <div class="row">
           <div class="col-md-6 col-lg-6 col-xl-6 col-12">
@@ -50,14 +65,14 @@
                 <li><a href="https://wa.me/+201005721414"><i class="fa fa-whatsapp"></i></a></li>
                 <li><a href="https://www.facebook.com/Curve-104326978133886/"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="https://www.instagram.com/curve.realestateco/?igshid=18yvkdv78idlf"><i class="fa fa-instagram"></i></a></li>
-                <!-- <li><a href="#"><i class="fa fa-linkedin"></i></a></li> -->
-                <!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+    </ul>
     </div>
+    </div>
+    </div>
+    </div>
+    </div> -->
   </header>
   <!-- //navigation -->
   @yield('content')
@@ -165,7 +180,7 @@
 
   <!-- //copy right end here -->
 
-  <div id="location_modal">
+  <div class="location_modal">
     <!-- Modal -->
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
@@ -195,81 +210,19 @@
     </div>
   </div>
 
-
+  <!-- Scroll Up -->
+  <a class="rounded-circle" href="javascript:" id="return-to-top">
+  <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i>
+  </a>
 
   <!-- //bootstrap-pop-up -->
   <script type="text/javascript" src="{{url('js/jquery-2.1.4.min.js')}}"></script>
   <!-- js -->
   <!-- FlexSlider -->
   <script defer src="{{url('js/jquery.flexslider.js')}}"></script>
-  <!-- <script>
-    const myVideo = document.getElementById('myVideo');
-
-    // Not all browsers return promise from .play().
-    const playPromise = myVideo.play() || Promise.reject('');
-    playPromise.then(() => {
-      // Video could be autoplayed, do nothing.
-    }).catch(err => {
-      // Video couldn't be autoplayed because of autoplay policy. Mute it and play.
-      myVideo.muted = true;
-      myVideo.play();
-    });
-  </script> -->
-
-  <!-- <script type="text/javascript">
-    $(window).load(function() {
-      $('.flexslider').flexslider({
-        animation: "slide",
-        start: function(slider) {
-          $('body').removeClass('loading');
-        }
-      });
-    });
-  </script> -->
-
-  <!-- End-slider-script -->
-  <!-- <script src="js/SmoothScroll.min.js"></script> -->
-  <!-- start-smooth-scrolling -->
-  <script type="text/javascript" src="{{url('js/move-top.js')}}"></script>
   <script type="text/javascript" src="{{url('js/easing.js')}}"></script>
-
-
-
-  <!-- <script type="text/javascript">
-    jQuery(document).ready(function($) {
-      $(".scroll").click(function(event) {
-        event.preventDefault();
-
-        $('html,body').animate({
-          scrollTop: $(this.hash).offset().top
-        }, 1000);
-      });
-    });
-  </script> -->
-  <!-- //end-smooth-scrolling -->
-  <!-- smooth-scrolling-of-move-up -->
-  <!-- <script type="text/javascript">
-    $(document).ready(function() {
-      /*
-      var defaults = {
-      	containerID: 'toTop', // fading element id
-      	containerHoverID: 'toTopHover', // fading element hover id
-      	scrollSpeed: 1200,
-      	easingType: 'linear'
-      };
-      */
-
-      $().UItoTop({
-        easingType: 'easeOutQuart'
-      });
-
-    });
-  </script> -->
-  <!-- //smooth-scrolling-of-move-up -->
-  <!-- Bootstrap core JavaScript
-    ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="{{url('js/bootstrap.js')}}"></script>
+  <script src="{{url('js/bootstrap.min.js')}}"></script>
+  <script src="{{url('js/popper.min.js')}}"></script>
   <script src="{{url('js/script.js')}}"></script>
   @yield('script')
 </body>

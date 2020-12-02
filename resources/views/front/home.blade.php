@@ -32,12 +32,16 @@
     <!-- //banner-text -->
   </div>
   <!-- //banner -->
-  <div class="container_views">
 
+  <div class="container_views">
     @foreach ($cards as $card)
 
     <div class="dFlex">
       <figure class="effect-julia rounded">
+        <a href="{{url('/landing')}}" class="btn text-capitalize dFlex_title">
+          <h6>test</h6>
+        </a>
+
         <a href="{{url('/landing')}}" class="btn text-capitalize more_details">
           <img src="{{url("uploads/$card->image")}}" class="img-fluid " alt="curve">
 
@@ -72,7 +76,7 @@
         </div>
         <section>
           <div class="modal-body">
-            <img src="{{url("uploads/$card->image")}}" alt="{{$card->image}}" class="img-responsive rounded"/>
+            <img src="{{url("uploads/$card->image")}}" alt="{{$card->image}}" class="img-responsive rounded" />
             <p class="modalDesc">{{$card->description}}</p>
 
             <a class="btn btn_download" href="{{url("uploads/$card->image")}}" download>Download</a>

@@ -1,8 +1,6 @@
-$bejCol: #2ebaef;
 $whiteCol: #fff;
 $blackCol: #000;
 $menuCol: #25252594;
-
 
 body {
   width: 100%;
@@ -29,6 +27,188 @@ body {
 
 /*********Start Header *********/
 header {
+  height: 0;
+
+  .head_logo {
+    position: relative;
+
+    img {
+      z-index: 99999;
+      width: 40%;
+      position: absolute;
+      top: 70px;
+      left: 12%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+    }
+  }
+
+  .head_social {
+    position: relative;
+
+    ul {
+      padding: 0;
+      margin: 0;
+      z-index: 99999;
+      position: absolute;
+      top: 70px;
+      right: 5%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+
+      li {
+        display: inline-block;
+
+        &:nth-child(odd) {
+          margin: 0 .25em;
+        }
+
+        &:nth-child(even) {
+          margin: 0 .25em;
+        }
+
+        a {
+          color: #333;
+          text-align: center;
+          font-size: 1.3rem;
+
+          i {
+            &.fa.fa-whatsapp {
+              height: 40px;
+              width: 40px;
+              background: $blackCol;
+              line-height: 40px;
+              color: #FFF;
+              border-radius: 50%;
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              -o-border-radius: 50%;
+              -ms-border-radius: 50%;
+              transition: 0.5s all;
+              -webkit-transition: 0.5s all;
+              -moz-transition: 0.5s all;
+              -o-transition: 0.5s all;
+              -ms-transition: 0.5s all;
+
+              &:hover {
+                height: 40px;
+                width: 40px;
+                line-height: 40px;
+                background: #25D366;
+              }
+            }
+
+            &.fa.fa-facebook {
+              height: 40px;
+              width: 40px;
+              background: $blackCol;
+              line-height: 40px;
+              color: #FFF;
+              border-radius: 50%;
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              -o-border-radius: 50%;
+              -ms-border-radius: 50%;
+              transition: 0.5s all;
+              -webkit-transition: 0.5s all;
+              -moz-transition: 0.5s all;
+              -o-transition: 0.5s all;
+              -ms-transition: 0.5s all;
+
+              &:hover {
+                height: 40px;
+                width: 40px;
+                line-height: 40px;
+                background: #3b5999;
+              }
+            }
+
+            &.fa.fa-twitter {
+              height: 40px;
+              width: 40px;
+              background: $blackCol;
+              line-height: 40px;
+              color: #FFF;
+              border-radius: 50%;
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              -o-border-radius: 50%;
+              -ms-border-radius: 50%;
+              transition: 0.5s all;
+              -webkit-transition: 0.5s all;
+              -moz-transition: 0.5s all;
+              -o-transition: 0.5s all;
+              -ms-transition: 0.5s all;
+
+              &:hover {
+                height: 40px;
+                width: 40px;
+                line-height: 40px;
+                background: #55acee;
+              }
+            }
+
+            &.fa.fa-instagram {
+              height: 40px;
+              width: 40px;
+              background: $blackCol;
+              line-height: 40px;
+              color: #FFF;
+              border-radius: 50%;
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              -o-border-radius: 50%;
+              -ms-border-radius: 50%;
+              transition: 0.5s all;
+              -webkit-transition: 0.5s all;
+              -moz-transition: 0.5s all;
+              -o-transition: 0.5s all;
+              -ms-transition: 0.5s all;
+
+              &:hover {
+                height: 40px;
+                width: 40px;
+                line-height: 40px;
+                background: #e4405f;
+              }
+            }
+
+            &.fa.fa-linkedin {
+              height: 40px;
+              width: 40px;
+              background: $blackCol;
+              line-height: 40px;
+              color: #FFF;
+              border-radius: 50%;
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              -o-border-radius: 50%;
+              -ms-border-radius: 50%;
+              transition: 0.5s all;
+              -webkit-transition: 0.5s all;
+              -moz-transition: 0.5s all;
+              -o-transition: 0.5s all;
+              -ms-transition: 0.5s all;
+
+              &:hover {
+                height: 40px;
+                width: 40px;
+                line-height: 40px;
+                background: #0077B5;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
   .w3-agiletop {
     .head_logo {
       .img_logo {
@@ -65,7 +245,7 @@ header {
               &.fa.fa-whatsapp {
                 height: 40px;
                 width: 40px;
-                background: #2ebaef;
+                background: $blackCol;
                 line-height: 40px;
                 color: #FFF;
                 border-radius: 50%;
@@ -90,7 +270,7 @@ header {
               &.fa.fa-facebook {
                 height: 40px;
                 width: 40px;
-                background: #2ebaef;
+                background: $blackCol;
                 line-height: 40px;
                 color: #FFF;
                 border-radius: 50%;
@@ -115,7 +295,7 @@ header {
               &.fa.fa-twitter {
                 height: 40px;
                 width: 40px;
-                background: #2ebaef;
+                background: $blackCol;
                 line-height: 40px;
                 color: #FFF;
                 border-radius: 50%;
@@ -140,7 +320,7 @@ header {
               &.fa.fa-instagram {
                 height: 40px;
                 width: 40px;
-                background: #2ebaef;
+                background: $blackCol;
                 line-height: 40px;
                 color: #FFF;
                 border-radius: 50%;
@@ -165,7 +345,7 @@ header {
               &.fa.fa-linkedin {
                 height: 40px;
                 width: 40px;
-                background: #2ebaef;
+                background: $blackCol;
                 line-height: 40px;
                 color: #FFF;
                 border-radius: 50%;
@@ -208,34 +388,36 @@ main {
   }
 
   .dFlex {
+    .effect-julia {
+      .dFlex_title {
+        h6 {
+          margin-bottom: 0;
+          color: $whiteCol;
+        }
+      }
+    }
+
     .more_details {
       padding: 0;
       border: 0;
-      // color: $whiteCol;
-      // background: $bejCol;
-      // width: 30%;
-      // position: absolute;
-      // top: 95%;
-      // left: 85%;
-      // transform: translate(-50%, -50%);
-      // -webkit-transform: translate(-50%, -50%);
-      // -moz-transform: translate(-50%, -50%);
-      // -ms-transform: translate(-50%, -50%);
-      // -o-transform: translate(-50%, -50%);
     }
 
     .read_more {
       color: $whiteCol;
-      background: $bejCol;
+      background: $blackCol;
       width: 30%;
       position: absolute;
-      top: 95%;
+      top: 95.45%;
       left: 85%;
       transform: translate(-50%, -50%);
       -webkit-transform: translate(-50%, -50%);
       -moz-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       -o-transform: translate(-50%, -50%);
+
+      &:focus {
+        box-shadow: 0 0 0 0.2rem $whiteCol !important;
+      }
     }
   }
 
@@ -258,20 +440,37 @@ main {
     margin: 0 auto;
     display: block;
     padding: 3% 0;
+    direction: rtl;
 
     .your_data {
       color: $whiteCol;
       font-size: 1.25rem;
     }
 
+    .all_group {
+      .span_icon {
+        border-top-right-radius: 0.25rem;
+        border-bottom-right-radius: 0.25rem;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+
+      input {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 0.25rem;
+        border-bottom-left-radius: 0.25rem;
+      }
+    }
+
     .form_submit {
-      color: #FFFFFF;
+      color: $blackCol;
       font-size: .9em;
-      border: solid 1px $bejCol;
+      border: solid 1px $blackCol;
       padding: 1em 2em;
       text-align: center;
       text-decoration: none;
-      background: $bejCol;
+      background: $whiteCol;
       transition: 0.5s all;
       -webkit-transition: 0.5s all;
       -moz-transition: 0.5s all;
@@ -287,10 +486,8 @@ main {
 
       &:hover,
       &:focus {
-        background: none;
-        border: solid 1px $bejCol;
-        color: $bejCol;
         outline: 0;
+        box-shadow: 0 0 0 0.2rem $whiteCol;
       }
     }
   }
@@ -315,8 +512,8 @@ main {
   }
 }
 
-#modalImg {
-  #myModal {
+.modalImg {
+  .myModal {
     .modal-dialog {
       width: 99%;
       max-width: 100%;
@@ -338,11 +535,11 @@ main {
           }
 
           .btn_download {
-            background-color: $bejCol;
+            background-color: $blackCol;
             color: $whiteCol;
             margin: 0 auto;
             display: block;
-            width: 25%;
+            width: 15%;
           }
         }
       }
@@ -384,7 +581,7 @@ main {
   -ms-border-radius: 0.5rem;
   -o-border-radius: 0.5rem;
 
-  background: $bejCol;
+  background: $blackCol;
   color: $whiteCol;
   margin: 5% auto;
   display: block;
@@ -392,13 +589,15 @@ main {
   &:hover,
   &:focus {
     background: none;
-    border: solid 1px $bejCol;
-    color: $bejCol;
+    border: 0;
+    color: $blackCol;
     outline: 0;
+    box-shadow: 0 0 0 0.2rem $whiteCol !important;
+    font-weight: bold;
   }
 }
 
-#location_modal {
+.location_modal {
   .modal-content {
     .modal-header {}
 
@@ -425,7 +624,7 @@ main {
       justify-content: flex-start;
 
       .x_modal {
-        background-color: $bejCol;
+        background-color: $blackCol;
         color: $whiteCol;
       }
     }
@@ -443,7 +642,8 @@ main {
     margin-bottom: 0;
 
     a {
-      color: $bejCol;
+      color: $whiteCol;
+      text-decoration: underline;
       -webkit-transition: 0.5s all;
       -moz-transition: 0.5s all;
       transition: 0.5s all;
@@ -452,6 +652,35 @@ main {
         color: $whiteCol;
       }
     }
+  }
+}
+
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  left: 95%;
+  background-color: $whiteCol;
+  width: 35px;
+  height: 35px;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
+  i {
+    color: $blackCol;
+    margin: 0;
+    position: relative;
+    left: 14%;
+    top: 8%;
+    font-size: 30px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 }
 
@@ -464,10 +693,10 @@ figure {
   margin: 10px 1%;
   min-width: 320px;
   max-width: 480px;
-  max-height: 360px;
+  max-height: 440px;
   // width: 48%;
   height: auto;
-  background: #3085a3;
+  background: $blackCol;
   text-align: center;
   cursor: pointer;
 }
@@ -540,7 +769,7 @@ figure p {
 /*---------------*/
 
 figure.effect-julia {
-  background: #2f3238;
+  background: $blackCol;
 }
 
 figure.effect-julia img {
@@ -694,7 +923,7 @@ figure.effect-julia:hover p {
         border-left: none;
 
         &.borderBottom {
-          border-bottom: 1px solid $bejCol;
+          border-bottom: 1px solid $blackCol;
           margin-bottom: 4%;
         }
 
@@ -726,8 +955,8 @@ figure.effect-julia:hover p {
     }
   }
 
-  #modalImg {
-    #myModal {
+  .modalImg {
+    .myModal {
       .modal-dialog {
         .modal-content {
           .modal-body {
@@ -837,7 +1066,7 @@ figure.effect-julia:hover p {
         border-left: none;
 
         &.borderBottom {
-          border-bottom: 1px solid $bejCol;
+          border-bottom: 1px solid $blackCol;
           margin-bottom: 3%;
         }
 
@@ -869,8 +1098,8 @@ figure.effect-julia:hover p {
     }
   }
 
-  #modalImg {
-    #myModal {
+  .modalImg {
+    .myModal {
       .modal-dialog {
         .modal-content {
           .modal-body {
@@ -980,7 +1209,7 @@ figure.effect-julia:hover p {
         border-left: none;
 
         &.borderBottom {
-          border-bottom: 1px solid $bejCol;
+          border-bottom: 1px solid $blackCol;
           margin-bottom: 4%;
         }
 
@@ -1012,8 +1241,8 @@ figure.effect-julia:hover p {
     }
   }
 
-  #modalImg {
-    #myModal {
+  .modalImg {
+    .myModal {
       .modal-dialog {
         .modal-content {
           .modal-body {
@@ -1123,7 +1352,7 @@ figure.effect-julia:hover p {
         border-left: none;
 
         &.borderBottom {
-          border-bottom: 1px solid $bejCol;
+          border-bottom: 1px solid $blackCol;
           margin-bottom: 4%;
         }
 
@@ -1155,8 +1384,8 @@ figure.effect-julia:hover p {
     }
   }
 
-  #modalImg {
-    #myModal {
+  .modalImg {
+    .myModal {
       .modal-dialog {
         .modal-content {
           .modal-body {
@@ -1270,7 +1499,7 @@ figure.effect-julia:hover p {
     .footer-grids {
       .foot-top-w3 {
         // border-left: none;
-        // border-bottom: 1px solid $bejCol;
+        // border-bottom: 1px solid $blackCol;
 
         .footer-grid-heading {
           text-align: center;
@@ -1300,8 +1529,8 @@ figure.effect-julia:hover p {
     }
   }
 
-  #modalImg {
-    #myModal {
+  .modalImg {
+    .myModal {
       .modal-dialog {
         .modal-content {
           .modal-body {
@@ -1430,7 +1659,7 @@ figure.effect-julia:hover p {
     .footer-grids {
       .foot-top-w3 {
         // border-left: none;
-        // border-bottom: 1px solid $bejCol;
+        // border-bottom: 1px solid $blackCol;
 
         .footer-grid-heading {
           text-align: center;
@@ -1460,8 +1689,8 @@ figure.effect-julia:hover p {
     }
   }
 
-  #modalImg {
-    #myModal {
+  .modalImg {
+    .myModal {
       .modal-dialog {
         .modal-content {
           .modal-body {
