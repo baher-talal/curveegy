@@ -18,6 +18,8 @@
 
     <!-- Custom styles for this template-->
     <link href="{{url('css/sb-admin-2.min.css')}}" rel="stylesheet">
+    <link href="{{url('public/vendor/datatables/dataTables.bootstrap4.min.css')}}" rel="stylesheet">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 @yield('style')
 
@@ -78,11 +80,26 @@
     <script src="{{url('public/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
+    <script src="{{url('js/sb-admin-2.min.js')}}"></script>
+
+    <!-- Page level plugins -->
+    <script src="{{url('public/vendor/datatables/jquery.dataTables.min.js')}}"></script>
+    <script src="{{url('public/vendor/datatables/dataTables.bootstrap4.min.js')}}"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="{{url('js/demo/datatables-demo.js')}}"></script>
 
     <!-- Page level custom scripts -->
     @yield('script')
 
+    <script>
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+    </script>
+    
 </body>
 
 </html>

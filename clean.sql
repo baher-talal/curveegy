@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 29, 2020 at 10:15 PM
+-- Generation Time: Dec 02, 2020 at 01:02 PM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.3.9
 
@@ -45,8 +45,9 @@ CREATE TABLE `cards` (
 --
 
 INSERT INTO `cards` (`id`, `title`, `city`, `installment`, `downpayment`, `description`, `image`, `created_at`, `updated_at`) VALUES
-(1, 'Modal Title', 'New Cairo', '8 installment', '10% downpayment', 'Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. \" Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.', 'C:\\xampp\\tmp\\phpEC3B.tmp', '2020-11-29 18:37:42', '2020-11-29 18:37:42'),
-(2, 'Modal Title', 'New Cairo', '8 installment', '10% downpayment', 'Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. \" Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.', 'card/Lpo5iUpueTHxFeKHwmrS7PgAyR7lP6SY6V2RGhL3.jpeg', '2020-11-29 18:38:32', '2020-11-29 18:38:32');
+(3, 'futures', 'cairo', '8 instalment', '50 % cash', 'tttttessssssstttttttt', 'card/Aes3t8i65fuCybcpxnXPxSjFrF4T3tVEY6j0UzwN.jpeg', '2020-12-02 09:18:42', '2020-12-02 09:54:15'),
+(4, 'test', 'test', 'test', 'test', 'test', 'card/Iq4ZaPZvDd6CwjpDexZs6TBDSwQfRVjT94DeQ96q.jpeg', '2020-12-02 09:29:55', '2020-12-02 09:29:55'),
+(5, 'ttt', 'ttttt', 'ttttttttt', 'ttttttttt', 'tttttttttttt', 'card/IYG8qdSbeTZ886X13kjGy3Kf2jSVDEznVQm5pzSu.jpeg', '2020-12-02 09:54:47', '2020-12-02 09:54:47');
 
 -- --------------------------------------------------------
 
@@ -83,7 +84,7 @@ CREATE TABLE `homepages` (
 --
 
 INSERT INTO `homepages` (`id`, `key`, `value`, `created_at`, `updated_at`) VALUES
-(1, 'header_video', 'header_video/29mnSNckSuXl0RhJoCdzjtfcU4Hz6l2p5YgoC2Ok.mp4', '2020-11-29 18:18:12', '2020-11-29 18:18:12');
+(7, 'header_video', 'header_video/aoyknWpO3MaHdbNtrphfcO4GBH3VyK3oiZFR9TzN.mp4', '2020-12-02 09:57:48', '2020-12-02 09:57:48');
 
 -- --------------------------------------------------------
 
@@ -163,7 +164,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'admin', 'admin@joe.com', NULL, '$2y$10$lvIzYJJg.S3fRrlXw/AIe.kbzzOsd6TQt3MgmwgkfkoMNHawgCQnO', 'nShGqCjZYGyc72u7axWIqIrIqDc68oZQ4i6AjMnTu1l08Ot0p4sD1Uo6ikoG', '2020-11-18 21:10:03', '2020-11-18 21:10:03');
+(1, 'admin', 'admin@admin.com', NULL, '$2y$10$lvIzYJJg.S3fRrlXw/AIe.kbzzOsd6TQt3MgmwgkfkoMNHawgCQnO', 'KDBd0uapOYcsiLy4oOqqqRLHB9Xv70yr5EwCV3EU3lsuHTrY41LV2gTRuLX5', '2020-11-18 21:10:03', '2020-11-18 21:10:03');
 
 --
 -- Indexes for dumped tables
@@ -221,7 +222,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `cards`
 --
 ALTER TABLE `cards`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -233,7 +234,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `homepages`
 --
 ALTER TABLE `homepages`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `migrations`

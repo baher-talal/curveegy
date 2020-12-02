@@ -21,21 +21,45 @@ class HomePageController extends Controller
     {
         $Homepage['key'] = 'header_video';
         $Homepage['value'] = Storage::disk('uploads')->put('header_video', $request->headervideoinput);
+        $CreateHomepage = Homepage::where('key', 'header_video')->delete();
+        
         $CreateHomepage = Homepage::create($Homepage);
         return redirect()->back()->with('success', 'Saved!');
     }
     
     public function cards()
     {
-        return view('dashboard.homepage.cards');
+        $cards = Card::all();
+        return view('dashboard.homepage.cards', compact('cards'));
     }
 
     public function cardsStore(Request $request)
     {
-        $card = $request->all();
-        $card['image'] = Storage::disk('uploads')->put("card", $request->image);
-        $CreateCard = Card::create($card);
+        if($request->id){
+            $card = Card::findOrFail($request->id);
+            $newCard = $request->all();
+            if($request->image){
+                $newCard['image'] = Storage::disk('uploads')->put("card", $request->image);
+            }
+            $card->update($newCard);
+        }else{
+            $card = $request->all();
+            $card['image'] = Storage::disk('uploads')->put("card", $request->image);
+            $CreateCard = Card::create($card);
+        }
         return redirect()->back()->with('success', 'Saved!');
+    }
+
+    public function cardsEdit(Request $request)
+    {
+        $card = Card::find($request->id);
+        return $card;
+    }
+
+    public function cardsDelete(Request $request)
+    {
+        $card = Card::find($request->id)->delete();
+        return $card;
     }
 
     public function newsletterStore(Request $request)

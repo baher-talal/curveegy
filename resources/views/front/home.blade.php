@@ -39,18 +39,18 @@
     <div class="dFlex">
       <figure class="effect-julia rounded">
         <a href="{{url('/landing')}}" class="btn text-capitalize more_details">
-          <img src="images/2.jpg" class="img-fluid " alt="curve">
+          <img src="{{url("uploads/$card->image")}}" class="img-fluid " alt="curve">
 
           <figcaption>
             <div class="more_desc">
-              <p class="text-capitalize">New Cairo</p>
-              <p class="text-capitalize">10% Down Payment</p>
-              <p class="text-capitalize">8 Installment</p>
+              <p class="text-capitalize">{{$card->city}}</p>
+              <p class="text-capitalize">{{$card->downpayment}}</p>
+              <p class="text-capitalize">{{$card->installment}}</p>
             </div>
             <!-- <a href="#0" class="text-capitalize btn more_details">more details</a> -->
           </figcaption>
         </a>
-        <a href="#0" class="btn text-capitalize read_more" data-toggle="modal" data-target="#myModal">Read More</a>
+        <a href="#0" class="btn text-capitalize read_more" data-toggle="modal" data-target="{{"#$card->id"}}">Read More</a>
       </figure>
     </div>
 
@@ -60,29 +60,22 @@
 
 <!-- Modal -->
 @foreach ($cards as $card)
-<div id="modalImg">
-  <div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modalImg">
+  <div class="modal video-modal fade myModal" id="{{$card->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">New Cairo</h5>
+          <h5 class="modal-title" id="exampleModalCenterTitle">{{$card->title}}</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <section>
           <div class="modal-body">
-            <img src="images/3.jpg" alt=" " class="img-responsive rounded"/>
-            <p class="modalDesc">Ut enim ad minima veniam, quis nostrum
-              exercitationem ullam corporis suscipit laboriosam,
-              nisi ut aliquid ex ea commodi consequatur? Quis autem
-              vel eum iure reprehenderit qui in ea voluptate velit
-              esse quam nihil molestiae consequatur, vel illum qui
-              dolorem eum fugiat quo voluptas nulla pariatur.
-              <i>" Quis autem vel eum iure reprehenderit qui in ea voluptate velit
-                esse quam nihil molestiae consequatur.</i></p>
+            <img src="{{url("uploads/$card->image")}}" alt="{{$card->image}}" class="img-responsive rounded"/>
+            <p class="modalDesc">{{$card->description}}</p>
 
-            <a class="btn btn_download" href="images/3.jpg" download>Download</a>
+            <a class="btn btn_download" href="{{url("uploads/$card->image")}}" download>Download</a>
           </div>
         </section>
         <!-- <div class="modal-footer">
