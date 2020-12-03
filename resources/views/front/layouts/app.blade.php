@@ -221,7 +221,8 @@
   <!-- FlexSlider -->
   <script defer src="{{url('js/jquery.flexslider.js')}}"></script>
   <script type="text/javascript" src="{{url('js/easing.js')}}"></script>
-  <script src="{{url('js/bootstrap.min.js')}}"></script>
+  <script src="{{url('js/bootstrap.js')}}"></script>
+  {{-- <script src="{{url('js/bootstrap.min.js')}}"></script> --}}
   <script src="{{url('js/popper.min.js')}}"></script>
   <script src="{{url('js/script.js')}}"></script>
   @yield('script')
