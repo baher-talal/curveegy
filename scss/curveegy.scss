@@ -856,9 +856,28 @@ figure.effect-julia:hover p {
 
 /* Start Media Query */
 @media (min-width: 320px) and (max-width: 359.9px) {
+  // header {
+  //   .top-nav {
+  //     text-align: center;
+  //   }
+  // }
+
   header {
-    .top-nav {
-      text-align: center;
+    height: 9vh;
+
+    .head_logo {
+      img {
+        width: 80%;
+        top: 30px;
+        left: 17%;
+      }
+    }
+
+    .head_social {
+      ul {
+        top: 30px;
+        right: -19%;
+      }
     }
   }
 
@@ -911,7 +930,7 @@ figure.effect-julia:hover p {
       }
 
       .read_more {
-        top: 93.6%;
+        top: 94%;
         left: 84.75%;
       }
     }
@@ -952,6 +971,7 @@ figure.effect-julia:hover p {
   .copy-w3right {
     p {
       letter-spacing: 1px;
+      font-size: 10px;
     }
   }
 
@@ -996,12 +1016,35 @@ figure.effect-julia:hover p {
       }
     }
   }
+
+  #return-to-top {
+    left: 86%;
+  }
 }
 
 @media (min-width: 360px) and (max-width: 374.9px) {
+  // header {
+  //   .top-nav {
+  //     text-align: center;
+  //   }
+  // }
+
   header {
-    .top-nav {
-      text-align: center;
+    height: 9vh;
+
+    .head_logo {
+      img {
+        width: 80%;
+        top: 30px;
+        left: 17%;
+      }
+    }
+
+    .head_social {
+      ul {
+        top: 30px;
+        right: -19%;
+      }
     }
   }
 
@@ -1054,7 +1097,7 @@ figure.effect-julia:hover p {
       }
 
       .read_more {
-        top: 93.6%;
+        top: 94%;
         left: 84.75%;
       }
     }
@@ -1095,6 +1138,7 @@ figure.effect-julia:hover p {
   .copy-w3right {
     p {
       letter-spacing: 1px;
+      font-size: 10px;
     }
   }
 
@@ -1138,13 +1182,36 @@ figure.effect-julia:hover p {
         margin-bottom: 0.75%;
       }
     }
+  }
+
+  #return-to-top {
+    left: 86%;
   }
 }
 
 @media (min-width: 375px) and (max-width: 410.9px) {
+  // header {
+  //   .top-nav {
+  //     text-align: center;
+  //   }
+  // }
+
   header {
-    .top-nav {
-      text-align: center;
+    height: 9vh;
+
+    .head_logo {
+      img {
+        width: 80%;
+        top: 30px;
+        left: 17%;
+      }
+    }
+
+    .head_social {
+      ul {
+        top: 30px;
+        right: -19%;
+      }
     }
   }
 
@@ -1197,7 +1264,7 @@ figure.effect-julia:hover p {
       }
 
       .read_more {
-        top: 93.6%;
+        top: 94%;
         left: 84.75%;
       }
     }
@@ -1238,6 +1305,7 @@ figure.effect-julia:hover p {
   .copy-w3right {
     p {
       letter-spacing: 1px;
+      font-size: 10px;
     }
   }
 
@@ -1281,13 +1349,36 @@ figure.effect-julia:hover p {
         margin-bottom: 0.75%;
       }
     }
+  }
+
+  #return-to-top {
+    left: 88%;
   }
 }
 
 @media (min-width: 411px) and (max-width: 414px) {
+  // header {
+  //   .top-nav {
+  //     text-align: center;
+  //   }
+  // }
+
   header {
-    .top-nav {
-      text-align: center;
+    height: 9vh;
+
+    .head_logo {
+      img {
+        width: 80%;
+        top: 30px;
+        left: 17%;
+      }
+    }
+
+    .head_social {
+      ul {
+        top: 30px;
+        right: -15%;
+      }
     }
   }
 
@@ -1340,7 +1431,7 @@ figure.effect-julia:hover p {
       }
 
       .read_more {
-        top: 93.6%;
+        top: 94%;
         left: 84.75%;
       }
     }
@@ -1381,6 +1472,7 @@ figure.effect-julia:hover p {
   .copy-w3right {
     p {
       letter-spacing: 1px;
+      font-size: 11px;
     }
   }
 
@@ -1425,19 +1517,42 @@ figure.effect-julia:hover p {
       }
     }
   }
+
+  #return-to-top {
+    left: 88%;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023.9px) {
+  // header {
+  //   .top-nav {
+  //     text-align: center;
+  //   }
+
+  //   .w3-agiletop {
+  //     .head_logo {
+  //       .img_logo {
+  //         width: 80%;
+  //       }
+  //     }
+  //   }
+  // }
+
   header {
-    .top-nav {
-      text-align: center;
+    height: 2vh;
+
+    .head_logo {
+      img {
+        width: 65%;
+        top: 40px;
+        left: 17%;
+      }
     }
 
-    .w3-agiletop {
-      .head_logo {
-        .img_logo {
-          width: 80%;
-        }
+    .head_social {
+      ul {
+        top: 40px;
+        right: -5%;
       }
     }
   }
@@ -1489,7 +1604,7 @@ figure.effect-julia:hover p {
       }
 
       .read_more {
-        top: 95%;
+        top: 95.4%;
         left: 85%;
       }
     }
@@ -1526,6 +1641,7 @@ figure.effect-julia:hover p {
   .copy-w3right {
     p {
       letter-spacing: 1px;
+      font-size: 10px;
     }
   }
 
@@ -1545,7 +1661,7 @@ figure.effect-julia:hover p {
 
   .landing_page {
     .form_landing {
-      width: 90%;
+      width: 60%;
     }
 
     .landing_desc {
@@ -1570,28 +1686,55 @@ figure.effect-julia:hover p {
       }
     }
   }
+
+  #return-to-top {
+    left: 92%;
+
+    i {
+      left: 13%;
+      top: 7%;
+    }
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1050px) {
+
+  // header {
+  //   .top-nav {
+  //     text-align: center;
+  //   }
+
+  //   .w3-agiletop {
+  //     .head_logo {
+  //       .img_logo {
+  //         width: 80%;
+  //       }
+  //     }
+
+  //     .social_head {
+  //       text-align: center;
+  //       margin-top: 5%;
+  //     }
+  //   }
+  // }
+
   header {
-    .top-nav {
-      text-align: center;
-    }
+    height: 2vh;
 
-    .w3-agiletop {
-      .head_logo {
-        .img_logo {
-          width: 80%;
-        }
-      }
-
-      .social_head {
-        text-align: center;
-        margin-top: 5%;
+    .head_logo {
+      img {
+        width: 70%;
+        top: 60px;
+        left: 17%;
       }
     }
 
-
+    .head_social {
+      ul {
+        top: 60px;
+        right: -2%;
+      }
+    }
   }
 
   main {
@@ -1627,10 +1770,12 @@ figure.effect-julia:hover p {
     .dFlex {
       &:nth-child(odd) {
         margin: 9% 0;
+        padding-left: 10%;
       }
 
       &:nth-child(even) {
         margin: -9% 0;
+        padding-right: 10%;
       }
 
       figure {
@@ -1649,7 +1794,7 @@ figure.effect-julia:hover p {
       }
 
       .read_more {
-        top: 95%;
+        top: 95.4%;
         left: 85%;
       }
     }
@@ -1686,6 +1831,7 @@ figure.effect-julia:hover p {
   .copy-w3right {
     p {
       letter-spacing: 1px;
+      font-size: 20px;
     }
   }
 
@@ -1705,20 +1851,22 @@ figure.effect-julia:hover p {
 
   .landing_page {
     .form_landing {
-      width: 90%;
+      width: 50%;
     }
 
     .landing_desc {
       .about_pro {
-        font-size: 19px;
+        font-size: 1.75rem;
       }
 
       .title_pro {
         padding-right: 3%;
+        font-size: 1.75rem;
       }
 
       .landing_desc_p {
         padding: 0% 2%;
+        font-size: 1.5rem;
       }
     }
 
@@ -1728,6 +1876,18 @@ figure.effect-julia:hover p {
       img {
         margin-bottom: 0.75%;
       }
+    }
+  }
+
+  #return-to-top {
+    left: 93%;
+    width: 45px;
+    height: 45px;
+
+    i {
+      left: 17%;
+      top: 8%;
+      font-size: 35px;
     }
   }
 }

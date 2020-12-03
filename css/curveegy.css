@@ -734,8 +734,17 @@ figure.effect-julia:hover p {
 
 /* Start Media Query */
 @media (min-width: 320px) and (max-width: 359.9px) {
-  header .top-nav {
-    text-align: center;
+  header {
+    height: 9vh;
+  }
+  header .head_logo img {
+    width: 80%;
+    top: 30px;
+    left: 17%;
+  }
+  header .head_social ul {
+    top: 30px;
+    right: -19%;
   }
 
   main .w3ls-banner .banner-text {
@@ -767,7 +776,7 @@ figure.effect-julia:hover p {
     width: 85%;
   }
   main .dFlex .read_more {
-    top: 93.6%;
+    top: 94%;
     left: 84.75%;
   }
 
@@ -791,6 +800,7 @@ figure.effect-julia:hover p {
 
   .copy-w3right p {
     letter-spacing: 1px;
+    font-size: 10px;
   }
 
   .modalImg .myModal .modal-dialog .modal-content .modal-body .btn_download {
@@ -815,10 +825,23 @@ figure.effect-julia:hover p {
   .landing_page .landing_img img {
     margin-bottom: 0.75%;
   }
+
+  #return-to-top {
+    left: 86%;
+  }
 }
 @media (min-width: 360px) and (max-width: 374.9px) {
-  header .top-nav {
-    text-align: center;
+  header {
+    height: 9vh;
+  }
+  header .head_logo img {
+    width: 80%;
+    top: 30px;
+    left: 17%;
+  }
+  header .head_social ul {
+    top: 30px;
+    right: -19%;
   }
 
   main .w3ls-banner .banner-text {
@@ -850,7 +873,7 @@ figure.effect-julia:hover p {
     width: 85%;
   }
   main .dFlex .read_more {
-    top: 93.6%;
+    top: 94%;
     left: 84.75%;
   }
 
@@ -874,6 +897,7 @@ figure.effect-julia:hover p {
 
   .copy-w3right p {
     letter-spacing: 1px;
+    font-size: 10px;
   }
 
   .modalImg .myModal .modal-dialog .modal-content .modal-body .btn_download {
@@ -897,11 +921,24 @@ figure.effect-julia:hover p {
   }
   .landing_page .landing_img img {
     margin-bottom: 0.75%;
+  }
+
+  #return-to-top {
+    left: 86%;
   }
 }
 @media (min-width: 375px) and (max-width: 410.9px) {
-  header .top-nav {
-    text-align: center;
+  header {
+    height: 9vh;
+  }
+  header .head_logo img {
+    width: 80%;
+    top: 30px;
+    left: 17%;
+  }
+  header .head_social ul {
+    top: 30px;
+    right: -19%;
   }
 
   main .w3ls-banner .banner-text {
@@ -933,7 +970,7 @@ figure.effect-julia:hover p {
     width: 85%;
   }
   main .dFlex .read_more {
-    top: 93.6%;
+    top: 94%;
     left: 84.75%;
   }
 
@@ -957,6 +994,7 @@ figure.effect-julia:hover p {
 
   .copy-w3right p {
     letter-spacing: 1px;
+    font-size: 10px;
   }
 
   .modalImg .myModal .modal-dialog .modal-content .modal-body .btn_download {
@@ -980,11 +1018,24 @@ figure.effect-julia:hover p {
   }
   .landing_page .landing_img img {
     margin-bottom: 0.75%;
+  }
+
+  #return-to-top {
+    left: 88%;
   }
 }
 @media (min-width: 411px) and (max-width: 414px) {
-  header .top-nav {
-    text-align: center;
+  header {
+    height: 9vh;
+  }
+  header .head_logo img {
+    width: 80%;
+    top: 30px;
+    left: 17%;
+  }
+  header .head_social ul {
+    top: 30px;
+    right: -15%;
   }
 
   main .w3ls-banner .banner-text {
@@ -1016,7 +1067,7 @@ figure.effect-julia:hover p {
     width: 85%;
   }
   main .dFlex .read_more {
-    top: 93.6%;
+    top: 94%;
     left: 84.75%;
   }
 
@@ -1040,6 +1091,7 @@ figure.effect-julia:hover p {
 
   .copy-w3right p {
     letter-spacing: 1px;
+    font-size: 11px;
   }
 
   .modalImg .myModal .modal-dialog .modal-content .modal-body .btn_download {
@@ -1064,13 +1116,23 @@ figure.effect-julia:hover p {
   .landing_page .landing_img img {
     margin-bottom: 0.75%;
   }
+
+  #return-to-top {
+    left: 88%;
+  }
 }
 @media (min-width: 768px) and (max-width: 1023.9px) {
-  header .top-nav {
-    text-align: center;
+  header {
+    height: 2vh;
   }
-  header .w3-agiletop .head_logo .img_logo {
-    width: 80%;
+  header .head_logo img {
+    width: 65%;
+    top: 40px;
+    left: 17%;
+  }
+  header .head_social ul {
+    top: 40px;
+    right: -5%;
   }
 
   main .w3ls-banner .banner-text {
@@ -1094,7 +1156,7 @@ main .w3ls-banner .banner-text .flexslider .flex-direction-nav .flex-next {
     width: 65%;
   }
   main .dFlex .read_more {
-    top: 95%;
+    top: 95.4%;
     left: 85%;
   }
 
@@ -1111,6 +1173,7 @@ main .w3ls-banner .banner-text .flexslider .flex-direction-nav .flex-next {
 
   .copy-w3right p {
     letter-spacing: 1px;
+    font-size: 10px;
   }
 
   .modalImg .myModal .modal-dialog .modal-content .modal-body .btn_download {
@@ -1118,7 +1181,7 @@ main .w3ls-banner .banner-text .flexslider .flex-direction-nav .flex-next {
   }
 
   .landing_page .form_landing {
-    width: 90%;
+    width: 60%;
   }
   .landing_page .landing_desc .about_pro {
     font-size: 19px;
@@ -1135,17 +1198,27 @@ main .w3ls-banner .banner-text .flexslider .flex-direction-nav .flex-next {
   .landing_page .landing_img img {
     margin-bottom: 0.75%;
   }
+
+  #return-to-top {
+    left: 92%;
+  }
+  #return-to-top i {
+    left: 13%;
+    top: 7%;
+  }
 }
 @media (min-width: 1024px) and (max-width: 1050px) {
-  header .top-nav {
-    text-align: center;
+  header {
+    height: 2vh;
   }
-  header .w3-agiletop .head_logo .img_logo {
-    width: 80%;
+  header .head_logo img {
+    width: 70%;
+    top: 60px;
+    left: 17%;
   }
-  header .w3-agiletop .social_head {
-    text-align: center;
-    margin-top: 5%;
+  header .head_social ul {
+    top: 60px;
+    right: -2%;
   }
 
   main .w3ls-banner .banner-text {
@@ -1169,15 +1242,17 @@ main .w3ls-banner .banner-text .flexslider .flex-direction-nav .flex-next.flex-n
   }
   main .dFlex:nth-child(odd) {
     margin: 9% 0;
+    padding-left: 10%;
   }
   main .dFlex:nth-child(even) {
     margin: -9% 0;
+    padding-right: 10%;
   }
   main .dFlex figure figcaption .more_desc p {
     width: 65%;
   }
   main .dFlex .read_more {
-    top: 95%;
+    top: 95.4%;
     left: 85%;
   }
 
@@ -1194,6 +1269,7 @@ main .w3ls-banner .banner-text .flexslider .flex-direction-nav .flex-next.flex-n
 
   .copy-w3right p {
     letter-spacing: 1px;
+    font-size: 20px;
   }
 
   .modalImg .myModal .modal-dialog .modal-content .modal-body .btn_download {
@@ -1201,22 +1277,35 @@ main .w3ls-banner .banner-text .flexslider .flex-direction-nav .flex-next.flex-n
   }
 
   .landing_page .form_landing {
-    width: 90%;
+    width: 50%;
   }
   .landing_page .landing_desc .about_pro {
-    font-size: 19px;
+    font-size: 1.75rem;
   }
   .landing_page .landing_desc .title_pro {
     padding-right: 3%;
+    font-size: 1.75rem;
   }
   .landing_page .landing_desc .landing_desc_p {
     padding: 0% 2%;
+    font-size: 1.5rem;
   }
   .landing_page .landing_img {
     width: 100%;
   }
   .landing_page .landing_img img {
     margin-bottom: 0.75%;
+  }
+
+  #return-to-top {
+    left: 93%;
+    width: 45px;
+    height: 45px;
+  }
+  #return-to-top i {
+    left: 17%;
+    top: 8%;
+    font-size: 35px;
   }
 }
 /* End Media Query */

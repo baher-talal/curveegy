@@ -1,6 +1,11 @@
 @extends('front.layouts.app')
-
 @section('content')
+
+<style>
+  header {
+    height: 0;
+}
+</style>
 
 <main class="">
   <!-- banner -->
