@@ -33,6 +33,7 @@ Route::prefix('dashboard')->group(function () {
     Route::post('cardsDelete', [App\Http\Controllers\Dashboard\HomePageController::class, 'cardsDelete']);
     
     Route::post('newsletterStore', [App\Http\Controllers\Dashboard\HomePageController::class, 'newsletterStore']);
+    Route::post('landing', [App\Http\Controllers\Dashboard\HomePageController::class, 'landing']);
 });
 
 

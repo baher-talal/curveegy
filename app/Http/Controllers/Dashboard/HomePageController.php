@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Dashboard;
 
 use App\Models\Card;
 use App\Models\Homepage;
+use App\Mail\LandingMail;
 use App\Models\Newsletter;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -66,5 +67,12 @@ class HomePageController extends Controller
     {
         $CreateCard = Newsletter::create($request->all());
         return redirect()->back()->with('success', 'Saved!');
+    }
+
+    public function landing(Request $request)
+    {
+        $details = $request->all();
+        \Mail::to('yousef.uwk@gmail.com')->send(new \App\Mail\LandingMail($details));
+        return redirect()->back()->with('success', 'Email Sent!');
     }
 }
