@@ -5,8 +5,8 @@
   <title>Curve Egy Real Estate</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="keywords" content="Prefab Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
-	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+  <meta content="We offer more than 300 real estate compounds in New Cairo, 6 October, Sheikh Zayed, North Coast, Ain Sokhna & Over 300 Real-estate consultants." name="description"/>
+  <meta content="real estate egypt, realestate egypt, property for sale, property for rent, mls listings, property listings, New Cairo, 6 October, Sheikh Zayed, North Coast, Ain Sokhna" name="keywords">
   <script type="application/x-javascript">
     addEventListener("load", function() {
       setTimeout(hideURLbar, 0);
@@ -48,33 +48,9 @@
         <li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
       </ul>
     </div>
-    <!-- <div class="top-nav w3-agiletop">
-      <div class="container_views">
-        <div class="row">
-          <div class="col-md-6 col-lg-6 col-xl-6 col-12">
-            <div class="navbar-header head_logo">
-              <a href="{{url('/')}}">
-                <img class="img_logo" src="images/curve_logo.png" alt="">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-6 col-xl-6 col-12 d-none d-md-block d-lg-block d-xl-block">
-            <div class="social_head">
-              <ul>
-                <li><a href="https://wa.me/+201005721414"><i class="fa fa-whatsapp"></i></a></li>
-                <li><a href="https://www.facebook.com/Curve-104326978133886/"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="https://www.instagram.com/curve.realestateco/?igshid=18yvkdv78idlf"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-    </ul>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div> -->
   </header>
   <!-- //navigation -->
+
   @yield('content')
   <!-- footer -->
   <div class="w3-agile-footer">
@@ -86,37 +62,38 @@
               <div class="footer-grid-heading">
                 <h4>Get In Touch</h4>
               </div>
+
               <div class="footer-grid-info">
                 <div class="row">
-                  <div class="col-xl-1 col-1 noPadding">
+                  <div class="col-xl-1 col-1">
                     <i class="fa fa-map-marker i_icons"></i>
                   </div>
 
-                  <div class="col-xl-11 col-11 noPadding">
+                  <div class="col-xl-11 col-11">
                     <p>The fifth settlement south of Academy Property 281 FirstFloor</p>
                   </div>
 
-                  <div class="col-xl-1 col-1 noPadding">
+                  <div class="col-xl-1 col-1">
                     <i class="fa fa-phone i_icons"></i>
                   </div>
 
-                  <div class="col-xl-11 col-11 noPadding">
+                  <div class="col-xl-11 col-11">
                     <a href="tel:+201005721414"> 01005721414</a> / <a href="tel:+201006268989"> 01006268989</a>
                   </div>
 
-                  <div class="col-xl-1 col-1 noPadding">
+                  <div class="col-xl-1 col-1">
                     <i class="fa fa-envelope-o i_icons"></i>
                   </div>
 
-                  <div class="col-xl-11 col-11 noPadding">
+                  <div class="col-xl-11 col-11">
                     <a href="mailto:admin@curveegy.com">admin@curveegy.com</a>
                   </div>
 
-                  <div class="col-xl-1 col-1 noPadding">
+                  <div class="col-xl-1 col-1">
                     <i class="fa fa-globe i_icons"></i>
                   </div>
 
-                  <div class="col-xl-11 col-11 noPadding">
+                  <div class="col-xl-11 col-11">
                     <a class="text-lowercase" href="http://www.curveegy.com/">Curveegy.com</a>
                   </div>
 
@@ -134,9 +111,11 @@
               <div class="footer-grid-heading">
                 <h4>Newsletter</h4>
               </div>
+
               <div class="footer-grid-info">
                 <p>AND ALWAYS STAY INFORMED OF THE LATEST COMPANY NEWS AND EVENTS!</p>
               </div>
+
               <div class="w3-agileits-subscribe-form">
                 <form action="{{url('dashboard/newsletterStore')}}" method="post">
                   @csrf
