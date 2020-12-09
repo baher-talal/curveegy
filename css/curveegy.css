@@ -6,7 +6,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: inherit;
+  background-attachment: fixed;
 }
 
 a {
@@ -352,7 +352,7 @@ main .w3ls-banner .video-fluid {
 main .w3ls-banner .banner-text {
   text-align: center;
   width: 90%;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.5);
   padding: 2% 0;
   margin: 0 auto;
 }
@@ -476,7 +476,7 @@ main .dFlex:nth-child(even) {
 /*********End Landing *********/
 /*********Start Footer *********/
 .w3-agile-footer {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.5);
   padding: 5em 0;
 }
 .w3-agile-footer .footer-grids {
