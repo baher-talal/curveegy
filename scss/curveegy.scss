@@ -697,7 +697,7 @@ main {
     direction: rtl;
 
     .your_data {
-      color: $whiteCol;
+      color: $blackCol;
       font-size: 1.25rem;
     }
 
@@ -714,6 +714,11 @@ main {
         border-bottom-right-radius: 0;
         border-top-left-radius: 0.25rem;
         border-bottom-left-radius: 0.25rem;
+
+        &:focus {
+          box-shadow: 0 0 0 0.2rem $blackCol;
+          border-color: $whiteCol;
+        }
       }
     }
 
@@ -748,7 +753,7 @@ main {
 
   .landing_desc {
     color: $whiteCol;
-    background: rgb(255 255 255 / 0.4);
+    background: rgba(0, 0, 0, 0.5);;
     text-align: right;
     padding: 2% 2%;
 
