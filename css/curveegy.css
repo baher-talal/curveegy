@@ -372,9 +372,88 @@ main .w3ls-banner .banner-text h5 {
   line-height: 34px;
   margin: 2em auto;
 }
-main .dFlex .effect-julia .dFlex_title h6 {
+main .dFlex figure {
+  position: relative;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 320px;
+  max-width: 480px;
+  max-height: 440px;
+  height: auto;
+  background: #000;
+  text-align: center;
+  cursor: pointer;
+}
+main .dFlex figure h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+}
+main .dFlex figure h2 span {
+  font-weight: 800;
+}
+main .dFlex figure h2,
+main .dFlex figure p {
+  margin: 0;
+}
+main .dFlex figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+main .dFlex figure.effect-julia {
+  background: #000;
+}
+main .dFlex figure.effect-julia .dFlex_title h6 {
   margin-bottom: 0;
   color: #fff;
+}
+main .dFlex figure.effect-julia img {
+  width: 100%;
+  max-width: none;
+  height: 400px;
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, transform 1s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+main .dFlex figure.effect-julia figcaption {
+  text-align: left;
+}
+main .dFlex figure.effect-julia h2 {
+  position: relative;
+  padding: 0.5em 0;
+}
+main .dFlex figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 1;
+}
+main .dFlex figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+main .dFlex figure figcaption::before, main .dFlex figure figcaption::after {
+  pointer-events: none;
+}
+main .dFlex figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+main .dFlex figure figcaption,
+main .dFlex figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 main .dFlex .more_details {
   padding: 0;
@@ -405,6 +484,97 @@ main .dFlex:nth-child(even) {
   display: flex;
   justify-content: flex-end;
   margin: -10% 0;
+}
+main figure.effect-julia .more_desc {
+  margin-top: 27%;
+}
+main figure.effect-julia .more_desc p {
+  display: block;
+  width: 60%;
+  margin: 0 0 0.25em;
+  padding: 0.4em 1em;
+  background: rgba(255, 255, 255, 0.9);
+  color: #2f3238;
+  text-transform: none;
+  font-weight: 500;
+  font-size: 75%;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-360px, 0, 0);
+  transform: translate3d(-360px, 0, 0);
+}
+main figure.effect-julia p:first-child {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+main figure.effect-julia p:nth-of-type(2) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+main figure.effect-julia p:nth-of-type(3) {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+main figure.effect-julia:hover p:first-child {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+main figure.effect-julia:hover p:nth-of-type(2) {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+main figure.effect-julia:hover p:nth-of-type(3) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+main figure.effect-julia:hover img {
+  opacity: 0.4;
+  -webkit-transform: scale3d(1.1, 1.1, 1);
+  transform: scale3d(1.1, 1.1, 1);
+}
+main figure.effect-julia:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.modalImg .myModal .modal-dialog {
+  width: 99%;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+.modalImg .myModal .modal-dialog .modal-content .modal-header .close:focus {
+  outline: 0;
+}
+.modalImg .myModal .modal-dialog .modal-content .modal-body img.img-responsive {
+  width: 100%;
+}
+.modalImg .myModal .modal-dialog .modal-content .modal-body .modalDesc {
+  padding: 1.5% 4% 0;
+}
+.modalImg .myModal .modal-dialog .modal-content .modal-body .btn_download {
+  background-color: #000;
+  color: #fff;
+  margin: 0 auto;
+  display: block;
+  width: 15%;
+}
+
+.fade:not(.show) {
+  opacity: 1;
+}
+
+.modal-backdrop {
+  background-color: transparent;
+}
+
+.modal.fade .modal-dialog {
+  transform: unset;
+  -webkit-transform: unset;
+  -moz-transform: unset;
+  -ms-transform: unset;
+  -o-transform: unset;
 }
 
 /*********End Home *********/
@@ -511,6 +681,34 @@ main .dFlex:nth-child(even) {
 .w3-agile-footer .footer-grids .foot-top-w3 .footer-grid-info p:hover,
 .w3-agile-footer .footer-grids .foot-top-w3 .footer-grid-info a:hover {
   color: #000;
+}
+.w3-agile-footer .footer-grids .foot-top-w3 .footer-grid-info .location_btn {
+  font-size: 0.9em;
+  padding: 1em 2em;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  background: #000;
+  color: #fff;
+  margin: 5% auto;
+  display: block;
+}
+.w3-agile-footer .footer-grids .foot-top-w3 .footer-grid-info .location_btn:hover, .w3-agile-footer .footer-grids .foot-top-w3 .footer-grid-info .location_btn:focus {
+  background: none;
+  border: 0;
+  color: #000;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem #fff !important;
+  font-weight: bold;
 }
 .w3-agile-footer .footer-grids .foot-top-w3 .social ul {
   padding: 0;
@@ -650,76 +848,6 @@ main .dFlex:nth-child(even) {
   font-weight: bold;
 }
 
-/*********End Footer *********/
-.modalImg .myModal .modal-dialog {
-  width: 99%;
-  max-width: 100%;
-  margin: 0 auto;
-  display: block;
-}
-.modalImg .myModal .modal-dialog .modal-content .modal-header .close:focus {
-  outline: 0;
-}
-.modalImg .myModal .modal-dialog .modal-content .modal-body img.img-responsive {
-  width: 100%;
-}
-.modalImg .myModal .modal-dialog .modal-content .modal-body .modalDesc {
-  padding: 1.5% 4% 0;
-}
-.modalImg .myModal .modal-dialog .modal-content .modal-body .btn_download {
-  background-color: #000;
-  color: #fff;
-  margin: 0 auto;
-  display: block;
-  width: 15%;
-}
-
-.fade:not(.show) {
-  opacity: 1;
-}
-
-.modal-backdrop {
-  background-color: transparent;
-}
-
-.modal.fade .modal-dialog {
-  transform: unset;
-  -webkit-transform: unset;
-  -moz-transform: unset;
-  -ms-transform: unset;
-  -o-transform: unset;
-}
-
-/********* Start Footer *********/
-.location_btn {
-  font-size: 0.9em;
-  padding: 1em 2em;
-  text-align: center;
-  text-decoration: none;
-  transition: 0.5s all;
-  -webkit-transition: 0.5s all;
-  -moz-transition: 0.5s all;
-  -o-transition: 0.5s all;
-  -ms-transition: 0.5s all;
-  border-radius: 0.5rem;
-  -webkit-border-radius: 0.5rem;
-  -moz-border-radius: 0.5rem;
-  -ms-border-radius: 0.5rem;
-  -o-border-radius: 0.5rem;
-  background: #000;
-  color: #fff;
-  margin: 5% auto;
-  display: block;
-}
-.location_btn:hover, .location_btn:focus {
-  background: none;
-  border: 0;
-  color: #000;
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem #fff !important;
-  font-weight: bold;
-}
-
 .location_modal .modal-content .modal-body .my_location .mapouter {
   position: relative;
   text-align: right;
@@ -746,13 +874,13 @@ main .dFlex:nth-child(even) {
   text-align: center;
 }
 .copy-w3right p {
-  color: #fff;
+  color: #000;
   text-align: center;
   letter-spacing: 2px;
   margin-bottom: 0;
 }
 .copy-w3right p a {
-  color: #fff;
+  color: #000;
   text-decoration: underline;
   -webkit-transition: 0.5s all;
   -moz-transition: 0.5s all;
@@ -790,169 +918,7 @@ main .dFlex:nth-child(even) {
   transition: all 0.3s ease-in-out;
 }
 
-/********* End Footer *********/
-figure {
-  position: relative;
-  overflow: hidden;
-  margin: 10px 1%;
-  min-width: 320px;
-  max-width: 480px;
-  max-height: 440px;
-  height: auto;
-  background: #000;
-  text-align: center;
-  cursor: pointer;
-}
-
-figure img {
-  position: relative;
-  display: block;
-  min-height: 100%;
-  max-width: 100%;
-  opacity: 1;
-}
-
-figure figcaption {
-  padding: 2em;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 1.25em;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-figure figcaption::before,
-figure figcaption::after {
-  pointer-events: none;
-}
-
-figure figcaption,
-figure figcaption > a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-/* Anchor will cover the whole item by default */
-/* For some effects it will show as a button */
-figure figcaption > a {
-  z-index: 1000;
-  text-indent: 200%;
-  white-space: nowrap;
-  font-size: 0;
-  opacity: 0;
-}
-
-figure h2 {
-  word-spacing: -0.15em;
-  font-weight: 300;
-}
-
-figure h2 span {
-  font-weight: 800;
-}
-
-figure h2,
-figure p {
-  margin: 0;
-}
-
-figure p {
-  letter-spacing: 1px;
-  font-size: 68.5%;
-}
-
-/* Individual effects */
-/*---------------*/
-/***** Julia *****/
-/*---------------*/
-figure.effect-julia {
-  background: #000;
-}
-
-figure.effect-julia img {
-  width: 100%;
-  max-width: none;
-  height: 400px;
-  -webkit-transition: opacity 1s, -webkit-transform 1s;
-  transition: opacity 1s, transform 1s;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-figure.effect-julia figcaption {
-  text-align: left;
-}
-
-figure.effect-julia h2 {
-  position: relative;
-  padding: 0.5em 0;
-}
-
-figure.effect-julia .more_desc {
-  margin-top: 27%;
-}
-
-figure.effect-julia .more_desc p {
-  display: block;
-  width: 60%;
-  margin: 0 0 0.25em;
-  padding: 0.4em 1em;
-  background: rgba(255, 255, 255, 0.9);
-  color: #2f3238;
-  text-transform: none;
-  font-weight: 500;
-  font-size: 75%;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(-360px, 0, 0);
-  transform: translate3d(-360px, 0, 0);
-}
-
-figure.effect-julia p:first-child {
-  -webkit-transition-delay: 0.15s;
-  transition-delay: 0.15s;
-}
-
-figure.effect-julia p:nth-of-type(2) {
-  -webkit-transition-delay: 0.1s;
-  transition-delay: 0.1s;
-}
-
-figure.effect-julia p:nth-of-type(3) {
-  -webkit-transition-delay: 0.05s;
-  transition-delay: 0.05s;
-}
-
-figure.effect-julia:hover p:first-child {
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
-}
-
-figure.effect-julia:hover p:nth-of-type(2) {
-  -webkit-transition-delay: 0.05s;
-  transition-delay: 0.05s;
-}
-
-figure.effect-julia:hover p:nth-of-type(3) {
-  -webkit-transition-delay: 0.1s;
-  transition-delay: 0.1s;
-}
-
-figure.effect-julia:hover img {
-  opacity: 0.4;
-  -webkit-transform: scale3d(1.1, 1.1, 1);
-  transform: scale3d(1.1, 1.1, 1);
-}
-
-figure.effect-julia:hover p {
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
+/*********End Footer *********/
 /* Start Media Query */
 @media (min-width: 320px) and (max-width: 359.9px) {
   header {
@@ -978,6 +944,15 @@ figure.effect-julia:hover p {
   main .w3ls-banner .banner-text .flexslider .flex-control-nav {
     bottom: -8%;
   }
+  main .w3ls-banner .banner-text h2,
+main .w3ls-banner .banner-text h3 {
+    font-size: 1.3em;
+    line-height: 28px;
+  }
+  main .w3ls-banner .banner-text h5 {
+    width: 95%;
+    line-height: 23px;
+  }
   main .dFlex:nth-child(odd), main .dFlex:nth-child(even) {
     justify-content: unset;
     display: block;
@@ -1001,8 +976,18 @@ figure.effect-julia:hover p {
     left: 84.75%;
   }
 
+  .w3-agile-footer {
+    padding: 2em 0;
+  }
+  .w3-agile-footer .footer-grids {
+    padding: 0;
+  }
+  .w3-agile-footer .footer-grids p {
+    font-size: 13px;
+  }
   .w3-agile-footer .footer-grids .foot-top-w3 {
     border-left: none;
+    padding-left: 20px;
   }
   .w3-agile-footer .footer-grids .foot-top-w3.borderBottom {
     border-bottom: 1px solid #000;
@@ -1010,6 +995,9 @@ figure.effect-julia:hover p {
   }
   .w3-agile-footer .footer-grids .foot-top-w3 .footer-grid-heading {
     text-align: center;
+  }
+  .w3-agile-footer .footer-grids .foot-top-w3 .footer-grid-heading h4 {
+    font-size: 22px;
   }
   .w3-agile-footer .footer-grids .foot-top-w3 .w3-agileits-subscribe-form form .btn1 {
     margin-bottom: 4%;
@@ -1074,6 +1062,16 @@ figure.effect-julia:hover p {
   }
   main .w3ls-banner .banner-text .flexslider .flex-control-nav {
     bottom: -8%;
+  }
+  main .w3ls-banner .banner-text h2,
+main .w3ls-banner .banner-text h3 {
+    font-size: 1.4em;
+    line-height: 37px;
+  }
+  main .w3ls-banner .banner-text h5 {
+    font-size: 1.1em;
+    width: 85%;
+    line-height: 26px;
   }
   main .dFlex:nth-child(odd), main .dFlex:nth-child(even) {
     justify-content: unset;
@@ -1172,6 +1170,16 @@ figure.effect-julia:hover p {
   main .w3ls-banner .banner-text .flexslider .flex-control-nav {
     bottom: -8%;
   }
+  main .w3ls-banner .banner-text h2,
+main .w3ls-banner .banner-text h3 {
+    font-size: 1.4em;
+    line-height: 37px;
+  }
+  main .w3ls-banner .banner-text h5 {
+    font-size: 1.1em;
+    width: 85%;
+    line-height: 26px;
+  }
   main .dFlex:nth-child(odd), main .dFlex:nth-child(even) {
     justify-content: unset;
     display: block;
@@ -1268,6 +1276,16 @@ figure.effect-julia:hover p {
   }
   main .w3ls-banner .banner-text .flexslider .flex-control-nav {
     bottom: -8%;
+  }
+  main .w3ls-banner .banner-text h2,
+main .w3ls-banner .banner-text h3 {
+    font-size: 1.4em;
+    line-height: 37px;
+  }
+  main .w3ls-banner .banner-text h5 {
+    font-size: 1.1em;
+    width: 85%;
+    line-height: 26px;
   }
   main .dFlex:nth-child(odd), main .dFlex:nth-child(even) {
     justify-content: unset;
@@ -1367,6 +1385,16 @@ main .w3ls-banner .banner-text .flexslider .flex-direction-nav .flex-next {
   main .w3ls-banner .banner-text .flexslider .flex-control-nav {
     bottom: -8%;
   }
+  main .w3ls-banner .banner-text .flexslider h2,
+main .w3ls-banner .banner-text .flexslider h3 {
+    font-size: 1.4em;
+    line-height: 37px;
+  }
+  main .w3ls-banner .banner-text .flexslider h5 {
+    font-size: 1.1em;
+    width: 85%;
+    line-height: 26px;
+  }
   main .dFlex:nth-child(odd) {
     margin: 9% 0;
   }
@@ -1460,6 +1488,16 @@ main .w3ls-banner .banner-text .flexslider .flex-direction-nav .flex-next.flex-n
   }
   main .w3ls-banner .banner-text .flexslider .flex-control-nav {
     bottom: -8%;
+  }
+  main .w3ls-banner .banner-text h2,
+main .w3ls-banner .banner-text h3 {
+    font-size: 2em;
+    line-height: 37px;
+  }
+  main .w3ls-banner .banner-text h5 {
+    font-size: 1.75em;
+    width: 80%;
+    line-height: 26px;
   }
   main .dFlex:nth-child(odd) {
     margin: 9% 0;

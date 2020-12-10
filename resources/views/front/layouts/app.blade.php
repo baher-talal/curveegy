@@ -5,7 +5,8 @@
   <title>Curve Egy Real Estate</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta content="We offer more than 300 real estate compounds in New Cairo, 6 October, Sheikh Zayed, North Coast, Ain Sokhna & Over 300 Real-estate consultants." name="description"/>
+  <meta content="We offer more than 300 real estate compounds i
+  n New Cairo, 6 October, Sheikh Zayed, North Coast, Ain Sokhna & Over 300 Real-estate consultants." name="description"/>
   <meta content="real estate egypt, realestate egypt, property for sale, property for rent, mls listings, property listings, New Cairo, 6 October, Sheikh Zayed, North Coast, Ain Sokhna" name="keywords">
   <script type="application/x-javascript">
     addEventListener("load", function() {
@@ -21,7 +22,6 @@
   <link href="{{url('css/bootstrap.min.css')}}" type="text/css" rel="stylesheet" media="all">
   <link href="{{url('css/font-awesome.css')}}" rel="stylesheet"> <!-- font-awesome icons -->
   <link rel="stylesheet" href="{{url('css/flexslider.css')}}" type="text/css" media="screen" />
-  <link href="{{url('css/style.css')}}" type="text/css" rel="stylesheet" media="all">
   <link rel="stylesheet" type="text/css" href="{{url('css/curveegy.css')}}">
   <!-- //Custom Theme files -->
   <!-- font -->
@@ -57,7 +57,7 @@
     <div class="container_views">
       <div class="footer-grids">
         <div class="row m-0">
-          <div class="col-md-4 col-lg-4 col-xl-4 col-12 p-0 footer-grid">
+          <div class="col-md-4 col-lg-4 col-xl-4 col-12 footer-grid">
             <div class="foot-top-w3 borderBottom">
               <div class="footer-grid-heading">
                 <h4>Get In Touch</h4>
@@ -65,48 +65,47 @@
 
               <div class="footer-grid-info">
                 <div class="row">
-                  <div class="col-xl-1 col-1">
+                  <div class="col-xl-1 col-1 p-0">
                     <i class="fa fa-map-marker i_icons"></i>
                   </div>
 
-                  <div class="col-xl-11 col-11">
+                  <div class="col-xl-11 col-11 p-0">
                     <p>The fifth settlement south of Academy Property 281 FirstFloor</p>
                   </div>
 
-                  <div class="col-xl-1 col-1">
+                  <div class="col-xl-1 col-1 p-0">
                     <i class="fa fa-phone i_icons"></i>
                   </div>
 
-                  <div class="col-xl-11 col-11">
+                  <div class="col-xl-11 col-11 p-0">
                     <a href="tel:+201005721414"> 01005721414</a> / <a href="tel:+201006268989"> 01006268989</a>
                   </div>
 
-                  <div class="col-xl-1 col-1">
+                  <div class="col-xl-1 col-1 p-0">
                     <i class="fa fa-envelope-o i_icons"></i>
                   </div>
 
-                  <div class="col-xl-11 col-11">
+                  <div class="col-xl-11 col-11 p-0">
                     <a href="mailto:admin@curveegy.com">admin@curveegy.com</a>
                   </div>
 
-                  <div class="col-xl-1 col-1">
+                  <div class="col-xl-1 col-1 p-0">
                     <i class="fa fa-globe i_icons"></i>
                   </div>
 
-                  <div class="col-xl-11 col-11">
+                  <div class="col-xl-11 col-11 p-0">
                     <a class="text-lowercase" href="http://www.curveegy.com/">Curveegy.com</a>
                   </div>
 
                   <div class="col-xl-12">
                     <button type="button" class="location_btn btn text-capitalize" data-toggle="modal" data-target="#exampleModalCenter">location</button>
                   </div>
-
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-md-4 col-lg-4 col-xl-4 col-12 p-0 footer-grid">
+          <div class="col-md-4 col-lg-4 col-xl-4 col-12 footer-grid">
             <div class="foot-top-w3 borderBottom">
               <div class="footer-grid-heading">
                 <h4>Newsletter</h4>
@@ -126,7 +125,7 @@
             </div>
           </div>
 
-          <div class="col-md-4 col-lg-4 col-xl-4 col-12 p-0 footer-grid">
+          <div class="col-md-4 col-lg-4 col-xl-4 col-12 footer-grid">
             <div class="foot-top-w3">
               <div class="footer-grid-heading">
                 <h4>Follow Us</h4>

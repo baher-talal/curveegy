@@ -427,12 +427,104 @@ main {
   }
 
   .dFlex {
-    .effect-julia {
-      .dFlex_title {
-        h6 {
-          margin-bottom: 0;
-          color: $whiteCol;
+    figure {
+      position: relative;
+      overflow: hidden;
+      margin: 10px 1%;
+      min-width: 320px;
+      max-width: 480px;
+      max-height: 440px;
+      height: auto;
+      background: $blackCol;
+      text-align: center;
+      cursor: pointer;
+
+      h2 {
+        word-spacing: -0.15em;
+        font-weight: 300;
+
+        span {
+          font-weight: 800;
         }
+      }
+
+      h2,
+      p {
+        margin: 0;
+      }
+
+      p {
+        letter-spacing: 1px;
+        font-size: 68.5%;
+      }
+
+      &.effect-julia {
+        background: $blackCol;
+
+        .dFlex_title {
+          h6 {
+            margin-bottom: 0;
+            color: $whiteCol;
+          }
+        }
+
+        img {
+          width: 100%;
+          max-width: none;
+          height: 400px;
+          -webkit-transition: opacity 1s, -webkit-transform 1s;
+          transition: opacity 1s, transform 1s;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+        }
+
+        figcaption {
+          text-align: left;
+        }
+
+        h2 {
+          position: relative;
+          padding: 0.5em 0;
+        }
+      }
+
+      img {
+        position: relative;
+        display: block;
+        min-height: 100%;
+        max-width: 100%;
+        opacity: 1;
+      }
+
+      figcaption {
+        padding: 2em;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.25em;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+
+        &::before,
+        &::after {
+          pointer-events: none;
+        }
+
+        &>a {
+          z-index: 1000;
+          text-indent: 200%;
+          white-space: nowrap;
+          font-size: 0;
+          opacity: 0;
+        }
+      }
+
+      figcaption,
+      figcaption>a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
       }
     }
 
@@ -471,6 +563,126 @@ main {
     justify-content: flex-end;
     margin: -10% 0;
   }
+
+  figure.effect-julia .more_desc {
+    margin-top: 27%;
+  }
+
+  figure.effect-julia .more_desc p {
+    display: block;
+    width: 60%;
+    margin: 0 0 0.25em;
+    padding: 0.4em 1em;
+    background: rgba(255, 255, 255, 0.9);
+    color: #2f3238;
+    text-transform: none;
+    font-weight: 500;
+    font-size: 75%;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-360px, 0, 0);
+    transform: translate3d(-360px, 0, 0);
+  }
+
+  figure.effect-julia p:first-child {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+  }
+
+  figure.effect-julia p:nth-of-type(2) {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+  }
+
+  figure.effect-julia p:nth-of-type(3) {
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+  }
+
+  figure.effect-julia:hover p:first-child {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+
+  figure.effect-julia:hover p:nth-of-type(2) {
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+  }
+
+  figure.effect-julia:hover p:nth-of-type(3) {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+  }
+
+  figure.effect-julia:hover img {
+    opacity: 0.4;
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+  }
+
+  figure.effect-julia:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+// Start Img Card Modal
+.modalImg {
+  .myModal {
+    .modal-dialog {
+      width: 99%;
+      max-width: 100%;
+      margin: 0 auto;
+      display: block;
+
+      .modal-content {
+        .modal-header {
+          .close {
+            &:focus {
+              outline: 0;
+            }
+          }
+        }
+
+        .modal-body {
+          img {
+            &.img-responsive {
+              width: 100%;
+            }
+          }
+
+          .modalDesc {
+            padding: 1.5% 4% 0;
+          }
+
+          .btn_download {
+            background-color: $blackCol;
+            color: $whiteCol;
+            margin: 0 auto;
+            display: block;
+            width: 15%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.fade:not(.show) {
+  opacity: 1;
+}
+
+.modal-backdrop {
+  background-color: transparent;
+}
+
+.modal.fade .modal-dialog {
+  transform: unset;
+  -webkit-transform: unset;
+  -moz-transform: unset;
+  -ms-transform: unset;
+  -o-transform: unset;
 }
 
 /*********End Home *********/
@@ -598,6 +810,38 @@ main {
 
           &:hover {
             color: #000;
+          }
+        }
+
+        .location_btn {
+          font-size: .9em;
+          padding: 1em 2em;
+          text-align: center;
+          text-decoration: none;
+          transition: 0.5s all;
+          -webkit-transition: 0.5s all;
+          -moz-transition: 0.5s all;
+          -o-transition: 0.5s all;
+          -ms-transition: 0.5s all;
+          border-radius: 0.5rem;
+          -webkit-border-radius: 0.5rem;
+          -moz-border-radius: 0.5rem;
+          -ms-border-radius: 0.5rem;
+          -o-border-radius: 0.5rem;
+
+          background: $blackCol;
+          color: $whiteCol;
+          margin: 5% auto;
+          display: block;
+
+          &:hover,
+          &:focus {
+            background: none;
+            border: 0;
+            color: $blackCol;
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem $whiteCol !important;
+            font-weight: bold;
           }
         }
       }
@@ -766,99 +1010,7 @@ main {
   }
 }
 
-/*********End Footer *********/
-
-.modalImg {
-  .myModal {
-    .modal-dialog {
-      width: 99%;
-      max-width: 100%;
-      margin: 0 auto;
-      display: block;
-
-      .modal-content {
-        .modal-header {
-          .close {
-            &:focus {
-              outline: 0;
-            }
-          }
-        }
-
-        .modal-body {
-          img {
-            &.img-responsive {
-              width: 100%;
-            }
-          }
-
-          .modalDesc {
-            padding: 1.5% 4% 0;
-          }
-
-          .btn_download {
-            background-color: $blackCol;
-            color: $whiteCol;
-            margin: 0 auto;
-            display: block;
-            width: 15%;
-          }
-        }
-      }
-    }
-  }
-}
-
-.fade:not(.show) {
-  opacity: 1;
-}
-
-.modal-backdrop {
-  background-color: transparent;
-}
-
-.modal.fade .modal-dialog {
-  transform: unset;
-  -webkit-transform: unset;
-  -moz-transform: unset;
-  -ms-transform: unset;
-  -o-transform: unset;
-}
-
-/********* Start Footer *********/
-
-.location_btn {
-  font-size: .9em;
-  padding: 1em 2em;
-  text-align: center;
-  text-decoration: none;
-  transition: 0.5s all;
-  -webkit-transition: 0.5s all;
-  -moz-transition: 0.5s all;
-  -o-transition: 0.5s all;
-  -ms-transition: 0.5s all;
-  border-radius: 0.5rem;
-  -webkit-border-radius: 0.5rem;
-  -moz-border-radius: 0.5rem;
-  -ms-border-radius: 0.5rem;
-  -o-border-radius: 0.5rem;
-
-  background: $blackCol;
-  color: $whiteCol;
-  margin: 5% auto;
-  display: block;
-
-  &:hover,
-  &:focus {
-    background: none;
-    border: 0;
-    color: $blackCol;
-    outline: 0;
-    box-shadow: 0 0 0 0.2rem $whiteCol !important;
-    font-weight: bold;
-  }
-}
-
+// Location Modal
 .location_modal {
   .modal-content {
     .modal-header {}
@@ -893,18 +1045,19 @@ main {
   }
 }
 
+// Copyright
 .copy-w3right {
   padding: 1em 0;
   text-align: center;
 
   p {
-    color: $whiteCol;
+    color: $blackCol;
     text-align: center;
     letter-spacing: 2px;
     margin-bottom: 0;
 
     a {
-      color: $whiteCol;
+      color: $blackCol;
       text-decoration: underline;
       -webkit-transition: 0.5s all;
       -moz-transition: 0.5s all;
@@ -917,6 +1070,7 @@ main {
   }
 }
 
+// Back To Top
 #return-to-top {
   position: fixed;
   bottom: 20px;
@@ -946,175 +1100,7 @@ main {
   }
 }
 
-/********* End Footer *********/
-
-figure {
-  position: relative;
-  // float: left;
-  overflow: hidden;
-  margin: 10px 1%;
-  min-width: 320px;
-  max-width: 480px;
-  max-height: 440px;
-  // width: 48%;
-  height: auto;
-  background: $blackCol;
-  text-align: center;
-  cursor: pointer;
-}
-
-figure img {
-  position: relative;
-  display: block;
-  min-height: 100%;
-  max-width: 100%;
-  opacity: 1;
-}
-
-figure figcaption {
-  padding: 2em;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 1.25em;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-figure figcaption::before,
-figure figcaption::after {
-  pointer-events: none;
-}
-
-figure figcaption,
-figure figcaption>a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-
-/* Anchor will cover the whole item by default */
-/* For some effects it will show as a button */
-figure figcaption>a {
-  z-index: 1000;
-  text-indent: 200%;
-  white-space: nowrap;
-  font-size: 0;
-  opacity: 0;
-}
-
-figure h2 {
-  word-spacing: -0.15em;
-  font-weight: 300;
-}
-
-figure h2 span {
-  font-weight: 800;
-}
-
-figure h2,
-figure p {
-  margin: 0;
-}
-
-figure p {
-  letter-spacing: 1px;
-  font-size: 68.5%;
-}
-
-/* Individual effects */
-
-/*---------------*/
-/***** Julia *****/
-/*---------------*/
-
-figure.effect-julia {
-  background: $blackCol;
-}
-
-figure.effect-julia img {
-  width: 100%;
-  max-width: none;
-  height: 400px;
-  -webkit-transition: opacity 1s, -webkit-transform 1s;
-  transition: opacity 1s, transform 1s;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-figure.effect-julia figcaption {
-  text-align: left;
-}
-
-figure.effect-julia h2 {
-  position: relative;
-  padding: 0.5em 0;
-}
-
-figure.effect-julia .more_desc {
-  margin-top: 27%;
-}
-
-figure.effect-julia .more_desc p {
-  display: block;
-  width: 60%;
-  margin: 0 0 0.25em;
-  padding: 0.4em 1em;
-  background: rgba(255, 255, 255, 0.9);
-  color: #2f3238;
-  text-transform: none;
-  font-weight: 500;
-  font-size: 75%;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(-360px, 0, 0);
-  transform: translate3d(-360px, 0, 0);
-}
-
-figure.effect-julia p:first-child {
-  -webkit-transition-delay: 0.15s;
-  transition-delay: 0.15s;
-}
-
-figure.effect-julia p:nth-of-type(2) {
-  -webkit-transition-delay: 0.1s;
-  transition-delay: 0.1s;
-}
-
-figure.effect-julia p:nth-of-type(3) {
-  -webkit-transition-delay: 0.05s;
-  transition-delay: 0.05s;
-}
-
-figure.effect-julia:hover p:first-child {
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
-}
-
-figure.effect-julia:hover p:nth-of-type(2) {
-  -webkit-transition-delay: 0.05s;
-  transition-delay: 0.05s;
-}
-
-figure.effect-julia:hover p:nth-of-type(3) {
-  -webkit-transition-delay: 0.1s;
-  transition-delay: 0.1s;
-}
-
-figure.effect-julia:hover img {
-  opacity: 0.4;
-  -webkit-transform: scale3d(1.1, 1.1, 1);
-  transform: scale3d(1.1, 1.1, 1);
-}
-
-figure.effect-julia:hover p {
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
+/*********End Footer *********/
 
 /* Start Media Query */
 @media (min-width: 320px) and (max-width: 359.9px) {
@@ -1139,6 +1125,7 @@ figure.effect-julia:hover p {
 
   main {
     .w3ls-banner {
+
       .banner-text {
         padding: 3% 0;
         width: 99%;
@@ -1151,6 +1138,17 @@ figure.effect-julia:hover p {
           .flex-control-nav {
             bottom: -8%;
           }
+        }
+
+        h2,
+        h3 {
+          font-size: 1.3em;
+          line-height: 28px;
+        }
+
+        h5 {
+          width: 95%;
+          line-height: 23px;
         }
       }
     }
@@ -1193,9 +1191,18 @@ figure.effect-julia:hover p {
   }
 
   .w3-agile-footer {
+    padding: 2em 0;
+
     .footer-grids {
+      padding: 0;
+
+      p {
+        font-size: 13px;
+      }
+
       .foot-top-w3 {
         border-left: none;
+        padding-left: 20px;
 
         &.borderBottom {
           border-bottom: 1px solid $blackCol;
@@ -1204,6 +1211,10 @@ figure.effect-julia:hover p {
 
         .footer-grid-heading {
           text-align: center;
+
+          h4 {
+            font-size: 22px;
+          }
         }
 
         .w3-agileits-subscribe-form {
@@ -1312,6 +1323,18 @@ figure.effect-julia:hover p {
           .flex-control-nav {
             bottom: -8%;
           }
+        }
+
+        h2,
+        h3 {
+          font-size: 1.4em;
+          line-height: 37px;
+        }
+
+        h5 {
+          font-size: 1.1em;
+          width: 85%;
+          line-height: 26px;
         }
       }
     }
@@ -1474,6 +1497,18 @@ figure.effect-julia:hover p {
             bottom: -8%;
           }
         }
+
+        h2,
+        h3 {
+          font-size: 1.4em;
+          line-height: 37px;
+        }
+
+        h5 {
+          font-size: 1.1em;
+          width: 85%;
+          line-height: 26px;
+        }
       }
     }
 
@@ -1634,6 +1669,18 @@ figure.effect-julia:hover p {
           .flex-control-nav {
             bottom: -8%;
           }
+        }
+
+        h2,
+        h3 {
+          font-size: 1.4em;
+          line-height: 37px;
+        }
+
+        h5 {
+          font-size: 1.1em;
+          width: 85%;
+          line-height: 26px;
         }
       }
     }
@@ -1798,6 +1845,18 @@ figure.effect-julia:hover p {
 
           .flex-control-nav {
             bottom: -8%;
+          }
+
+          h2,
+          h3 {
+            font-size: 1.4em;
+            line-height: 37px;
+          }
+
+          h5 {
+            font-size: 1.1em;
+            width: 85%;
+            line-height: 26px;
           }
         }
       }
@@ -1967,6 +2026,18 @@ figure.effect-julia:hover p {
           .flex-control-nav {
             bottom: -8%;
           }
+        }
+
+        h2,
+        h3 {
+          font-size: 2em;
+          line-height: 37px;
+        }
+
+        h5 {
+          font-size: 1.75em;
+          width: 80%;
+          line-height: 26px;
         }
       }
     }
