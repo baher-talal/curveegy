@@ -4,8 +4,8 @@
     <title>curveegy.com</title>
 </head>
 <body>
-    <h6>{{ $details['username'] }}</h6>
-    <h5>{{ $details['phone'] }}</h5>
+    <h4>{{ $details['username'] }}</h4>
+    <h4>{{ $details['phone'] }}</h4>
    
     <p>Thank you</p>
 </body>
