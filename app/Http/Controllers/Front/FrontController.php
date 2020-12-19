@@ -16,8 +16,10 @@ class FrontController extends Controller
         return view('front.home', compact('header_video', 'cards'));
     }
 
-    public function landing()
+    public function landing(Request $request)
     {
-        return view('front.landing');
+        $card = Card::findOrFail($request->id);
+        $card_imgs = json_decode($card->landing_imgs);
+        return view('front.landing', compact('card_imgs'));
     }
 }

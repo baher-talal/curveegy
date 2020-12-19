@@ -61,41 +61,14 @@
 
   <div class="landing_img mt-3">
     <div class="row m-0">
+      @foreach ($card_imgs as $img)
       <div class="col-xl-4 p-0">
         <div class="">
-          <img class="w-100" src="images/1.jpg" alt="">
+          <img class="w-100" src="{{url("uploads/$img")}}" alt="">
         </div>
       </div>
+      @endforeach
 
-      <div class="col-xl-4 p-0">
-        <div class="">
-          <img class="w-100" src="images/2.jpg" alt="">
-        </div>
-      </div>
-
-      <div class="col-xl-4 p-0">
-        <div class="">
-          <img class="w-100" src="images/3.jpg" alt="">
-        </div>
-      </div>
-
-      <div class="col-xl-4 p-0">
-        <div class="">
-          <img class="w-100" src="images/2.jpg" alt="">
-        </div>
-      </div>
-
-      <div class="col-xl-4 p-0">
-        <div class="">
-          <img class="w-100" src="images/3.jpg" alt="">
-        </div>
-      </div>
-
-      <div class="col-xl-4 p-0">
-        <div class="">
-          <img class="w-100" src="images/1.jpg" alt="">
-        </div>
-      </div>
     </div>
   </div>
 

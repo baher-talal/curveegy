@@ -71,6 +71,16 @@
           </div>
       </div>
 
+      <div class="input-group mb-3">
+          <div class="input-group-prepend">
+              <span class="input-group-text">Landing Images</span>
+          </div>
+          <div class="custom-file">
+              <input type="file" class="custom-file-input" name="landing_imgs[]" id="landing-imgs" multiple>
+              <label class="custom-file-label" for="landing-imgs">Choose files</label>
+          </div>
+      </div>
+
       <input type="submit" class="btn btn-success btn-lg w-100" value="save">
 
     </form>

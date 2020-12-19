@@ -43,11 +43,11 @@
 
     <div class="dFlex">
       <figure class="effect-julia rounded">
-        <a href="{{url('/landing')}}" class="btn text-capitalize dFlex_title">
+        <a href="{{url("/landing/$card->id")}}" class="btn text-capitalize dFlex_title">
           <h6>{{$card->title}}</h6>
         </a>
 
-        <a href="{{url('/landing')}}" class="btn text-capitalize more_details">
+        <a href="{{url("/landing/$card->id")}}" class="btn text-capitalize more_details">
           <img src="{{url("uploads/$card->image")}}" class="img-fluid " alt="curve">
 
           <figcaption>

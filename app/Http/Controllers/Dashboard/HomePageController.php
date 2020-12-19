@@ -42,10 +42,23 @@ class HomePageController extends Controller
             if($request->image){
                 $newCard['image'] = Storage::disk('uploads')->put("card", $request->image);
             }
+            if($request->landing_imgs){
+                foreach($card['landing_imgs'] as $img){
+                    $img = Storage::disk('uploads')->put("landing_images", $img);
+                    array_push($landing_imgs, $img);
+                }
+                $card['landing_imgs'] = json_encode($landing_imgs);
+            }
             $card->update($newCard);
         }else{
             $card = $request->all();
+            $landing_imgs = [];
             $card['image'] = Storage::disk('uploads')->put("card", $request->image);
+            foreach($card['landing_imgs'] as $img){
+                $img = Storage::disk('uploads')->put("landing_images", $img);
+                array_push($landing_imgs, $img);
+            }
+            $card['landing_imgs'] = json_encode($landing_imgs);
             $CreateCard = Card::create($card);
         }
         return redirect()->back()->with('success', 'Saved!');
