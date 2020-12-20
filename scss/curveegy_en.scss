@@ -3,6 +3,7 @@ $blackCol: #000;
 $menuCol: #25252594;
 
 body {
+  direction: ltr;
   font-family: 'Roboto', sans-serif;
   width: 100%;
   height: 100%;
@@ -219,170 +220,6 @@ header {
       }
     }
   }
-
-  .w3-agiletop {
-    .head_logo {
-      .img_logo {
-        width: 60%;
-      }
-    }
-
-
-    .social_head {
-      text-align: right;
-      margin-top: 3%;
-
-      ul {
-        padding: 0;
-        margin: 0;
-
-        li {
-          display: inline-block;
-
-          &:nth-child(odd) {
-            margin: 0 .25em;
-          }
-
-          &:nth-child(even) {
-            margin: 0 .25em;
-          }
-
-          a {
-            color: #333;
-            text-align: center;
-            font-size: 1.3rem;
-
-            i {
-              &.fa.fa-whatsapp {
-                height: 40px;
-                width: 40px;
-                background: $blackCol;
-                line-height: 40px;
-                color: #FFF;
-                border-radius: 50%;
-                -webkit-border-radius: 50%;
-                -moz-border-radius: 50%;
-                -o-border-radius: 50%;
-                -ms-border-radius: 50%;
-                transition: 0.5s all;
-                -webkit-transition: 0.5s all;
-                -moz-transition: 0.5s all;
-                -o-transition: 0.5s all;
-                -ms-transition: 0.5s all;
-
-                &:hover {
-                  height: 40px;
-                  width: 40px;
-                  line-height: 40px;
-                  background: #25D366;
-                }
-              }
-
-              &.fa.fa-facebook {
-                height: 40px;
-                width: 40px;
-                background: $blackCol;
-                line-height: 40px;
-                color: #FFF;
-                border-radius: 50%;
-                -webkit-border-radius: 50%;
-                -moz-border-radius: 50%;
-                -o-border-radius: 50%;
-                -ms-border-radius: 50%;
-                transition: 0.5s all;
-                -webkit-transition: 0.5s all;
-                -moz-transition: 0.5s all;
-                -o-transition: 0.5s all;
-                -ms-transition: 0.5s all;
-
-                &:hover {
-                  height: 40px;
-                  width: 40px;
-                  line-height: 40px;
-                  background: #3b5999;
-                }
-              }
-
-              &.fa.fa-twitter {
-                height: 40px;
-                width: 40px;
-                background: $blackCol;
-                line-height: 40px;
-                color: #FFF;
-                border-radius: 50%;
-                -webkit-border-radius: 50%;
-                -moz-border-radius: 50%;
-                -o-border-radius: 50%;
-                -ms-border-radius: 50%;
-                transition: 0.5s all;
-                -webkit-transition: 0.5s all;
-                -moz-transition: 0.5s all;
-                -o-transition: 0.5s all;
-                -ms-transition: 0.5s all;
-
-                &:hover {
-                  height: 40px;
-                  width: 40px;
-                  line-height: 40px;
-                  background: #55acee;
-                }
-              }
-
-              &.fa.fa-instagram {
-                height: 40px;
-                width: 40px;
-                background: $blackCol;
-                line-height: 40px;
-                color: #FFF;
-                border-radius: 50%;
-                -webkit-border-radius: 50%;
-                -moz-border-radius: 50%;
-                -o-border-radius: 50%;
-                -ms-border-radius: 50%;
-                transition: 0.5s all;
-                -webkit-transition: 0.5s all;
-                -moz-transition: 0.5s all;
-                -o-transition: 0.5s all;
-                -ms-transition: 0.5s all;
-
-                &:hover {
-                  height: 40px;
-                  width: 40px;
-                  line-height: 40px;
-                  background: #e4405f;
-                }
-              }
-
-              &.fa.fa-linkedin {
-                height: 40px;
-                width: 40px;
-                background: $blackCol;
-                line-height: 40px;
-                color: #FFF;
-                border-radius: 50%;
-                -webkit-border-radius: 50%;
-                -moz-border-radius: 50%;
-                -o-border-radius: 50%;
-                -ms-border-radius: 50%;
-                transition: 0.5s all;
-                -webkit-transition: 0.5s all;
-                -moz-transition: 0.5s all;
-                -o-transition: 0.5s all;
-                -ms-transition: 0.5s all;
-
-                &:hover {
-                  height: 40px;
-                  width: 40px;
-                  line-height: 40px;
-                  background: #0077B5;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
 }
 
 /********* End Header *********/
@@ -419,7 +256,7 @@ main {
         font-size: 1.3em;
         font-weight: 300;
         letter-spacing: 4px;
-        width: 33%;
+        width: 90%;
         line-height: 34px;
         margin: 2em auto;
       }
@@ -582,6 +419,9 @@ main {
     transition: opacity 0.35s, transform 0.35s;
     -webkit-transform: translate3d(-360px, 0, 0);
     transform: translate3d(-360px, 0, 0);
+    -moz-transform: translate3d(-360px, 0, 0);
+    -ms-transform: translate3d(-360px, 0, 0);
+    -o-transform: translate3d(-360px, 0, 0);
   }
 
   figure.effect-julia p:first-child {
@@ -653,7 +493,7 @@ main {
           }
 
           .modalDesc {
-            padding: 1.5% 4% 0;
+            padding: 1% 0 0 3%;
           }
 
           .btn_download {
@@ -753,7 +593,8 @@ main {
 
   .landing_desc {
     color: $whiteCol;
-    background: rgba(0, 0, 0, 0.5);;
+    background: rgba(0, 0, 0, 0.5);
+    ;
     text-align: right;
     padding: 2% 2%;
 
@@ -781,17 +622,17 @@ main {
   .footer-grids {
     margin: 0;
     font-size: 14px;
-    color: #FFF;
+    color: $whiteCol;
     line-height: 1.8em;
     text-transform: capitalize;
 
     .foot-top-w3 {
-      border-left: 1px solid #000;
+      border-left: 1px solid $blackCol;
       padding-left: 30px;
 
       .footer-grid-heading {
         h4 {
-          color: #000;
+          color: $blackCol;
           font-size: 25px;
           margin: 0;
           text-transform: uppercase;
@@ -802,19 +643,19 @@ main {
       .footer-grid-info,
       .social {
         margin: 1.5em 0 0 0;
-        color: #FFF;
+        color: $whiteCol;
       }
 
       .footer-grid-info {
 
         p,
         a {
-          color: #fff;
+          color: $whiteCol;
           text-decoration: none;
           margin-bottom: 0;
 
           &:hover {
-            color: #000;
+            color: $blackCol;
           }
         }
 

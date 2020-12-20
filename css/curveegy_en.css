@@ -1,4 +1,5 @@
 body {
+  direction: ltr;
   font-family: "Roboto", sans-serif;
   width: 100%;
   height: 100%;
@@ -196,146 +197,6 @@ header .head_social ul li a i.fa.fa-linkedin:hover {
   line-height: 40px;
   background: #0077B5;
 }
-header .w3-agiletop .head_logo .img_logo {
-  width: 60%;
-}
-header .w3-agiletop .social_head {
-  text-align: right;
-  margin-top: 3%;
-}
-header .w3-agiletop .social_head ul {
-  padding: 0;
-  margin: 0;
-}
-header .w3-agiletop .social_head ul li {
-  display: inline-block;
-}
-header .w3-agiletop .social_head ul li:nth-child(odd) {
-  margin: 0 0.25em;
-}
-header .w3-agiletop .social_head ul li:nth-child(even) {
-  margin: 0 0.25em;
-}
-header .w3-agiletop .social_head ul li a {
-  color: #333;
-  text-align: center;
-  font-size: 1.3rem;
-}
-header .w3-agiletop .social_head ul li a i.fa.fa-whatsapp {
-  height: 40px;
-  width: 40px;
-  background: #000;
-  line-height: 40px;
-  color: #FFF;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -o-border-radius: 50%;
-  -ms-border-radius: 50%;
-  transition: 0.5s all;
-  -webkit-transition: 0.5s all;
-  -moz-transition: 0.5s all;
-  -o-transition: 0.5s all;
-  -ms-transition: 0.5s all;
-}
-header .w3-agiletop .social_head ul li a i.fa.fa-whatsapp:hover {
-  height: 40px;
-  width: 40px;
-  line-height: 40px;
-  background: #25D366;
-}
-header .w3-agiletop .social_head ul li a i.fa.fa-facebook {
-  height: 40px;
-  width: 40px;
-  background: #000;
-  line-height: 40px;
-  color: #FFF;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -o-border-radius: 50%;
-  -ms-border-radius: 50%;
-  transition: 0.5s all;
-  -webkit-transition: 0.5s all;
-  -moz-transition: 0.5s all;
-  -o-transition: 0.5s all;
-  -ms-transition: 0.5s all;
-}
-header .w3-agiletop .social_head ul li a i.fa.fa-facebook:hover {
-  height: 40px;
-  width: 40px;
-  line-height: 40px;
-  background: #3b5999;
-}
-header .w3-agiletop .social_head ul li a i.fa.fa-twitter {
-  height: 40px;
-  width: 40px;
-  background: #000;
-  line-height: 40px;
-  color: #FFF;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -o-border-radius: 50%;
-  -ms-border-radius: 50%;
-  transition: 0.5s all;
-  -webkit-transition: 0.5s all;
-  -moz-transition: 0.5s all;
-  -o-transition: 0.5s all;
-  -ms-transition: 0.5s all;
-}
-header .w3-agiletop .social_head ul li a i.fa.fa-twitter:hover {
-  height: 40px;
-  width: 40px;
-  line-height: 40px;
-  background: #55acee;
-}
-header .w3-agiletop .social_head ul li a i.fa.fa-instagram {
-  height: 40px;
-  width: 40px;
-  background: #000;
-  line-height: 40px;
-  color: #FFF;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -o-border-radius: 50%;
-  -ms-border-radius: 50%;
-  transition: 0.5s all;
-  -webkit-transition: 0.5s all;
-  -moz-transition: 0.5s all;
-  -o-transition: 0.5s all;
-  -ms-transition: 0.5s all;
-}
-header .w3-agiletop .social_head ul li a i.fa.fa-instagram:hover {
-  height: 40px;
-  width: 40px;
-  line-height: 40px;
-  background: #e4405f;
-}
-header .w3-agiletop .social_head ul li a i.fa.fa-linkedin {
-  height: 40px;
-  width: 40px;
-  background: #000;
-  line-height: 40px;
-  color: #FFF;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -o-border-radius: 50%;
-  -ms-border-radius: 50%;
-  transition: 0.5s all;
-  -webkit-transition: 0.5s all;
-  -moz-transition: 0.5s all;
-  -o-transition: 0.5s all;
-  -ms-transition: 0.5s all;
-}
-header .w3-agiletop .social_head ul li a i.fa.fa-linkedin:hover {
-  height: 40px;
-  width: 40px;
-  line-height: 40px;
-  background: #0077B5;
-}
 
 /********* End Header *********/
 /*********Start Home *********/
@@ -368,7 +229,7 @@ main .w3ls-banner .banner-text h5 {
   font-size: 1.3em;
   font-weight: 300;
   letter-spacing: 4px;
-  width: 33%;
+  width: 90%;
   line-height: 34px;
   margin: 2em auto;
 }
@@ -502,6 +363,9 @@ main figure.effect-julia .more_desc p {
   transition: opacity 0.35s, transform 0.35s;
   -webkit-transform: translate3d(-360px, 0, 0);
   transform: translate3d(-360px, 0, 0);
+  -moz-transform: translate3d(-360px, 0, 0);
+  -ms-transform: translate3d(-360px, 0, 0);
+  -o-transform: translate3d(-360px, 0, 0);
 }
 main figure.effect-julia p:first-child {
   -webkit-transition-delay: 0.15s;
@@ -551,7 +415,7 @@ main figure.effect-julia:hover p {
   width: 100%;
 }
 .modalImg .myModal .modal-dialog .modal-content .modal-body .modalDesc {
-  padding: 1.5% 4% 0;
+  padding: 1% 0 0 3%;
 }
 .modalImg .myModal .modal-dialog .modal-content .modal-body .btn_download {
   background-color: #000;
@@ -656,7 +520,7 @@ main figure.effect-julia:hover p {
 .w3-agile-footer .footer-grids {
   margin: 0;
   font-size: 14px;
-  color: #FFF;
+  color: #fff;
   line-height: 1.8em;
   text-transform: capitalize;
 }
@@ -674,7 +538,7 @@ main figure.effect-julia:hover p {
 .w3-agile-footer .footer-grids .foot-top-w3 .footer-grid-info,
 .w3-agile-footer .footer-grids .foot-top-w3 .social {
   margin: 1.5em 0 0 0;
-  color: #FFF;
+  color: #fff;
 }
 .w3-agile-footer .footer-grids .foot-top-w3 .footer-grid-info p,
 .w3-agile-footer .footer-grids .foot-top-w3 .footer-grid-info a {
@@ -1573,4 +1437,4 @@ main .w3ls-banner .banner-text h3 {
 }
 /* End Media Query */
 
-/*# sourceMappingURL=curveegy.css.map */
+/*# sourceMappingURL=curveegy_en.css.map */

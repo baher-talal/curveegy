@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta content="We offer more than 300 real estate compounds i
-  n New Cairo, 6 October, Sheikh Zayed, North Coast, Ain Sokhna & Over 300 Real-estate consultants." name="description"/>
+  n New Cairo, 6 October, Sheikh Zayed, North Coast, Ain Sokhna & Over 300 Real-estate consultants." name="description" />
   <meta content="real estate egypt, realestate egypt, property for sale, property for rent, mls listings, property listings, New Cairo, 6 October, Sheikh Zayed, North Coast, Ain Sokhna" name="keywords">
   <script type="application/x-javascript">
     addEventListener("load", function() {
@@ -22,7 +22,13 @@
   <link href="{{url('css/bootstrap.min.css')}}" type="text/css" rel="stylesheet" media="all">
   <link href="{{url('css/font-awesome.css')}}" rel="stylesheet"> <!-- font-awesome icons -->
   <link rel="stylesheet" href="{{url('css/flexslider.css')}}" type="text/css" media="screen" />
-  <link rel="stylesheet" type="text/css" href="{{url('css/curveegy.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{url('css/curveegy_en.css')}}">
+
+  @if(App::getLocale() == 'ar')
+  <link rel="stylesheet" type="text/css" href="{{url('css/curveegy_en.css')}}">
+  @else
+  <link rel="stylesheet" type="text/css" href="{{url('css/curveegy_ar.css')}}">
+  @endif
   <!-- //Custom Theme files -->
   <!-- font -->
   <link href="//fonts.googleapis.com/css?family=Oswald:300,400,700&amp;subset=latin-ext" rel="stylesheet">
@@ -190,7 +196,7 @@
 
   <!-- Scroll Up -->
   <a class="rounded-circle" href="javascript:" id="return-to-top">
-  <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i>
+    <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i>
   </a>
 
   <!-- //bootstrap-pop-up -->

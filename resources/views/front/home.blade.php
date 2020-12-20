@@ -82,7 +82,7 @@
         <section>
           <div class="modal-body">
             <img src="{{url("uploads/$card->image")}}" alt="{{$card->image}}" class="img-responsive rounded" />
-            <p class="modalDesc">{{$card->description}}</p>
+            <p class="modalDesc mb-0">{{$card->description}}</p>
 
             <a class="btn btn_download" href="{{url("uploads/$card->image")}}" download>Download</a>
           </div>
