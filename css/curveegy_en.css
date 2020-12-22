@@ -36,21 +36,7 @@ a {
 /*********Start Header *********/
 header {
   height: 0;
-}
-header .head_logo {
   position: relative;
-}
-header .head_logo img {
-  z-index: 99999;
-  width: 40%;
-  position: absolute;
-  top: 70px;
-  left: 12%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
 }
 header .head_social {
   position: relative;
@@ -60,8 +46,8 @@ header .head_social ul {
   margin: 0;
   z-index: 99999;
   position: absolute;
-  top: 70px;
-  right: 5%;
+  top: 50px;
+  left: 20%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -196,6 +182,110 @@ header .head_social ul li a i.fa.fa-linkedin:hover {
   width: 40px;
   line-height: 40px;
   background: #0077B5;
+}
+header .head_logo {
+  position: relative;
+}
+header .head_logo img {
+  z-index: 99999;
+  width: 80%;
+  position: absolute;
+  top: 51px;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+header .toggle_lang {
+  z-index: 99999999999;
+  position: absolute;
+  top: 40px;
+  right: -9%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.switch-input {
+  display: none;
+}
+
+.switch-label {
+  z-index: 99999999;
+  position: relative;
+  display: inline-block;
+  min-width: 112px;
+  cursor: pointer;
+  color: #727272;
+  font-weight: 500;
+  text-align: left;
+  margin: 16px;
+  padding: 0px 0 0px 44px;
+}
+
+.switch-label:before,
+.switch-label:after {
+  content: "";
+  position: absolute;
+  margin: 0;
+  outline: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.switch-label:before {
+  left: 1px;
+  width: 34px;
+  height: 14px;
+  background-color: #000;
+  border-radius: 8px;
+}
+
+.switch-label:after {
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.14), 0 2px 2px 0 rgba(0, 0, 0, 0.098), 0 1px 5px 0 rgba(0, 0, 0, 0.084);
+}
+
+.switch-label .toggle--on {
+  display: none;
+}
+
+.switch-label .toggle--off {
+  display: inline-block;
+  color: #fff;
+}
+
+.switch-input:checked + .switch-label:before {
+  background: #000;
+}
+
+.switch-input:checked + .switch-label:after {
+  background: #000;
+  -webkit-transform: translate(80%, -50%);
+  transform: translate(80%, -50%);
+}
+
+.switch-input:checked + .switch-label .toggle--on {
+  display: inline-block;
+}
+
+.switch-input:checked + .switch-label .toggle--off {
+  display: none;
+}
+
+.switch-input:checked + .switch-label .toggle--option {
+  color: #fff;
 }
 
 /********* End Header *********/
@@ -448,23 +538,10 @@ main figure.effect-julia:hover p {
   margin: 0 auto;
   display: block;
   padding: 3% 0;
-  direction: rtl;
 }
 .landing_page .form_landing .your_data {
   color: #000;
   font-size: 1.25rem;
-}
-.landing_page .form_landing .all_group .span_icon {
-  border-top-right-radius: 0.25rem;
-  border-bottom-right-radius: 0.25rem;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-.landing_page .form_landing .all_group input {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border-top-left-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
 }
 .landing_page .form_landing .all_group input:focus {
   box-shadow: 0 0 0 0.2rem #000;
@@ -498,7 +575,7 @@ main figure.effect-julia:hover p {
 .landing_page .landing_desc {
   color: #fff;
   background: rgba(0, 0, 0, 0.5);
-  text-align: right;
+  text-align: left;
   padding: 2% 2%;
 }
 .landing_page .landing_desc .landing_desc_p {
@@ -754,8 +831,9 @@ main figure.effect-julia:hover p {
   -moz-transition: 0.5s all;
   transition: 0.5s all;
 }
-.copy-w3right p a:hover {
-  color: #fff;
+.copy-w3right p a:hover, .copy-w3right p a:focus {
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 #return-to-top {

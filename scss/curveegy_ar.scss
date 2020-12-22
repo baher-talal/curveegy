@@ -12,46 +12,28 @@ body {
 
 /*********Start Header *********/
 header {
-  .head_logo {
-    img {
-      left: 88%;
-    }
-  }
-
   .head_social {
     ul {
-      right: 84%;
+      left: 75%;
 
       li {
         &:nth-child(odd) {}
 
         &:nth-child(even) {}
 
-        a {
-          i {
-            &.fa.fa-whatsapp {
-              &:hover {}
-            }
-
-            &.fa.fa-facebook {
-              &:hover {}
-            }
-
-            &.fa.fa-twitter {
-              &:hover {}
-            }
-
-            &.fa.fa-instagram {
-              &:hover {}
-            }
-
-            &.fa.fa-linkedin {
-              &:hover {}
-            }
-          }
-        }
+        a {}
       }
     }
+  }
+
+  .head_logo {
+    img {
+      left: 30%;
+    }
+  }
+
+  .toggle_lang {
+    right: 60%;
   }
 }
 
@@ -322,6 +304,7 @@ main {
         }
 
         .location_btn {
+
           &:hover,
           &:focus {}
         }
@@ -355,12 +338,14 @@ main {
 
       .w3-agileits-subscribe-form {
         input[type="text"] {
+
           &:hover,
           &:focus {}
         }
 
         button {
           &.btn1 {
+
             &:hover,
             &:focus {}
           }

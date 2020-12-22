@@ -3,12 +3,16 @@ body {
 }
 
 /*********Start Header *********/
-header .head_logo img {
-  left: 88%;
-}
 header .head_social ul {
-  right: 84%;
+  left: 75%;
 }
+header .head_logo img {
+  left: 30%;
+}
+header .toggle_lang {
+  right: 60%;
+}
+
 /********* End Header *********/
 /*********Start Home *********/
 main .w3ls-banner .banner-text h2,
