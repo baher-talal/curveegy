@@ -40,3 +40,4 @@ Route::prefix('dashboard')->group(function () {
 //front routes
 Route::get('/', [App\Http\Controllers\Front\FrontController::class, 'index']);
 Route::get('/landing/{id}', [App\Http\Controllers\Front\FrontController::class, 'landing'])->name('landing');
+Route::get('/lang/{lang}', [App\Http\Controllers\Front\FrontController::class, 'language'])->name('language');

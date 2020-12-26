@@ -20,16 +20,13 @@
       <div class="flexslider">
         <ul class="slides">
           <li>
-            <h2>Finding Your House is Much Easier now!</h2>
-            <h5>We help you to find the best property match to you need in just a few simple steps.</h5>
+            @lang('front.slider1')
           </li>
           <li>
-            <h3>The Best Way To Find Your Home</h3>
-            <h5>We help you to find the best property match to you need in just a few simple steps.</h5>
+            @lang('front.slider2')
           </li>
           <li>
-            <h3>Finding Your House is Much Easier now!</h3>
-            <h5>We help you to find the best property match to you need in just a few simple steps.</h5>
+            @lang('front.slider3')
           </li>
         </ul>
       </div>
@@ -59,7 +56,7 @@
             <!-- <a href="#0" class="text-capitalize btn more_details">more details</a> -->
           </figcaption>
         </a>
-        <a href="#0" class="btn text-capitalize read_more" data-toggle="modal" data-target="{{"#$card->id"}}">Read More</a>
+        <a href="#0" class="btn text-capitalize read_more" data-toggle="modal" data-target="{{"#$card->id"}}">@lang('front.read_more')</a>
       </figure>
     </div>
 

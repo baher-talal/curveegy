@@ -61,6 +61,41 @@
           <textarea type="text" class="form-control" placeholder="Description" name="description" aria-label="Description" aria-describedby="basic-addon1"></textarea>
         </div>
 
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">title AR</span>
+          </div>
+          <input type="text" class="form-control" placeholder="title" name="title_ar" aria-label="title" aria-describedby="basic-addon1">
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">city AR</span>
+          </div>
+          <input type="text" class="form-control" placeholder="city" name="city_ar" aria-label="city" aria-describedby="basic-addon1">
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">installment AR</span>
+          </div>
+          <input type="text" class="form-control" placeholder="installment" name="installment_ar" aria-label="installment" aria-describedby="basic-addon1">
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">downpayment AR</span>
+          </div>
+          <input type="text" class="form-control" placeholder="downpayment" name="downpayment_ar" aria-label="downpayment" aria-describedby="basic-addon1">
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Description AR</span>
+          </div>
+          <textarea type="text" class="form-control" placeholder="Description" name="description_ar" aria-label="Description" aria-describedby="basic-addon1"></textarea>
+        </div>
+
       <div class="input-group mb-3">
           <div class="input-group-prepend">
               <span class="input-group-text">Image</span>
@@ -147,7 +182,12 @@
         $("input[name='city']").val(response.city);
         $("input[name='installment']").val(response.installment);
         $("input[name='downpayment']").val(response.downpayment);
-        $("input[name='description']").val(response.description);
+        $("textarea[name='description']").val(response.description);
+        $("input[name='title_ar']").val(response.title_ar);
+        $("input[name='city_ar']").val(response.city_ar);
+        $("input[name='installment_ar']").val(response.installment_ar);
+        $("input[name='downpayment_ar']").val(response.downpayment_ar);
+        $("textarea[name='description_ar']").val(response.description_ar);
       }
     });
   });

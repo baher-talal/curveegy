@@ -23,13 +23,10 @@
   <link href="{{url('css/font-awesome.css')}}" rel="stylesheet"> <!-- font-awesome icons -->
   <link rel="stylesheet" href="{{url('css/flexslider.css')}}" type="text/css" media="screen" />
   <link rel="stylesheet" type="text/css" href="{{url('css/curveegy_en.css')}}">
-  <!-- <link rel="stylesheet" type="text/css" href="{{url('css/curveegy_ar.css')}}"> -->
 
-  <!-- @if(App::getLocale() == 'ar')
+  @if(Session::get('language') == 'ar')
   <link rel="stylesheet" type="text/css" href="{{url('css/curveegy_ar.css')}}">
-  @else
-  <link rel="stylesheet" type="text/css" href="{{url('css/curveegy_en.css')}}">
-  @endif -->
+  @endif
 
   <!-- //Custom Theme files -->
   <!-- font -->
@@ -45,14 +42,14 @@
       <div class="col-8 p-0">
         <div class="head_logo">
           <a href="{{url('/')}}">
-            <img class="img_logo" src="images/curve_logo.png" alt="Curve Logo">
+            <img class="img_logo" src="{{url('images/curve_logo.png')}}" alt="Curve Logo">
           </a>
         </div>
       </div>
 
       <div class="col-4 p-0">
         <div class="toggle_lang">
-          <input type="checkbox" id="on-off" name="on-off" onclick="toggle_lang()" class="switch-input">
+          <input type="checkbox" id="on-off" name="on-off" onclick="toggle_lang()" class="switch-input" @if(Session::get('language') == 'ar') checked @endif>
           <label for="on-off" class="switch-label">
             <span class="toggle--on toggle--option">EN</span>
             <span class="toggle--off toggle--option">AR</span>
@@ -216,6 +213,20 @@
   <script src="{{url('js/popper.min.js')}}"></script>
   <script src="{{url('js/script.js')}}"></script>
   @yield('script')
+  <script>
+        
+    function toggle_lang() {
+      const checkbox = document.getElementById("on-off");
+      checkbox.addEventListener('change', (event) => {
+        if (event.target.checked) {
+          location.href = "{{url('lang/ar')}}";
+        } else {
+          location.href = "{{url('lang/en')}}";
+        }
+      });
+    }
+    
+  </script>
 </body>
 
 </html>

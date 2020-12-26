@@ -7,17 +7,6 @@ $(window).load(function () {
   });
 });
 
-function toggle_lang() {
-  const checkbox = document.getElementById("on-off");
-  checkbox.addEventListener('change', (event) => {
-    if (event.target.checked) {
-      location.href = "{{url('lang/ar')}}";
-    } else {
-      location.href = "{{url('lang/en')}}";
-    }
-  });
-}
-
 /* Start container & container-fluid */
 $(document).ready(function () {
   function checkWidth() {

@@ -59,6 +59,7 @@
     </div>
   </div>
 
+  @if ($card_imgs)
   <div class="landing_img mt-3">
     <div class="row m-0">
       @foreach ($card_imgs as $img)
@@ -71,6 +72,7 @@
 
     </div>
   </div>
+  @endif
 
   <div class="container_views">
     <form class="form_landing" method="POST" action="{{url('/dashboard/landing')}}">
