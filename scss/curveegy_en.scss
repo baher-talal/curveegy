@@ -42,169 +42,6 @@ header {
   height: 0;
   position: relative;
 
-  .head_social {
-    position: relative;
-
-    ul {
-      padding: 0;
-      margin: 0;
-      z-index: 99999;
-      position: absolute;
-      top: 50px;
-      left: 20%;
-      transform: translate(-50%, -50%);
-      -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      -o-transform: translate(-50%, -50%);
-
-      li {
-        display: inline-block;
-
-        &:nth-child(odd) {
-          margin: 0 .25em;
-        }
-
-        &:nth-child(even) {
-          margin: 0 .25em;
-        }
-
-        a {
-          color: #333;
-          text-align: center;
-          font-size: 1.3rem;
-
-          i {
-            &.fa.fa-whatsapp {
-              height: 40px;
-              width: 40px;
-              background: $blackCol;
-              line-height: 40px;
-              color: #FFF;
-              border-radius: 50%;
-              -webkit-border-radius: 50%;
-              -moz-border-radius: 50%;
-              -o-border-radius: 50%;
-              -ms-border-radius: 50%;
-              transition: 0.5s all;
-              -webkit-transition: 0.5s all;
-              -moz-transition: 0.5s all;
-              -o-transition: 0.5s all;
-              -ms-transition: 0.5s all;
-
-              &:hover {
-                height: 40px;
-                width: 40px;
-                line-height: 40px;
-                background: #25D366;
-              }
-            }
-
-            &.fa.fa-facebook {
-              height: 40px;
-              width: 40px;
-              background: $blackCol;
-              line-height: 40px;
-              color: #FFF;
-              border-radius: 50%;
-              -webkit-border-radius: 50%;
-              -moz-border-radius: 50%;
-              -o-border-radius: 50%;
-              -ms-border-radius: 50%;
-              transition: 0.5s all;
-              -webkit-transition: 0.5s all;
-              -moz-transition: 0.5s all;
-              -o-transition: 0.5s all;
-              -ms-transition: 0.5s all;
-
-              &:hover {
-                height: 40px;
-                width: 40px;
-                line-height: 40px;
-                background: #3b5999;
-              }
-            }
-
-            &.fa.fa-twitter {
-              height: 40px;
-              width: 40px;
-              background: $blackCol;
-              line-height: 40px;
-              color: #FFF;
-              border-radius: 50%;
-              -webkit-border-radius: 50%;
-              -moz-border-radius: 50%;
-              -o-border-radius: 50%;
-              -ms-border-radius: 50%;
-              transition: 0.5s all;
-              -webkit-transition: 0.5s all;
-              -moz-transition: 0.5s all;
-              -o-transition: 0.5s all;
-              -ms-transition: 0.5s all;
-
-              &:hover {
-                height: 40px;
-                width: 40px;
-                line-height: 40px;
-                background: #55acee;
-              }
-            }
-
-            &.fa.fa-instagram {
-              height: 40px;
-              width: 40px;
-              background: $blackCol;
-              line-height: 40px;
-              color: #FFF;
-              border-radius: 50%;
-              -webkit-border-radius: 50%;
-              -moz-border-radius: 50%;
-              -o-border-radius: 50%;
-              -ms-border-radius: 50%;
-              transition: 0.5s all;
-              -webkit-transition: 0.5s all;
-              -moz-transition: 0.5s all;
-              -o-transition: 0.5s all;
-              -ms-transition: 0.5s all;
-
-              &:hover {
-                height: 40px;
-                width: 40px;
-                line-height: 40px;
-                background: #e4405f;
-              }
-            }
-
-            &.fa.fa-linkedin {
-              height: 40px;
-              width: 40px;
-              background: $blackCol;
-              line-height: 40px;
-              color: #FFF;
-              border-radius: 50%;
-              -webkit-border-radius: 50%;
-              -moz-border-radius: 50%;
-              -o-border-radius: 50%;
-              -ms-border-radius: 50%;
-              transition: 0.5s all;
-              -webkit-transition: 0.5s all;
-              -moz-transition: 0.5s all;
-              -o-transition: 0.5s all;
-              -ms-transition: 0.5s all;
-
-              &:hover {
-                height: 40px;
-                width: 40px;
-                line-height: 40px;
-                background: #0077B5;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
   .head_logo {
     position: relative;
 
@@ -213,7 +50,7 @@ header {
       width: 80%;
       position: absolute;
       top: 51px;
-      left: 30%;
+      left: 15%;
       transform: translate(-50%, -50%);
       -webkit-transform: translate(-50%, -50%);
       -moz-transform: translate(-50%, -50%);
@@ -226,7 +63,7 @@ header {
     z-index: 99999999999;
     position: absolute;
     top: 40px;
-    right: -9%;
+    right: -2%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
@@ -243,12 +80,12 @@ header {
   z-index: 99999999;
   position: relative;
   display: inline-block;
-  min-width: 112px;
+  /* min-width: 112px; */
   cursor: pointer;
   color: #727272;
   font-weight: 500;
-  text-align: left;
-  margin: 16px;
+  /* text-align: left; */
+  /* margin: 16px; */
   padding: 0px 0 0px 44px;
 }
 
@@ -1051,13 +888,6 @@ main {
         left: 17%;
       }
     }
-
-    .head_social {
-      ul {
-        top: 30px;
-        right: -19%;
-      }
-    }
   }
 
   main {
@@ -1237,13 +1067,6 @@ main {
         left: 17%;
       }
     }
-
-    .head_social {
-      ul {
-        top: 30px;
-        right: -19%;
-      }
-    }
   }
 
   main {
@@ -1408,13 +1231,6 @@ main {
         width: 80%;
         top: 30px;
         left: 17%;
-      }
-    }
-
-    .head_social {
-      ul {
-        top: 30px;
-        right: -19%;
       }
     }
   }
@@ -1583,13 +1399,6 @@ main {
         left: 17%;
       }
     }
-
-    .head_social {
-      ul {
-        top: 30px;
-        right: -15%;
-      }
-    }
   }
 
   main {
@@ -1756,13 +1565,6 @@ main {
         left: 17%;
       }
     }
-
-    .head_social {
-      ul {
-        top: 40px;
-        right: -5%;
-      }
-    }
   }
 
   main {
@@ -1926,13 +1728,6 @@ main {
         width: 70%;
         top: 60px;
         left: 17%;
-      }
-    }
-
-    .head_social {
-      ul {
-        top: 60px;
-        right: -2%;
       }
     }
   }

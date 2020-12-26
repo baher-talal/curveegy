@@ -12,28 +12,14 @@ body {
 
 /*********Start Header *********/
 header {
-  .head_social {
-    ul {
-      left: 75%;
-
-      li {
-        &:nth-child(odd) {}
-
-        &:nth-child(even) {}
-
-        a {}
-      }
-    }
-  }
-
   .head_logo {
     img {
-      left: 30%;
+      left: 81%;
     }
   }
 
   .toggle_lang {
-    right: 60%;
+    right: 72%;
   }
 }
 
@@ -408,13 +394,6 @@ main {
         left: 17%;
       }
     }
-
-    .head_social {
-      ul {
-        top: 30px;
-        right: -19%;
-      }
-    }
   }
 
   main {
@@ -594,13 +573,6 @@ main {
         left: 17%;
       }
     }
-
-    .head_social {
-      ul {
-        top: 30px;
-        right: -19%;
-      }
-    }
   }
 
   main {
@@ -765,13 +737,6 @@ main {
         width: 80%;
         top: 30px;
         left: 17%;
-      }
-    }
-
-    .head_social {
-      ul {
-        top: 30px;
-        right: -19%;
       }
     }
   }
@@ -940,13 +905,6 @@ main {
         left: 17%;
       }
     }
-
-    .head_social {
-      ul {
-        top: 30px;
-        right: -15%;
-      }
-    }
   }
 
   main {
@@ -1113,13 +1071,6 @@ main {
         left: 17%;
       }
     }
-
-    .head_social {
-      ul {
-        top: 40px;
-        right: -5%;
-      }
-    }
   }
 
   main {
@@ -1283,13 +1234,6 @@ main {
         width: 70%;
         top: 60px;
         left: 17%;
-      }
-    }
-
-    .head_social {
-      ul {
-        top: 60px;
-        right: -2%;
       }
     }
   }

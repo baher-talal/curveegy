@@ -3,14 +3,11 @@ body {
 }
 
 /*********Start Header *********/
-header .head_social ul {
-  left: 75%;
-}
 header .head_logo img {
-  left: 30%;
+  left: 81%;
 }
 header .toggle_lang {
-  right: 60%;
+  right: 72%;
 }
 
 /********* End Header *********/
@@ -166,10 +163,6 @@ main figure.effect-julia .more_desc p {
     top: 30px;
     left: 17%;
   }
-  header .head_social ul {
-    top: 30px;
-    right: -19%;
-  }
 
   main .w3ls-banner .banner-text {
     padding: 3% 0;
@@ -285,10 +278,6 @@ main .w3ls-banner .banner-text h3 {
     top: 30px;
     left: 17%;
   }
-  header .head_social ul {
-    top: 30px;
-    right: -19%;
-  }
 
   main .w3ls-banner .banner-text {
     padding: 3% 0;
@@ -391,10 +380,6 @@ main .w3ls-banner .banner-text h3 {
     width: 80%;
     top: 30px;
     left: 17%;
-  }
-  header .head_social ul {
-    top: 30px;
-    right: -19%;
   }
 
   main .w3ls-banner .banner-text {
@@ -499,10 +484,6 @@ main .w3ls-banner .banner-text h3 {
     top: 30px;
     left: 17%;
   }
-  header .head_social ul {
-    top: 30px;
-    right: -15%;
-  }
 
   main .w3ls-banner .banner-text {
     padding: 3% 0;
@@ -606,10 +587,6 @@ main .w3ls-banner .banner-text h3 {
     top: 40px;
     left: 17%;
   }
-  header .head_social ul {
-    top: 40px;
-    right: -5%;
-  }
 
   main .w3ls-banner .banner-text {
     padding: 3% 0;
@@ -701,10 +678,6 @@ main .w3ls-banner .banner-text .flexslider h3 {
     width: 70%;
     top: 60px;
     left: 17%;
-  }
-  header .head_social ul {
-    top: 60px;
-    right: -2%;
   }
 
   main .w3ls-banner .banner-text {

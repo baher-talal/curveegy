@@ -23,7 +23,7 @@
   <link href="{{url('css/font-awesome.css')}}" rel="stylesheet"> <!-- font-awesome icons -->
   <link rel="stylesheet" href="{{url('css/flexslider.css')}}" type="text/css" media="screen" />
   <link rel="stylesheet" type="text/css" href="{{url('css/curveegy_en.css')}}">
-  <link rel="stylesheet" type="text/css" href="{{url('css/curveegy_ar.css')}}">
+  <!-- <link rel="stylesheet" type="text/css" href="{{url('css/curveegy_ar.css')}}"> -->
 
   <!-- @if(App::getLocale() == 'ar')
   <link rel="stylesheet" type="text/css" href="{{url('css/curveegy_ar.css')}}">
@@ -42,19 +42,7 @@
 <body>
   <header>
     <div class="row m-0">
-      <div class="col-4 p-0">
-        <div class="head_social">
-          <ul>
-            <li><a href="https://wa.me/+201005721414"><i class="fa fa-whatsapp"></i></a></li>
-            <li><a href="https://www.facebook.com/Curve-104326978133886/"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="https://www.instagram.com/curve.realestateco/?igshid=18yvkdv78idlf"><i class="fa fa-instagram"></i></a></li>
-            <!-- <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-        <li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
-          </ul>
-        </div>
-      </div>
-
-      <div class="col-4 p-0">
+      <div class="col-8 p-0">
         <div class="head_logo">
           <a href="{{url('/')}}">
             <img class="img_logo" src="images/curve_logo.png" alt="Curve Logo">

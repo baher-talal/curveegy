@@ -38,151 +38,6 @@ header {
   height: 0;
   position: relative;
 }
-header .head_social {
-  position: relative;
-}
-header .head_social ul {
-  padding: 0;
-  margin: 0;
-  z-index: 99999;
-  position: absolute;
-  top: 50px;
-  left: 20%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-}
-header .head_social ul li {
-  display: inline-block;
-}
-header .head_social ul li:nth-child(odd) {
-  margin: 0 0.25em;
-}
-header .head_social ul li:nth-child(even) {
-  margin: 0 0.25em;
-}
-header .head_social ul li a {
-  color: #333;
-  text-align: center;
-  font-size: 1.3rem;
-}
-header .head_social ul li a i.fa.fa-whatsapp {
-  height: 40px;
-  width: 40px;
-  background: #000;
-  line-height: 40px;
-  color: #FFF;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -o-border-radius: 50%;
-  -ms-border-radius: 50%;
-  transition: 0.5s all;
-  -webkit-transition: 0.5s all;
-  -moz-transition: 0.5s all;
-  -o-transition: 0.5s all;
-  -ms-transition: 0.5s all;
-}
-header .head_social ul li a i.fa.fa-whatsapp:hover {
-  height: 40px;
-  width: 40px;
-  line-height: 40px;
-  background: #25D366;
-}
-header .head_social ul li a i.fa.fa-facebook {
-  height: 40px;
-  width: 40px;
-  background: #000;
-  line-height: 40px;
-  color: #FFF;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -o-border-radius: 50%;
-  -ms-border-radius: 50%;
-  transition: 0.5s all;
-  -webkit-transition: 0.5s all;
-  -moz-transition: 0.5s all;
-  -o-transition: 0.5s all;
-  -ms-transition: 0.5s all;
-}
-header .head_social ul li a i.fa.fa-facebook:hover {
-  height: 40px;
-  width: 40px;
-  line-height: 40px;
-  background: #3b5999;
-}
-header .head_social ul li a i.fa.fa-twitter {
-  height: 40px;
-  width: 40px;
-  background: #000;
-  line-height: 40px;
-  color: #FFF;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -o-border-radius: 50%;
-  -ms-border-radius: 50%;
-  transition: 0.5s all;
-  -webkit-transition: 0.5s all;
-  -moz-transition: 0.5s all;
-  -o-transition: 0.5s all;
-  -ms-transition: 0.5s all;
-}
-header .head_social ul li a i.fa.fa-twitter:hover {
-  height: 40px;
-  width: 40px;
-  line-height: 40px;
-  background: #55acee;
-}
-header .head_social ul li a i.fa.fa-instagram {
-  height: 40px;
-  width: 40px;
-  background: #000;
-  line-height: 40px;
-  color: #FFF;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -o-border-radius: 50%;
-  -ms-border-radius: 50%;
-  transition: 0.5s all;
-  -webkit-transition: 0.5s all;
-  -moz-transition: 0.5s all;
-  -o-transition: 0.5s all;
-  -ms-transition: 0.5s all;
-}
-header .head_social ul li a i.fa.fa-instagram:hover {
-  height: 40px;
-  width: 40px;
-  line-height: 40px;
-  background: #e4405f;
-}
-header .head_social ul li a i.fa.fa-linkedin {
-  height: 40px;
-  width: 40px;
-  background: #000;
-  line-height: 40px;
-  color: #FFF;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -o-border-radius: 50%;
-  -ms-border-radius: 50%;
-  transition: 0.5s all;
-  -webkit-transition: 0.5s all;
-  -moz-transition: 0.5s all;
-  -o-transition: 0.5s all;
-  -ms-transition: 0.5s all;
-}
-header .head_social ul li a i.fa.fa-linkedin:hover {
-  height: 40px;
-  width: 40px;
-  line-height: 40px;
-  background: #0077B5;
-}
 header .head_logo {
   position: relative;
 }
@@ -191,7 +46,7 @@ header .head_logo img {
   width: 80%;
   position: absolute;
   top: 51px;
-  left: 30%;
+  left: 15%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -202,7 +57,7 @@ header .toggle_lang {
   z-index: 99999999999;
   position: absolute;
   top: 40px;
-  right: -9%;
+  right: -2%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -218,12 +73,12 @@ header .toggle_lang {
   z-index: 99999999;
   position: relative;
   display: inline-block;
-  min-width: 112px;
+  /* min-width: 112px; */
   cursor: pointer;
   color: #727272;
   font-weight: 500;
-  text-align: left;
-  margin: 16px;
+  /* text-align: left; */
+  /* margin: 16px; */
   padding: 0px 0 0px 44px;
 }
 
@@ -875,10 +730,6 @@ main figure.effect-julia:hover p {
     top: 30px;
     left: 17%;
   }
-  header .head_social ul {
-    top: 30px;
-    right: -19%;
-  }
 
   main .w3ls-banner .banner-text {
     padding: 3% 0;
@@ -994,10 +845,6 @@ main .w3ls-banner .banner-text h3 {
     top: 30px;
     left: 17%;
   }
-  header .head_social ul {
-    top: 30px;
-    right: -19%;
-  }
 
   main .w3ls-banner .banner-text {
     padding: 3% 0;
@@ -1100,10 +947,6 @@ main .w3ls-banner .banner-text h3 {
     width: 80%;
     top: 30px;
     left: 17%;
-  }
-  header .head_social ul {
-    top: 30px;
-    right: -19%;
   }
 
   main .w3ls-banner .banner-text {
@@ -1208,10 +1051,6 @@ main .w3ls-banner .banner-text h3 {
     top: 30px;
     left: 17%;
   }
-  header .head_social ul {
-    top: 30px;
-    right: -15%;
-  }
 
   main .w3ls-banner .banner-text {
     padding: 3% 0;
@@ -1315,10 +1154,6 @@ main .w3ls-banner .banner-text h3 {
     top: 40px;
     left: 17%;
   }
-  header .head_social ul {
-    top: 40px;
-    right: -5%;
-  }
 
   main .w3ls-banner .banner-text {
     padding: 3% 0;
@@ -1410,10 +1245,6 @@ main .w3ls-banner .banner-text .flexslider h3 {
     width: 70%;
     top: 60px;
     left: 17%;
-  }
-  header .head_social ul {
-    top: 60px;
-    right: -2%;
   }
 
   main .w3ls-banner .banner-text {
