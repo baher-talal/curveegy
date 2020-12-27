@@ -56,18 +56,20 @@
             <!-- <a href="#0" class="text-capitalize btn more_details">more details</a> -->
           </figcaption>
         </a>
-        <a href="#0" class="btn text-capitalize read_more" data-toggle="modal" data-target="{{"#$card->id"}}">@lang('front.read_more')</a>
+        <button class="btn text-capitalize read_more" type="button" data-toggle="modal" data-target='{{"#cardID$card->id"}}'>@lang('front.read_more')</button>
       </figure>
+      <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target='{{"#test$card->id"}}'>
+  Launch demo modal
+</button> -->
     </div>
 
     @endforeach
   </div>
 </main>
-
-<!-- Modal -->
 @foreach ($cards as $card)
+
 <div class="modalImg">
-  <div class="modal video-modal fade myModal" id="{{$card->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal fade myModal" id='{{"cardID$card->id"}}' tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">

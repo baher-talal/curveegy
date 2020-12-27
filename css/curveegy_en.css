@@ -175,7 +175,6 @@ main .w3ls-banner .banner-text h5 {
   font-weight: 300;
   letter-spacing: 4px;
   width: 90%;
-  line-height: 34px;
   margin: 2em auto;
 }
 main .dFlex a:hover, main .dFlex a:focus {
@@ -378,22 +377,6 @@ main figure.effect-julia:hover p {
   margin: 0 auto;
   display: block;
   width: 15%;
-}
-
-.fade:not(.show) {
-  opacity: 1;
-}
-
-.modal-backdrop {
-  background-color: transparent;
-}
-
-.modal.fade .modal-dialog {
-  transform: unset;
-  -webkit-transform: unset;
-  -moz-transform: unset;
-  -ms-transform: unset;
-  -o-transform: unset;
 }
 
 /*********End Home *********/
@@ -736,9 +719,13 @@ main figure.effect-julia:hover p {
     height: 9vh;
   }
   header .head_logo img {
-    width: 80%;
-    top: 30px;
-    left: 17%;
+    width: 100%;
+    top: 20px;
+    left: 21%;
+  }
+  header .toggle_lang {
+    top: 25px;
+    right: -20%;
   }
 
   main .w3ls-banner .banner-text {
@@ -754,11 +741,10 @@ main figure.effect-julia:hover p {
   main .w3ls-banner .banner-text h2,
 main .w3ls-banner .banner-text h3 {
     font-size: 1.3em;
-    line-height: 28px;
   }
   main .w3ls-banner .banner-text h5 {
     width: 95%;
-    line-height: 23px;
+    margin: 1em auto;
   }
   main .dFlex:nth-child(odd), main .dFlex:nth-child(even) {
     justify-content: unset;
@@ -819,6 +805,9 @@ main .w3ls-banner .banner-text h3 {
     font-size: 10px;
   }
 
+  .modalImg .myModal .modal-dialog .modal-content {
+    top: 7rem;
+  }
   .modalImg .myModal .modal-dialog .modal-content .modal-body .btn_download {
     width: 35%;
   }
@@ -851,9 +840,13 @@ main .w3ls-banner .banner-text h3 {
     height: 9vh;
   }
   header .head_logo img {
-    width: 80%;
-    top: 30px;
-    left: 17%;
+    width: 100%;
+    top: 20px;
+    left: 21%;
+  }
+  header .toggle_lang {
+    top: 25px;
+    right: -16%;
   }
 
   main .w3ls-banner .banner-text {
@@ -869,12 +862,11 @@ main .w3ls-banner .banner-text h3 {
   main .w3ls-banner .banner-text h2,
 main .w3ls-banner .banner-text h3 {
     font-size: 1.4em;
-    line-height: 37px;
   }
   main .w3ls-banner .banner-text h5 {
     font-size: 1.1em;
-    width: 85%;
-    line-height: 26px;
+    width: 95%;
+    margin: 1em auto;
   }
   main .dFlex:nth-child(odd), main .dFlex:nth-child(even) {
     justify-content: unset;
@@ -922,6 +914,9 @@ main .w3ls-banner .banner-text h3 {
     font-size: 10px;
   }
 
+  .modalImg .myModal .modal-dialog .modal-content {
+    top: 8rem;
+  }
   .modalImg .myModal .modal-dialog .modal-content .modal-body .btn_download {
     width: 35%;
   }
@@ -954,9 +949,13 @@ main .w3ls-banner .banner-text h3 {
     height: 9vh;
   }
   header .head_logo img {
-    width: 80%;
-    top: 30px;
-    left: 17%;
+    width: 100%;
+    top: 20px;
+    left: 21%;
+  }
+  header .toggle_lang {
+    top: 25px;
+    right: -20%;
   }
 
   main .w3ls-banner .banner-text {
@@ -972,12 +971,11 @@ main .w3ls-banner .banner-text h3 {
   main .w3ls-banner .banner-text h2,
 main .w3ls-banner .banner-text h3 {
     font-size: 1.4em;
-    line-height: 37px;
   }
   main .w3ls-banner .banner-text h5 {
     font-size: 1.1em;
-    width: 85%;
-    line-height: 26px;
+    width: 95%;
+    margin: 1em auto;
   }
   main .dFlex:nth-child(odd), main .dFlex:nth-child(even) {
     justify-content: unset;
@@ -1025,6 +1023,9 @@ main .w3ls-banner .banner-text h3 {
     font-size: 10px;
   }
 
+  .modalImg .myModal .modal-dialog .modal-content {
+    top: 10rem;
+  }
   .modalImg .myModal .modal-dialog .modal-content .modal-body .btn_download {
     width: 35%;
   }
@@ -1057,9 +1058,13 @@ main .w3ls-banner .banner-text h3 {
     height: 9vh;
   }
   header .head_logo img {
-    width: 80%;
-    top: 30px;
-    left: 17%;
+    width: 100%;
+    top: 20px;
+    left: 21%;
+  }
+  header .toggle_lang {
+    top: 25px;
+    right: -20%;
   }
 
   main .w3ls-banner .banner-text {
@@ -1075,12 +1080,11 @@ main .w3ls-banner .banner-text h3 {
   main .w3ls-banner .banner-text h2,
 main .w3ls-banner .banner-text h3 {
     font-size: 1.4em;
-    line-height: 37px;
   }
   main .w3ls-banner .banner-text h5 {
     font-size: 1.1em;
-    width: 85%;
-    line-height: 26px;
+    width: 95%;
+    margin: 1em auto;
   }
   main .dFlex:nth-child(odd), main .dFlex:nth-child(even) {
     justify-content: unset;
@@ -1128,6 +1132,9 @@ main .w3ls-banner .banner-text h3 {
     font-size: 11px;
   }
 
+  .modalImg .myModal .modal-dialog .modal-content {
+    top: 10rem;
+  }
   .modalImg .myModal .modal-dialog .modal-content .modal-body .btn_download {
     width: 35%;
   }
@@ -1160,9 +1167,13 @@ main .w3ls-banner .banner-text h3 {
     height: 2vh;
   }
   header .head_logo img {
-    width: 65%;
-    top: 40px;
-    left: 17%;
+    width: 80%;
+    top: 35px;
+    left: 16%;
+  }
+  header .toggle_lang {
+    top: 38px;
+    right: -6%;
   }
 
   main .w3ls-banner .banner-text {
@@ -1174,17 +1185,15 @@ main .w3ls-banner .banner-text .flexslider .flex-direction-nav .flex-next {
     top: 42%;
   }
   main .w3ls-banner .banner-text .flexslider .flex-control-nav {
-    bottom: -8%;
+    display: none;
   }
   main .w3ls-banner .banner-text .flexslider h2,
 main .w3ls-banner .banner-text .flexslider h3 {
     font-size: 1.4em;
-    line-height: 37px;
   }
   main .w3ls-banner .banner-text .flexslider h5 {
     font-size: 1.1em;
     width: 85%;
-    line-height: 26px;
   }
   main .dFlex:nth-child(odd) {
     margin: 9% 0;
@@ -1216,6 +1225,9 @@ main .w3ls-banner .banner-text .flexslider h3 {
     font-size: 10px;
   }
 
+  .modalImg .myModal .modal-dialog .modal-content {
+    top: 10rem;
+  }
   .modalImg .myModal .modal-dialog .modal-content .modal-body .btn_download {
     width: 35%;
   }
@@ -1252,9 +1264,26 @@ main .w3ls-banner .banner-text .flexslider h3 {
     height: 2vh;
   }
   header .head_logo img {
-    width: 70%;
-    top: 60px;
+    width: 80%;
+    top: 45px;
     left: 17%;
+  }
+  header .toggle_lang {
+    top: 40px;
+    right: -6%;
+  }
+  header .switch-label {
+    font-size: 1.75rem;
+    padding: 0px 0 0px 62px;
+  }
+  header .switch-label:before {
+    width: 45px;
+    height: 20px;
+    left: -28px;
+  }
+  header .switch-label:after {
+    width: 30px;
+    height: 30px;
   }
 
   main .w3ls-banner .banner-text {
@@ -1274,17 +1303,15 @@ main .w3ls-banner .banner-text .flexslider .flex-direction-nav .flex-next.flex-n
     right: 2%;
   }
   main .w3ls-banner .banner-text .flexslider .flex-control-nav {
-    bottom: -8%;
+    display: none;
   }
   main .w3ls-banner .banner-text h2,
 main .w3ls-banner .banner-text h3 {
-    font-size: 2em;
-    line-height: 37px;
+    font-size: 2.25em;
   }
   main .w3ls-banner .banner-text h5 {
-    font-size: 1.75em;
+    font-size: 2em;
     width: 80%;
-    line-height: 26px;
   }
   main .dFlex:nth-child(odd) {
     margin: 9% 0;
@@ -1318,6 +1345,9 @@ main .w3ls-banner .banner-text h3 {
     font-size: 20px;
   }
 
+  .modalImg .myModal .modal-dialog .modal-content {
+    top: 15rem;
+  }
   .modalImg .myModal .modal-dialog .modal-content .modal-body .btn_download {
     width: 35%;
   }

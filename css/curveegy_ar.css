@@ -164,9 +164,10 @@ main figure.effect-julia:hover p {
     height: 9vh;
   }
   header .head_logo img {
-    width: 80%;
-    top: 30px;
-    left: 17%;
+    left: 77%;
+  }
+  header .toggle_lang {
+    right: 7%;
   }
 
   main .w3ls-banner .banner-text {
@@ -177,16 +178,7 @@ main figure.effect-julia:hover p {
     display: none;
   }
   main .w3ls-banner .banner-text .flexslider .flex-control-nav {
-    bottom: -8%;
-  }
-  main .w3ls-banner .banner-text h2,
-main .w3ls-banner .banner-text h3 {
-    font-size: 1.3em;
-    line-height: 28px;
-  }
-  main .w3ls-banner .banner-text h5 {
-    width: 95%;
-    line-height: 23px;
+    bottom: -16%;
   }
   main .dFlex:nth-child(odd), main .dFlex:nth-child(even) {
     justify-content: unset;
@@ -208,7 +200,7 @@ main .w3ls-banner .banner-text h3 {
   }
   main .dFlex .read_more {
     top: 94%;
-    left: 84.75%;
+    left: 15%;
   }
 
   .w3-agile-footer {
@@ -279,9 +271,10 @@ main .w3ls-banner .banner-text h3 {
     height: 9vh;
   }
   header .head_logo img {
-    width: 80%;
-    top: 30px;
-    left: 17%;
+    left: 77%;
+  }
+  header .toggle_lang {
+    right: 12%;
   }
 
   main .w3ls-banner .banner-text {
@@ -292,17 +285,7 @@ main .w3ls-banner .banner-text h3 {
     display: none;
   }
   main .w3ls-banner .banner-text .flexslider .flex-control-nav {
-    bottom: -8%;
-  }
-  main .w3ls-banner .banner-text h2,
-main .w3ls-banner .banner-text h3 {
-    font-size: 1.4em;
-    line-height: 37px;
-  }
-  main .w3ls-banner .banner-text h5 {
-    font-size: 1.1em;
-    width: 85%;
-    line-height: 26px;
+    bottom: -16%;
   }
   main .dFlex:nth-child(odd), main .dFlex:nth-child(even) {
     justify-content: unset;
@@ -324,7 +307,7 @@ main .w3ls-banner .banner-text h3 {
   }
   main .dFlex .read_more {
     top: 94%;
-    left: 84.75%;
+    left: 15.5%;
   }
 
   .w3-agile-footer .footer-grids .foot-top-w3 {
@@ -382,9 +365,10 @@ main .w3ls-banner .banner-text h3 {
     height: 9vh;
   }
   header .head_logo img {
-    width: 80%;
-    top: 30px;
-    left: 17%;
+    left: 77%;
+  }
+  header .toggle_lang {
+    right: 20%;
   }
 
   main .w3ls-banner .banner-text {
@@ -395,17 +379,7 @@ main .w3ls-banner .banner-text h3 {
     display: none;
   }
   main .w3ls-banner .banner-text .flexslider .flex-control-nav {
-    bottom: -8%;
-  }
-  main .w3ls-banner .banner-text h2,
-main .w3ls-banner .banner-text h3 {
-    font-size: 1.4em;
-    line-height: 37px;
-  }
-  main .w3ls-banner .banner-text h5 {
-    font-size: 1.1em;
-    width: 85%;
-    line-height: 26px;
+    bottom: -16%;
   }
   main .dFlex:nth-child(odd), main .dFlex:nth-child(even) {
     justify-content: unset;
@@ -427,7 +401,7 @@ main .w3ls-banner .banner-text h3 {
   }
   main .dFlex .read_more {
     top: 94%;
-    left: 84.75%;
+    left: 15%;
   }
 
   .w3-agile-footer .footer-grids .foot-top-w3 {
@@ -453,6 +427,9 @@ main .w3ls-banner .banner-text h3 {
     font-size: 10px;
   }
 
+  .modalImg .myModal .modal-dialog .modal-content .modal-header .close {
+    left: 4%;
+  }
   .modalImg .myModal .modal-dialog .modal-content .modal-body .btn_download {
     width: 35%;
   }
@@ -485,9 +462,10 @@ main .w3ls-banner .banner-text h3 {
     height: 9vh;
   }
   header .head_logo img {
-    width: 80%;
-    top: 30px;
-    left: 17%;
+    left: 77%;
+  }
+  header .toggle_lang {
+    right: 25%;
   }
 
   main .w3ls-banner .banner-text {
@@ -498,17 +476,7 @@ main .w3ls-banner .banner-text h3 {
     display: none;
   }
   main .w3ls-banner .banner-text .flexslider .flex-control-nav {
-    bottom: -8%;
-  }
-  main .w3ls-banner .banner-text h2,
-main .w3ls-banner .banner-text h3 {
-    font-size: 1.4em;
-    line-height: 37px;
-  }
-  main .w3ls-banner .banner-text h5 {
-    font-size: 1.1em;
-    width: 85%;
-    line-height: 26px;
+    bottom: -16%;
   }
   main .dFlex:nth-child(odd), main .dFlex:nth-child(even) {
     justify-content: unset;
@@ -530,7 +498,7 @@ main .w3ls-banner .banner-text h3 {
   }
   main .dFlex .read_more {
     top: 94%;
-    left: 84.75%;
+    left: 15%;
   }
 
   .w3-agile-footer .footer-grids .foot-top-w3 {
@@ -588,9 +556,10 @@ main .w3ls-banner .banner-text h3 {
     height: 2vh;
   }
   header .head_logo img {
-    width: 65%;
-    top: 40px;
-    left: 17%;
+    left: 82%;
+  }
+  header .toggle_lang {
+    right: 57%;
   }
 
   main .w3ls-banner .banner-text {
@@ -600,19 +569,6 @@ main .w3ls-banner .banner-text h3 {
   main .w3ls-banner .banner-text .flexslider .flex-direction-nav .flex-prev,
 main .w3ls-banner .banner-text .flexslider .flex-direction-nav .flex-next {
     top: 42%;
-  }
-  main .w3ls-banner .banner-text .flexslider .flex-control-nav {
-    bottom: -8%;
-  }
-  main .w3ls-banner .banner-text .flexslider h2,
-main .w3ls-banner .banner-text .flexslider h3 {
-    font-size: 1.4em;
-    line-height: 37px;
-  }
-  main .w3ls-banner .banner-text .flexslider h5 {
-    font-size: 1.1em;
-    width: 85%;
-    line-height: 26px;
   }
   main .dFlex:nth-child(odd) {
     margin: 9% 0;
@@ -625,7 +581,7 @@ main .w3ls-banner .banner-text .flexslider h3 {
   }
   main .dFlex .read_more {
     top: 95.4%;
-    left: 85%;
+    left: 15%;
   }
 
   .w3-agile-footer .footer-grids .foot-top-w3 .footer-grid-heading {
@@ -635,7 +591,7 @@ main .w3ls-banner .banner-text .flexslider h3 {
     margin-bottom: 4%;
   }
   .w3-agile-footer .footer-grids .foot-top-w3 .social ul {
-    text-align: center;
+    text-align: right;
     margin-bottom: 4%;
   }
 
@@ -680,9 +636,10 @@ main .w3ls-banner .banner-text .flexslider h3 {
     height: 2vh;
   }
   header .head_logo img {
-    width: 70%;
-    top: 60px;
-    left: 17%;
+    left: 82%;
+  }
+  header .toggle_lang {
+    right: 50%;
   }
 
   main .w3ls-banner .banner-text {
@@ -701,19 +658,6 @@ main .w3ls-banner .banner-text .flexslider .flex-direction-nav .flex-next.flex-p
 main .w3ls-banner .banner-text .flexslider .flex-direction-nav .flex-next.flex-next {
     right: 2%;
   }
-  main .w3ls-banner .banner-text .flexslider .flex-control-nav {
-    bottom: -8%;
-  }
-  main .w3ls-banner .banner-text h2,
-main .w3ls-banner .banner-text h3 {
-    font-size: 2em;
-    line-height: 37px;
-  }
-  main .w3ls-banner .banner-text h5 {
-    font-size: 1.75em;
-    width: 80%;
-    line-height: 26px;
-  }
   main .dFlex:nth-child(odd) {
     margin: 9% 0;
     padding-left: 10%;
@@ -722,12 +666,16 @@ main .w3ls-banner .banner-text h3 {
     margin: -9% 0;
     padding-right: 10%;
   }
+  main .dFlex figure {
+    min-width: 420px;
+    max-width: 580px;
+  }
   main .dFlex figure figcaption .more_desc p {
     width: 65%;
   }
   main .dFlex .read_more {
     top: 95.4%;
-    left: 85%;
+    left: 15%;
   }
 
   .w3-agile-footer .footer-grids .foot-top-w3 .footer-grid-heading {
@@ -737,7 +685,7 @@ main .w3ls-banner .banner-text h3 {
     margin-bottom: 4%;
   }
   .w3-agile-footer .footer-grids .foot-top-w3 .social ul {
-    text-align: center;
+    text-align: right;
     margin-bottom: 4%;
   }
 
