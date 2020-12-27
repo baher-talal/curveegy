@@ -44,6 +44,8 @@ main {
   }
 
   .dFlex {
+
+    // direction: ltr;
     figure {
       h2 {
         span {}
@@ -81,10 +83,7 @@ main {
       }
 
       figcaption,
-      figcaption>a {
-        left: unset;
-        right: 0;
-      }
+      figcaption>a {}
     }
 
     .more_details {}
@@ -118,13 +117,23 @@ main {
 
   figure.effect-julia:hover p:first-child {}
 
-  figure.effect-julia:hover p:nth-of-type(2) {}
+  figure.effect-julia:hover &:hover,
+  &:focus {
+    outline: 0 !important;
+    box-shadow: none !important;
+  }
+
+  p:nth-of-type(2) {}
 
   figure.effect-julia:hover p:nth-of-type(3) {}
 
   figure.effect-julia:hover img {}
 
-  figure.effect-julia:hover p {}
+  figure.effect-julia:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 // Start Img Card Modal

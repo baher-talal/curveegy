@@ -25,11 +25,6 @@ main .dFlex figure p {
 main .dFlex figure.effect-julia figcaption {
   text-align: right;
 }
-main .dFlex figure figcaption,
-main .dFlex figure figcaption > a {
-  left: unset;
-  right: 0;
-}
 main .dFlex .read_more {
   left: 15%;
 }
@@ -40,6 +35,16 @@ main figure.effect-julia .more_desc p {
   -ms-transform: translate3d(360px, 0, 0);
   -o-transform: translate3d(360px, 0, 0);
 }
+figure.effect-julia:hover main:hover, main:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+main figure.effect-julia:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
 .modalImg .myModal .modal-dialog .modal-content .modal-header {
   position: relative;
 }

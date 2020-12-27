@@ -43,7 +43,7 @@ header .head_logo {
 }
 header .head_logo img {
   z-index: 99999;
-  width: 80%;
+  width: 50%;
   position: absolute;
   top: 51px;
   left: 15%;
@@ -57,7 +57,7 @@ header .toggle_lang {
   z-index: 99999999999;
   position: absolute;
   top: 40px;
-  right: -2%;
+  right: 4%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -178,6 +178,11 @@ main .w3ls-banner .banner-text h5 {
   line-height: 34px;
   margin: 2em auto;
 }
+main .dFlex a:hover, main .dFlex a:focus {
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+}
 main .dFlex figure {
   position: relative;
   overflow: hidden;
@@ -208,7 +213,12 @@ main .dFlex figure p {
 main .dFlex figure.effect-julia {
   background: #000;
 }
+main .dFlex figure.effect-julia .dFlex_title:hover, main .dFlex figure.effect-julia .dFlex_title:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
 main .dFlex figure.effect-julia .dFlex_title h6 {
+  font-size: 1.35rem;
   margin-bottom: 0;
   color: #fff;
 }

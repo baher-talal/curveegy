@@ -47,7 +47,7 @@ header {
 
     img {
       z-index: 99999;
-      width: 80%;
+      width: 50%;
       position: absolute;
       top: 51px;
       left: 15%;
@@ -63,7 +63,7 @@ header {
     z-index: 99999999999;
     position: absolute;
     top: 40px;
-    right: -2%;
+    right: 4%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
@@ -192,6 +192,15 @@ main {
   }
 
   .dFlex {
+    a {
+      &:hover,
+      &:focus {
+        border: 0 !important;
+        outline: 0 !important;
+        box-shadow: none !important;
+      }
+    }
+
     figure {
       position: relative;
       overflow: hidden;
@@ -227,7 +236,15 @@ main {
         background: $blackCol;
 
         .dFlex_title {
+
+          &:hover,
+          &:focus {
+            outline: 0 !important;
+            box-shadow: none !important;
+          }
+
           h6 {
+            font-size: 1.35rem;
             margin-bottom: 0;
             color: $whiteCol;
           }
