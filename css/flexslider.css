@@ -154,8 +154,8 @@ html[xmlns] .flexslider .slides {
 }
 
 .flex-direction-nav a:hover {
-  color: #2ebaef;
-  border-color: #2ebaef;
+  color: #000;
+  border-color: #000;
 }
 
 .flex-direction-nav .flex-next {
