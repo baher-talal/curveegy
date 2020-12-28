@@ -46,7 +46,7 @@ header .head_logo img {
   width: 50%;
   position: absolute;
   top: 51px;
-  left: 15%;
+  left: 12%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -57,7 +57,7 @@ header .toggle_lang {
   z-index: 99999999999;
   position: absolute;
   top: 40px;
-  right: 4%;
+  right: 3%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -641,6 +641,10 @@ main figure.effect-julia:hover p {
   font-weight: bold;
 }
 
+.location_modal .modal-content .modal-body .my_location ul {
+  padding: 0;
+  margin-bottom: 0;
+}
 .location_modal .modal-content .modal-body .my_location .mapouter {
   position: relative;
   text-align: right;
@@ -1064,7 +1068,7 @@ main .w3ls-banner .banner-text h3 {
   }
   header .toggle_lang {
     top: 25px;
-    right: -20%;
+    right: -16%;
   }
 
   main .w3ls-banner .banner-text {
@@ -1284,6 +1288,10 @@ main .w3ls-banner .banner-text .flexslider h3 {
   header .switch-label:after {
     width: 30px;
     height: 30px;
+  }
+  header .switch-input:checked + .switch-label:after {
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
   }
 
   main .w3ls-banner .banner-text {

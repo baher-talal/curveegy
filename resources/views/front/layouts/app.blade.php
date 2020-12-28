@@ -49,10 +49,15 @@
 
       <div class="col-4 p-0">
         <div class="toggle_lang">
-          <input type="checkbox" id="on-off" name="on-off" onclick="toggle_lang()" class="switch-input" @if(Session::get('language') == 'ar') checked @endif>
+          <input type="checkbox" id="on-off" name="on-off" onclick="toggle_lang()" class="switch-input" @if(Session::get('language')=='ar' ) checked @endif>
           <label for="on-off" class="switch-label">
-            <span class="toggle--on toggle--option">EN</span>
-            <span class="toggle--off toggle--option">AR</span>
+            <span class="toggle--on toggle--option">
+              <img class="w-100" src="{{url('images/en.png')}}" alt="EN">
+            </span>
+
+            <span class="toggle--off toggle--option">
+              <img class="w-100" src="{{url('images/ar.png')}}" alt="AR">
+            </span>
           </label>
         </div>
       </div>
@@ -214,7 +219,6 @@
   <script src="{{url('js/script.js')}}"></script>
   @yield('script')
   <script>
-
     function toggle_lang() {
       const checkbox = document.getElementById("on-off");
       checkbox.addEventListener('change', (event) => {
@@ -225,7 +229,6 @@
         }
       });
     }
-
   </script>
 </body>
 

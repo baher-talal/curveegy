@@ -4,10 +4,10 @@ body {
 
 /*********Start Header *********/
 header .head_logo img {
-  left: 81%;
+  left: 88%;
 }
 header .toggle_lang {
-  right: 72%;
+  right: 82%;
 }
 
 /********* End Header *********/
@@ -659,12 +659,14 @@ main .w3ls-banner .banner-text .flexslider .flex-direction-nav .flex-next.flex-n
     right: 2%;
   }
   main .dFlex:nth-child(odd) {
-    margin: 9% 0;
-    padding-left: 10%;
+    margin: 6% 0;
+    padding-right: 10%;
+    padding-left: unset;
   }
   main .dFlex:nth-child(even) {
-    margin: -9% 0;
-    padding-right: 10%;
+    margin: -2% 0;
+    padding-left: 10%;
+    padding-right: unset;
   }
   main .dFlex figure {
     min-width: 420px;

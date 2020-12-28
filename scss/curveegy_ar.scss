@@ -14,12 +14,12 @@ body {
 header {
   .head_logo {
     img {
-      left: 81%;
+      left: 88%;
     }
   }
 
   .toggle_lang {
-    right: 72%;
+    right: 82%;
   }
 }
 
@@ -1265,13 +1265,15 @@ main {
 
     .dFlex {
       &:nth-child(odd) {
-        margin: 9% 0;
-        padding-left: 10%;
+        margin: 6% 0;
+        padding-right: 10%;
+        padding-left: unset;
       }
 
       &:nth-child(even) {
-        margin: -9% 0;
-        padding-right: 10%;
+        margin: -2% 0;
+        padding-left: 10%;
+        padding-right: unset;
       }
 
       figure {
