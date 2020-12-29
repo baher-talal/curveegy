@@ -19,6 +19,9 @@ return [
     'touch' => 'ابقى على تواصل',
     'Subscribe' => 'الإشتراك',
     'location' => 'موقعنا',
+    'username' => 'أسم المستخدم',
+    'phone' => 'رقم التليفون',
+    'mail_optional' => 'الايميل [اختياري]',
     'news' => 'وابق على اطلاع دائم بأحدث أخبار!',
 
     'your_data' => '<span class="d-block text-center font-weight-bold">سجل بياناتك لمزيد من المعلومات</span>

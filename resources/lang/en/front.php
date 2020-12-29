@@ -19,6 +19,9 @@ return [
     'touch' => 'Get In Touch',
     'Subscribe' => 'Subscribe',
     'location' => 'Location',
+    'username' => 'Username',
+    'mail_optional' => 'E-mail [Optional]',
+    'phone' => 'Username',
     'news' => 'ALWAYS STAY INFORMED OF THE LATEST COMPANY NEWS AND EVENTS!',
 
     'your_data' => '<span class="d-block text-center font-weight-bold">Register your data for more information</span>

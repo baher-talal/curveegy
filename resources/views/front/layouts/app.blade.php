@@ -100,7 +100,7 @@
                   </div>
 
                   <div class="col-xl-11 col-11 p-0">
-                    <a class="text-lowercase" href="mailto:admin@curveegy.com">{{$mail}}</a>
+                    <a class="text-lowercase" href="mailto:{{$mail}}">{{$mail}}</a>
                   </div>
 
                   <div class="col-xl-1 col-1 p-0">
@@ -108,7 +108,7 @@
                   </div>
 
                   <div class="col-xl-11 col-11 p-0">
-                    <a class="text-lowercase" href="http://www.curveegy.com/">{{$website}}</a>
+                    <a class="text-lowercase" href="{{$website}}">{{$website}}</a>
                   </div>
 
                   <div class="col-xl-12">

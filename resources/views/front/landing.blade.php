@@ -21,22 +21,21 @@
         <div class="input-group-prepend">
           <span class="span_icon input-group-text" id="basic-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
         </div>
-        <input type="text" class="form-control" name="username" placeholder="أسم المستخدم" aria-label="Username" aria-describedby="basic-addon1" required>
+        <input type="text" class="form-control" name="username" placeholder="@lang('front.username')" aria-label="Username" aria-describedby="basic-addon1" required>
       </div>
 
       <div class="all_group input-group mb-3">
         <div class="input-group-prepend">
           <span class="span_icon input-group-text" id="basic-addon2"><i class="fa fa-phone" aria-hidden="true"></i></span>
         </div>
-        <input type="phone" class="form-control" name="phone" placeholder="رقم التليفون" aria-label="phoneNumber" aria-describedby="basic-addon2" required>
+        <input type="phone" class="form-control" name="phone" placeholder="@lang('front.phone')" aria-label="phoneNumber" aria-describedby="basic-addon2" required>
       </div>
 
       <div class="all_group input-group mb-3">
         <div class="input-group-prepend">
           <span class="span_icon input-group-text" id="basic-addon3"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
         </div>
-        <input type="email" class="form-control" name="mail" placeholder="الايميل [اختياري]" aria-label="phoneNumber"
-          aria-describedby="basic-addon3">
+        <input type="email" class="form-control" name="mail" placeholder="@lang('front.mail_optional')" aria-label="phoneNumber" aria-describedby="basic-addon3">
       </div>
 
       <button class="btn text-capitalize form_submit" type="submit">@lang('front.submit')</button>
@@ -77,21 +76,21 @@
         <div class="input-group-prepend">
           <span class="span_icon input-group-text" id="basic-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
         </div>
-        <input type="text" class="form-control" name="username" placeholder="أسم المستخدم" aria-label="Username" aria-describedby="basic-addon1" required>
+        <input type="text" class="form-control" name="username" placeholder="@lang('front.username')" aria-label="Username" aria-describedby="basic-addon1" required>
       </div>
 
       <div class="all_group input-group mb-3">
         <div class="input-group-prepend">
           <span class="span_icon input-group-text" id="basic-addon2"><i class="fa fa-phone" aria-hidden="true"></i></span>
         </div>
-        <input type="phone" class="form-control" name="phone" placeholder="رقم التليفون" aria-label="phoneNumber" aria-describedby="basic-addon2" required>
+        <input type="phone" class="form-control" name="phone" placeholder="@lang('front.phone')" aria-label="phoneNumber" aria-describedby="basic-addon2" required>
       </div>
 
       <div class="all_group input-group mb-3">
         <div class="input-group-prepend">
           <span class="span_icon input-group-text" id="basic-addon3"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
         </div>
-        <input type="email" class="form-control" name="mail" placeholder="الايميل [اختياري]" aria-label="phoneNumber" aria-describedby="basic-addon3">
+        <input type="email" class="form-control" name="mail" placeholder="@lang('front.mail_optional')" aria-label="phoneNumber" aria-describedby="basic-addon3">
       </div>
 
       <button class="btn text-capitalize form_submit" type="submit">@lang('front.submit')</button>
