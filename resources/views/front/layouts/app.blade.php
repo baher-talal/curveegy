@@ -92,7 +92,7 @@
                   </div>
 
                   <div class="col-xl-11 col-11 p-0">
-                    <a href="tel:+201005721414"> 01005721414</a> / <a href="tel:+201006268989">{{$phone}}</a>
+                    <a href="tel:+{{$phone}}">{{$phone}}</a>
                   </div>
 
                   <div class="col-xl-1 col-1 p-0">
