@@ -382,7 +382,7 @@ main figure.effect-julia:hover p {
 /*********End Home *********/
 /*********Start Landing *********/
 .landing_page .form_landing {
-  width: 30%;
+  width: 40%;
   margin: 0 auto;
   display: block;
   padding: 3% 0;
@@ -390,6 +390,10 @@ main figure.effect-julia:hover p {
 .landing_page .form_landing .your_data {
   color: #000;
   font-size: 1.25rem;
+}
+.landing_page .form_landing .all_group {
+  width: 80%;
+  margin: 0 auto;
 }
 .landing_page .form_landing .all_group input:focus {
   box-shadow: 0 0 0 0.2rem #000;

@@ -475,7 +475,7 @@ main {
 /*********Start Landing *********/
 .landing_page {
   .form_landing {
-    width: 30%;
+    width: 40%;
     margin: 0 auto;
     display: block;
     padding: 3% 0;
@@ -486,6 +486,8 @@ main {
     }
 
     .all_group {
+      width: 80%;
+      margin: 0 auto;
       .span_icon {
         // border-top-right-radius: 0.25rem;
         // border-bottom-right-radius: 0.25rem;
@@ -548,11 +550,7 @@ main {
     }
   }
 
-  .landing_img {
-    width: 97%;
-    margin: 0 auto;
-
-  }
+  .landing_img {}
 }
 
 /*********End Landing *********/
