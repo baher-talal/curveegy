@@ -25,8 +25,12 @@ class FrontController extends Controller
     public function landing(Request $request)
     {
         $card = Card::findOrFail($request->id);
+        $address = optional(Homepage::where('key', 'address')->get()->last())->value;
+        $phone = optional(Homepage::where('key', 'phone')->get()->last())->value;
+        $mail = optional(Homepage::where('key', 'mail')->get()->last())->value;
+        $website = optional(Homepage::where('key', 'website')->get()->last())->value;
         $card_imgs = json_decode($card->landing_imgs);
-        return view('front.landing', compact('card_imgs', 'card'));
+        return view('front.landing', compact('card_imgs', 'card', 'address', 'phone', 'mail', 'website'));
     }
 
     public function language(Request $request)
