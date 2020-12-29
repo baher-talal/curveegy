@@ -23,11 +23,11 @@ class HomePageController extends Controller
         $Homepage['key'] = 'header_video';
         $Homepage['value'] = Storage::disk('uploads')->put('header_video', $request->headervideoinput);
         $CreateHomepage = Homepage::where('key', 'header_video')->delete();
-        
+
         $CreateHomepage = Homepage::create($Homepage);
         return redirect()->back()->with('success', 'Saved!');
     }
-    
+
     public function cards()
     {
         $cards = Card::all();
@@ -91,10 +91,10 @@ class HomePageController extends Controller
 
     public function footer()
     {
-        $address = Homepage::where('key', 'address')->get()->last()->value;
-        $phone = Homepage::where('key', 'phone')->get()->last()->value;
-        $mail = Homepage::where('key', 'mail')->get()->last()->value;
-        $website = Homepage::where('key', 'website')->get()->last()->value;
+        $address = optional(Homepage::where('key', 'address')->get()->last())->value;
+        $phone = optional(Homepage::where('key', 'phone')->get()->last())->value;
+        $mail = optional(Homepage::where('key', 'mail')->get()->last())->value;
+        $website = optional(Homepage::where('key', 'website')->get()->last())->value;
         return view('dashboard.homepage.footer', compact('address', 'phone', 'mail', 'website'));
     }
 

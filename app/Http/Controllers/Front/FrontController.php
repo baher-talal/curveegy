@@ -15,10 +15,10 @@ class FrontController extends Controller
     {
         $header_video = Homepage::where('key', 'header_video')->get()->last();
         $cards = Card::all();
-        $address = Homepage::where('key', 'address')->get()->last()->value;
-        $phone = Homepage::where('key', 'phone')->get()->last()->value;
-        $mail = Homepage::where('key', 'mail')->get()->last()->value;
-        $website = Homepage::where('key', 'website')->get()->last()->value;
+        $address = optional(Homepage::where('key', 'address')->get()->last())->value;
+        $phone = optional(Homepage::where('key', 'phone')->get()->last())->value;
+        $mail = optional(Homepage::where('key', 'mail')->get()->last())->value;
+        $website = optional(Homepage::where('key', 'website')->get()->last())->value;
         return view('front.home', compact('header_video', 'cards', 'address', 'phone', 'mail', 'website'));
     }
 
