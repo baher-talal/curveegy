@@ -88,4 +88,30 @@ class HomePageController extends Controller
         \Mail::to('yousef.uwk@gmail.com')->send(new \App\Mail\LandingMail($details));
         return redirect()->back()->with('success', 'Email Sent!');
     }
+
+    public function footer()
+    {
+        $address = Homepage::where('key', 'address')->get()->last()->value;
+        $phone = Homepage::where('key', 'phone')->get()->last()->value;
+        $mail = Homepage::where('key', 'mail')->get()->last()->value;
+        $website = Homepage::where('key', 'website')->get()->last()->value;
+        return view('dashboard.homepage.footer', compact('address', 'phone', 'mail', 'website'));
+    }
+
+    public function footerStore(Request $request)
+    {
+        if($request->address){
+            $address = Homepage::where('key', 'address')->updateOrCreate(['key' => "address" ,'value' => $request->address]);
+        }
+        if($request->phone){
+            $phone = Homepage::where('key', 'phone')->updateOrCreate(['key' => "phone" ,'value' => $request->phone]);
+        }
+        if($request->mail){
+            $mail = Homepage::where('key', 'mail')->updateOrCreate(['key' => "mail" ,'value' => $request->mail]);
+        }
+        if($request->website){
+            $website = Homepage::where('key', 'website')->updateOrCreate(['key' => "website" ,'value' => $request->website]);
+        }
+        return redirect()->back()->with('success', 'Saved!');
+    }
 }

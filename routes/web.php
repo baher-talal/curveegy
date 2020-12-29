@@ -34,6 +34,10 @@ Route::prefix('dashboard')->group(function () {
     
     Route::post('newsletterStore', [App\Http\Controllers\Dashboard\HomePageController::class, 'newsletterStore']);
     Route::post('landing', [App\Http\Controllers\Dashboard\HomePageController::class, 'landing']);
+
+    Route::get('footer', [App\Http\Controllers\Dashboard\HomePageController::class, 'footer']);
+    Route::post('footer', [App\Http\Controllers\Dashboard\HomePageController::class, 'footerStore']);
+
 });
 
 

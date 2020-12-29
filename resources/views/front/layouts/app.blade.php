@@ -74,7 +74,7 @@
           <div class="col-md-4 col-lg-4 col-xl-4 col-12 footer-grid">
             <div class="foot-top-w3 borderBottom">
               <div class="footer-grid-heading">
-                <h4>Get In Touch</h4>
+                <h4>@lang('front.touch')</h4>
               </div>
 
               <div class="footer-grid-info">
@@ -84,7 +84,7 @@
                   </div>
 
                   <div class="col-xl-11 col-11 p-0">
-                    <p>The fifth settlement south of Academy Property 281 FirstFloor</p>
+                    <p>{{$address}}</p>
                   </div>
 
                   <div class="col-xl-1 col-1 p-0">
@@ -92,7 +92,7 @@
                   </div>
 
                   <div class="col-xl-11 col-11 p-0">
-                    <a href="tel:+201005721414"> 01005721414</a> / <a href="tel:+201006268989"> 01006268989</a>
+                    <a href="tel:+201005721414"> 01005721414</a> / <a href="tel:+201006268989">{{$phone}}</a>
                   </div>
 
                   <div class="col-xl-1 col-1 p-0">
@@ -100,7 +100,7 @@
                   </div>
 
                   <div class="col-xl-11 col-11 p-0">
-                    <a href="mailto:admin@curveegy.com">admin@curveegy.com</a>
+                    <a href="mailto:admin@curveegy.com">{{$mail}}</a>
                   </div>
 
                   <div class="col-xl-1 col-1 p-0">
@@ -108,11 +108,11 @@
                   </div>
 
                   <div class="col-xl-11 col-11 p-0">
-                    <a class="text-lowercase" href="http://www.curveegy.com/">Curveegy.com</a>
+                    <a class="text-lowercase" href="http://www.curveegy.com/">{{$website}}</a>
                   </div>
 
                   <div class="col-xl-12">
-                    <button type="button" class="location_btn btn text-capitalize" data-toggle="modal" data-target="#exampleModalCenter">location</button>
+                    <button type="button" class="location_btn btn text-capitalize" data-toggle="modal" data-target="#exampleModalCenter">@lang('front.location')</button>
                   </div>
                 </div>
               </div>
@@ -122,18 +122,18 @@
           <div class="col-md-4 col-lg-4 col-xl-4 col-12 footer-grid">
             <div class="foot-top-w3 borderBottom">
               <div class="footer-grid-heading">
-                <h4>Newsletter</h4>
+                <h4>@lang('front.Newsletter')</h4>
               </div>
 
               <div class="footer-grid-info">
-                <p>AND ALWAYS STAY INFORMED OF THE LATEST COMPANY NEWS AND EVENTS!</p>
+                <p>@lang('front.news')</p>
               </div>
 
               <div class="w3-agileits-subscribe-form">
                 <form action="{{url('dashboard/newsletterStore')}}" method="post">
                   @csrf
                   <input type="text" placeholder="Email" name="mail" required="">
-                  <button type="submit" class="btn1">Subscribe</button>
+                  <button type="submit" class="btn1">@lang('front.Subscribe')</button>
                 </form>
               </div>
             </div>
@@ -142,7 +142,7 @@
           <div class="col-md-4 col-lg-4 col-xl-4 col-12 footer-grid">
             <div class="foot-top-w3">
               <div class="footer-grid-heading">
-                <h4>Follow Us</h4>
+                <h4>@lang('front.follow')</h4>
               </div>
               <div class="social">
                 <ul>

@@ -15,14 +15,18 @@ class FrontController extends Controller
     {
         $header_video = Homepage::where('key', 'header_video')->get()->last();
         $cards = Card::all();
-        return view('front.home', compact('header_video', 'cards'));
+        $address = Homepage::where('key', 'address')->get()->last()->value;
+        $phone = Homepage::where('key', 'phone')->get()->last()->value;
+        $mail = Homepage::where('key', 'mail')->get()->last()->value;
+        $website = Homepage::where('key', 'website')->get()->last()->value;
+        return view('front.home', compact('header_video', 'cards', 'address', 'phone', 'mail', 'website'));
     }
 
     public function landing(Request $request)
     {
         $card = Card::findOrFail($request->id);
         $card_imgs = json_decode($card->landing_imgs);
-        return view('front.landing', compact('card_imgs'));
+        return view('front.landing', compact('card_imgs', 'card'));
     }
 
     public function language(Request $request)

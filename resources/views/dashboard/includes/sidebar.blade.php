@@ -39,11 +39,12 @@
                 <h6 class="collapse-header">Homepage:</h6>
                 <a class="collapse-item" href="{{url('dashboard/headervideo')}}">Header Video</a>
                 <a class="collapse-item" href="{{url('dashboard/cards')}}">Cards</a>
+                <a class="collapse-item" href="{{url('dashboard/footer')}}">Footer</a>
             </div>
         </div>
     </li>
 
-    <!-- Divider -->
+    {{-- <!-- Divider -->
     <hr class="sidebar-divider">
 
     <!-- Heading -->
@@ -59,7 +60,7 @@
     </li>
 
     <!-- Divider -->
-    <hr class="sidebar-divider d-none d-md-block">
+    <hr class="sidebar-divider d-none d-md-block"> --}}
 
     <!-- Sidebar Toggler (Sidebar) -->
     <div class="text-center d-none d-md-inline">

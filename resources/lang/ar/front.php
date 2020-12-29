@@ -11,6 +11,18 @@ return [
     'slider3' => '<h3>العثور على منزلك أسهل بكثير الآن!</h3>
     <h5>نحن نساعدك في العثور على أفضل عقار يناسبك في بضع خطوات بسيطة.</h5>',
 
-    'read_more' => 'المزيد'
+    'read_more' => 'المزيد',
+
+    'submit' => 'إرسال',
+    'follow' => 'تابعنا',
+    'Newsletter' => 'رسالة إخبارية',
+    'touch' => 'ابقى على تواصل',
+    'Subscribe' => 'الإشتراك',
+    'location' => 'موقعنا',
+    'news' => 'وابق على اطلاع دائم بأحدث أخبار!',
+
+    'your_data' => '<span class="d-block text-center font-weight-bold">سجل بياناتك لمزيد من المعلومات</span>
+    <span class="d-block text-center font-weight-bold">هنكلمك و نقولك افضل الاختيارات</span>',
+
 
 ];
