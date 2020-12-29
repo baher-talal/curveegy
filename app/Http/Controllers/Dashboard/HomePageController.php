@@ -38,16 +38,17 @@ class HomePageController extends Controller
     {
         if($request->id){
             $card = Card::findOrFail($request->id);
+            $landing_imgs = [];
             $newCard = $request->all();
             if($request->image){
                 $newCard['image'] = Storage::disk('uploads')->put("card", $request->image);
             }
             if($request->landing_imgs){
-                foreach($card['landing_imgs'] as $img){
-                    $img = Storage::disk('uploads')->put("landing_images", $img);
-                    array_push($landing_imgs, $img);
+                foreach($newCard['landing_imgs'] as $img){
+                  $img = Storage::disk('uploads')->put("landing_images", $img);
+                  array_push($landing_imgs, $img);
                 }
-                $card['landing_imgs'] = json_encode($landing_imgs);
+                $newCard['landing_imgs'] = json_encode($landing_imgs);
             }
             $card->update($newCard);
         }else{
