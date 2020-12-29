@@ -49,9 +49,15 @@
 
           <figcaption>
             <div class="more_desc">
+              @if ($card->city)
               <p class="text-capitalize">{{$card->city}}</p>
+              @endif
+              @if ($card->downpayment)
               <p class="text-capitalize">{{$card->downpayment}}</p>
+              @endif
+              @if ($card->installment)
               <p class="text-capitalize">{{$card->installment}}</p>
+              @endif
             </div>
             <!-- <a href="#0" class="text-capitalize btn more_details">more details</a> -->
           </figcaption>
