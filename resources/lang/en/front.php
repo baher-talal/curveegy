@@ -14,6 +14,7 @@ return [
     'read_more' => 'Read More',
 
     'submit' => 'Submit',
+    'nabza' => 'About',
     'follow' => 'Follow Us',
     'Newsletter' => 'Newsletter',
     'touch' => 'Get In Touch',

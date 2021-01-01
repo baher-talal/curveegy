@@ -42,7 +42,7 @@
     </form>
 
     <div class="landing_desc rounded">
-      <p class="about_pro">نبذه عن</p>
+      <p class="about_pro">@lang('front.nabza')</p>
 
       <h5 class="title_pro">{{$card->title}}</h5>
 

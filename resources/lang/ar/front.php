@@ -14,6 +14,7 @@ return [
     'read_more' => 'المزيد',
 
     'submit' => 'إرسال',
+    'nabza' => 'نبذه عن',
     'follow' => 'تابعنا',
     'Newsletter' => 'رسالة إخبارية',
     'touch' => 'ابقى على تواصل',
