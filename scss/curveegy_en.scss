@@ -488,6 +488,7 @@ main {
     .all_group {
       width: 80%;
       margin: 0 auto;
+
       .span_icon {
         // border-top-right-radius: 0.25rem;
         // border-bottom-right-radius: 0.25rem;
@@ -1768,7 +1769,7 @@ main {
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1050px) {
+@media (min-width: 1024px) and (max-width: 1030px) {
   header {
     height: 2vh;
 
@@ -1957,6 +1958,392 @@ main {
 
       img {
         margin-bottom: 0.75%;
+      }
+    }
+  }
+
+  #return-to-top {
+    left: 93%;
+    width: 45px;
+    height: 45px;
+
+    i {
+      left: 17%;
+      top: 8%;
+      font-size: 35px;
+    }
+  }
+}
+
+@media (min-width: 1031px) and (max-width: 1200px) {
+  header {
+    height: 2vh;
+
+    .head_logo {
+      img {
+        width: 55%;
+        top: 40px;
+        left: 11%;
+      }
+    }
+
+    .toggle_lang {
+      top: 40px;
+      right: -6%;
+    }
+
+    .switch-label {
+      font-size: 1.75rem;
+      padding: 0px 0 0px 62px;
+
+      &:before {
+        width: 35px;
+        height: 15px;
+        left: 5px;
+      }
+
+      &:after {
+        width: 20px;
+        height: 20px;
+        left: 32px;
+      }
+    }
+
+    .switch-input:checked+.switch-label:after {
+      -webkit-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+    }
+  }
+
+  main {
+    .w3ls-banner {
+      .banner-text {
+        padding: 3% 0;
+        width: 99%;
+
+        .flexslider {
+          .flex-direction-nav {
+            display: none;
+          }
+        }
+
+        h2,
+        h3 {
+          font-size: 2.25em;
+        }
+
+        h5 {
+          font-size: 2em;
+          width: 80%;
+        }
+      }
+    }
+
+    .dFlex {
+      &:nth-child(odd) {
+        margin: 9% 0;
+        padding-left: 10%;
+      }
+
+      &:nth-child(even) {
+        margin: -9% 0;
+        padding-right: 10%;
+      }
+
+      figure {
+        &.effect-julia {
+          img {}
+        }
+
+        figcaption {
+
+          .more_desc {
+            p {
+              width: 65%;
+            }
+          }
+        }
+      }
+
+      .read_more {
+        top: 95.4%;
+        left: 85%;
+      }
+    }
+  }
+
+  .w3-agile-footer {
+    .footer-grids {
+      .foot-top-w3 {
+        // border-left: none;
+        // border-bottom: 1px solid $blackCol;
+
+        .footer-grid-heading {
+          text-align: center;
+        }
+
+        .w3-agileits-subscribe-form {
+          form {
+            .btn1 {
+              margin-bottom: 4%;
+            }
+          }
+        }
+
+        .social {
+          ul {
+            text-align: center;
+            margin-bottom: 4%;
+          }
+        }
+      }
+    }
+  }
+
+  .copy-w3right {
+    p {
+      letter-spacing: 1px;
+      font-size: 15px;
+    }
+  }
+
+  .modalImg {
+    .myModal {
+      .modal-dialog {
+        .modal-content {
+          top: 15rem;
+
+          .modal-body {
+            .btn_download {
+              width: 35%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .landing_page {
+    .form_landing {
+      width: 50%;
+    }
+
+    .landing_desc {
+      .about_pro {
+        font-size: 1.75rem;
+      }
+
+      .title_pro {
+        padding-right: 3%;
+        font-size: 1.75rem;
+      }
+
+      .landing_desc_p {
+        padding: 0% 2%;
+        font-size: 1.5rem;
+      }
+    }
+
+    .landing_img {
+      width: 100%;
+
+      img {
+        margin-bottom: 0.75%;
+        min-height: 16.688rem;
+        max-height: 20rem;
+      }
+    }
+  }
+
+  #return-to-top {
+    left: 93%;
+    width: 45px;
+    height: 45px;
+
+    i {
+      left: 17%;
+      top: 8%;
+      font-size: 35px;
+    }
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+  header {
+    height: 2vh;
+
+    .head_logo {
+      img {
+        width: 60%;
+        top: 44px;
+        left: 12%;
+      }
+    }
+
+    .toggle_lang {
+      top: 40px;
+      right: -6%;
+    }
+
+    .switch-label {
+      font-size: 1.75rem;
+      padding: 0px 0 0px 62px;
+
+      &:before {
+        width: 35px;
+        height: 15px;
+        left: 5px;
+      }
+
+      &:after {
+        width: 20px;
+        height: 20px;
+        left: 32px;
+      }
+    }
+
+    .switch-input:checked+.switch-label:after {
+      -webkit-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+    }
+  }
+
+  main {
+    .w3ls-banner {
+      .banner-text {
+        padding: 3% 0;
+        width: 99%;
+
+        .flexslider {
+          .flex-direction-nav {
+            display: none;
+          }
+        }
+
+        h2,
+        h3 {
+          font-size: 2.25em;
+        }
+
+        h5 {
+          font-size: 2em;
+          width: 80%;
+        }
+      }
+    }
+
+    .dFlex {
+      &:nth-child(odd) {
+        margin: 9% 0;
+        padding-left: 10%;
+      }
+
+      &:nth-child(even) {
+        margin: -9% 0;
+        padding-right: 10%;
+      }
+
+      figure {
+        &.effect-julia {
+          img {}
+        }
+
+        figcaption {
+
+          .more_desc {
+            p {
+              width: 65%;
+            }
+          }
+        }
+      }
+
+      .read_more {
+        top: 95.4%;
+        left: 85%;
+      }
+    }
+  }
+
+  .w3-agile-footer {
+    .footer-grids {
+      .foot-top-w3 {
+        // border-left: none;
+        // border-bottom: 1px solid $blackCol;
+
+        .footer-grid-heading {
+          text-align: center;
+        }
+
+        .w3-agileits-subscribe-form {
+          form {
+            .btn1 {
+              margin-bottom: 4%;
+            }
+          }
+        }
+
+        .social {
+          ul {
+            text-align: center;
+            margin-bottom: 4%;
+          }
+        }
+      }
+    }
+  }
+
+  .copy-w3right {
+    p {
+      letter-spacing: 1px;
+      font-size: 15px;
+    }
+  }
+
+  .modalImg {
+    .myModal {
+      .modal-dialog {
+        .modal-content {
+          top: 15rem;
+
+          .modal-body {
+            .btn_download {
+              width: 35%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .landing_page {
+    .form_landing {
+      width: 50%;
+    }
+
+    .landing_desc {
+      .about_pro {
+        font-size: 1.75rem;
+      }
+
+      .title_pro {
+        padding-right: 3%;
+        font-size: 1.75rem;
+      }
+
+      .landing_desc_p {
+        padding: 0% 2%;
+        font-size: 1.5rem;
+      }
+    }
+
+    .landing_img {
+      width: 100%;
+
+      img {
+        margin-bottom: 0.75%;
+        min-height: 18.821rem;
+        max-height: 20rem;
       }
     }
   }

@@ -435,11 +435,6 @@ main figure.effect-julia:hover p {
   padding: 0% 8%;
   direction: rtl;
 }
-.landing_page .landing_img {
-  width: 97%;
-  margin: 0 auto;
-}
-
 /*********End Landing *********/
 /*********Start Footer *********/
 .w3-agile-footer {
@@ -1267,7 +1262,7 @@ main .w3ls-banner .banner-text .flexslider h3 {
     top: 7%;
   }
 }
-@media (min-width: 1024px) and (max-width: 1050px) {
+@media (min-width: 1024px) and (max-width: 1030px) {
   header {
     height: 2vh;
   }
@@ -1383,6 +1378,246 @@ main .w3ls-banner .banner-text h3 {
   }
   .landing_page .landing_img img {
     margin-bottom: 0.75%;
+  }
+
+  #return-to-top {
+    left: 93%;
+    width: 45px;
+    height: 45px;
+  }
+  #return-to-top i {
+    left: 17%;
+    top: 8%;
+    font-size: 35px;
+  }
+}
+@media (min-width: 1031px) and (max-width: 1200px) {
+  header {
+    height: 2vh;
+  }
+  header .head_logo img {
+    width: 55%;
+    top: 40px;
+    left: 11%;
+  }
+  header .toggle_lang {
+    top: 40px;
+    right: -6%;
+  }
+  header .switch-label {
+    font-size: 1.75rem;
+    padding: 0px 0 0px 62px;
+  }
+  header .switch-label:before {
+    width: 35px;
+    height: 15px;
+    left: 5px;
+  }
+  header .switch-label:after {
+    width: 20px;
+    height: 20px;
+    left: 32px;
+  }
+  header .switch-input:checked + .switch-label:after {
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+
+  main .w3ls-banner .banner-text {
+    padding: 3% 0;
+    width: 99%;
+  }
+  main .w3ls-banner .banner-text .flexslider .flex-direction-nav {
+    display: none;
+  }
+  main .w3ls-banner .banner-text h2,
+main .w3ls-banner .banner-text h3 {
+    font-size: 2.25em;
+  }
+  main .w3ls-banner .banner-text h5 {
+    font-size: 2em;
+    width: 80%;
+  }
+  main .dFlex:nth-child(odd) {
+    margin: 9% 0;
+    padding-left: 10%;
+  }
+  main .dFlex:nth-child(even) {
+    margin: -9% 0;
+    padding-right: 10%;
+  }
+  main .dFlex figure figcaption .more_desc p {
+    width: 65%;
+  }
+  main .dFlex .read_more {
+    top: 95.4%;
+    left: 85%;
+  }
+
+  .w3-agile-footer .footer-grids .foot-top-w3 .footer-grid-heading {
+    text-align: center;
+  }
+  .w3-agile-footer .footer-grids .foot-top-w3 .w3-agileits-subscribe-form form .btn1 {
+    margin-bottom: 4%;
+  }
+  .w3-agile-footer .footer-grids .foot-top-w3 .social ul {
+    text-align: center;
+    margin-bottom: 4%;
+  }
+
+  .copy-w3right p {
+    letter-spacing: 1px;
+    font-size: 15px;
+  }
+
+  .modalImg .myModal .modal-dialog .modal-content {
+    top: 15rem;
+  }
+  .modalImg .myModal .modal-dialog .modal-content .modal-body .btn_download {
+    width: 35%;
+  }
+
+  .landing_page .form_landing {
+    width: 50%;
+  }
+  .landing_page .landing_desc .about_pro {
+    font-size: 1.75rem;
+  }
+  .landing_page .landing_desc .title_pro {
+    padding-right: 3%;
+    font-size: 1.75rem;
+  }
+  .landing_page .landing_desc .landing_desc_p {
+    padding: 0% 2%;
+    font-size: 1.5rem;
+  }
+  .landing_page .landing_img {
+    width: 100%;
+  }
+  .landing_page .landing_img img {
+    margin-bottom: 0.75%;
+    min-height: 16.688rem;
+    max-height: 20rem;
+  }
+
+  #return-to-top {
+    left: 93%;
+    width: 45px;
+    height: 45px;
+  }
+  #return-to-top i {
+    left: 17%;
+    top: 8%;
+    font-size: 35px;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1400px) {
+  header {
+    height: 2vh;
+  }
+  header .head_logo img {
+    width: 60%;
+    top: 44px;
+    left: 12%;
+  }
+  header .toggle_lang {
+    top: 40px;
+    right: -6%;
+  }
+  header .switch-label {
+    font-size: 1.75rem;
+    padding: 0px 0 0px 62px;
+  }
+  header .switch-label:before {
+    width: 35px;
+    height: 15px;
+    left: 5px;
+  }
+  header .switch-label:after {
+    width: 20px;
+    height: 20px;
+    left: 32px;
+  }
+  header .switch-input:checked + .switch-label:after {
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+
+  main .w3ls-banner .banner-text {
+    padding: 3% 0;
+    width: 99%;
+  }
+  main .w3ls-banner .banner-text .flexslider .flex-direction-nav {
+    display: none;
+  }
+  main .w3ls-banner .banner-text h2,
+main .w3ls-banner .banner-text h3 {
+    font-size: 2.25em;
+  }
+  main .w3ls-banner .banner-text h5 {
+    font-size: 2em;
+    width: 80%;
+  }
+  main .dFlex:nth-child(odd) {
+    margin: 9% 0;
+    padding-left: 10%;
+  }
+  main .dFlex:nth-child(even) {
+    margin: -9% 0;
+    padding-right: 10%;
+  }
+  main .dFlex figure figcaption .more_desc p {
+    width: 65%;
+  }
+  main .dFlex .read_more {
+    top: 95.4%;
+    left: 85%;
+  }
+
+  .w3-agile-footer .footer-grids .foot-top-w3 .footer-grid-heading {
+    text-align: center;
+  }
+  .w3-agile-footer .footer-grids .foot-top-w3 .w3-agileits-subscribe-form form .btn1 {
+    margin-bottom: 4%;
+  }
+  .w3-agile-footer .footer-grids .foot-top-w3 .social ul {
+    text-align: center;
+    margin-bottom: 4%;
+  }
+
+  .copy-w3right p {
+    letter-spacing: 1px;
+    font-size: 15px;
+  }
+
+  .modalImg .myModal .modal-dialog .modal-content {
+    top: 15rem;
+  }
+  .modalImg .myModal .modal-dialog .modal-content .modal-body .btn_download {
+    width: 35%;
+  }
+
+  .landing_page .form_landing {
+    width: 50%;
+  }
+  .landing_page .landing_desc .about_pro {
+    font-size: 1.75rem;
+  }
+  .landing_page .landing_desc .title_pro {
+    padding-right: 3%;
+    font-size: 1.75rem;
+  }
+  .landing_page .landing_desc .landing_desc_p {
+    padding: 0% 2%;
+    font-size: 1.5rem;
+  }
+  .landing_page .landing_img {
+    width: 100%;
+  }
+  .landing_page .landing_img img {
+    margin-bottom: 0.75%;
+    min-height: 18.821rem;
+    max-height: 20rem;
   }
 
   #return-to-top {
