@@ -101,18 +101,174 @@ class HomePageController extends Controller
 
     public function footerStore(Request $request)
     {
-        if($request->address){
-            $address = Homepage::where('key', 'address')->updateOrCreate(['key' => "address" ,'value' => $request->address]);
+        if($request->address1){
+            $address1 = Homepage::where('key', 'address1')->first();
+            if($address1){
+              $address1->value = $request->address1;
+              $address1->toggle = (boolean)$request->address1toggle;
+              $address1->save();
+            }else{
+              $address1 = new Homepage;
+              $address1->key = 'address1';
+              $address1->value = $request->address1;
+              $address1->toggle = (boolean)$request->address1toggle;
+              $address1->save();
+            }
         }
-        if($request->phone){
-            $phone = Homepage::where('key', 'phone')->updateOrCreate(['key' => "phone" ,'value' => $request->phone]);
+        if($request->address2){
+            $address2 = Homepage::where('key', 'address2')->first();
+            if($address2){
+              $address2->value = $request->address2;
+              $address2->toggle = (boolean)$request->address2toggle;
+              $address2->save();
+            }else{
+              $address2 = new Homepage;
+              $address2->key = 'address2';
+              $address2->value = $request->address2;
+              $address2->toggle = (boolean)$request->address2toggle;
+              $address2->save();
+            }
+        }
+        if($request->phone1){
+            $phone1 = Homepage::where('key', 'phone1')->first();
+            if($phone1){
+              $phone1->value = $request->phone1;
+              $phone1->toggle = (boolean)$request->phone1toggle;
+              $phone1->save();
+            }else{
+              $phone1 = new Homepage;
+              $phone1->key = 'phone1';
+              $phone1->value = $request->phone1;
+              $phone1->toggle = (boolean)$request->phone1toggle;
+              $phone1->save();
+            }
+        }
+        if($request->phone2){
+            $phone2 = Homepage::where('key', 'phone2')->first();
+            if($phone2){
+              $phone2->value = $request->phone2;
+              $phone2->toggle = (boolean)$request->phone2toggle;
+              $phone2->save();
+            }else{
+              $phone2 = new Homepage;
+              $phone2->key = 'phone2';
+              $phone2->value = $request->phone2;
+              $phone2->toggle = (boolean)$request->phone2toggle;
+              $phone2->save();
+            }
         }
         if($request->mail){
-            $mail = Homepage::where('key', 'mail')->updateOrCreate(['key' => "mail" ,'value' => $request->mail]);
+            $mail = Homepage::where('key', 'mail')->first();
+            if($mail){
+              $mail->value = $request->mail;
+              $mail->toggle = (boolean)$request->mailtoggle;
+              $mail->save();
+            }else{
+              $mail = new Homepage;
+              $mail->key = 'mail';
+              $mail->value = $request->mail;
+              $mail->toggle = (boolean)$request->mailtoggle;
+              $mail->save();
+            }
         }
-        if($request->website){
-            $website = Homepage::where('key', 'website')->updateOrCreate(['key' => "website" ,'value' => $request->website]);
-        }
+
         return redirect()->back()->with('success', 'Saved!');
     }
+
+
+    public function socialMedia()
+    {
+      return view('dashboard.homepage.socialMedia');
+    }
+
+    public function postSocialMedia(Request $request)
+    {
+        if($request->facebook){
+          $facebook = Homepage::where('key', 'facebook')->first();
+          if($facebook){
+            $facebook->value = $request->facebook;
+            $facebook->toggle = (boolean)$request->facebooktoggle;
+            $facebook->save();
+          }else{
+            $facebook = new Homepage;
+            $facebook->key = 'facebook';
+            $facebook->value = $request->facebook;
+            $facebook->toggle = (boolean)$request->facebooktoggle;
+            $facebook->save();
+          }
+        }
+        if($request->twitter){
+          $twitter = Homepage::where('key', 'twitter')->first();
+          if($twitter){
+            $twitter->value = $request->twitter;
+            $twitter->toggle = (boolean)$request->twittertoggle;
+            $twitter->save();
+          }else{
+            $twitter = new Homepage;
+            $twitter->key = 'twitter';
+            $twitter->value = $request->twitter;
+            $twitter->toggle = (boolean)$request->twittertoggle;
+            $twitter->save();
+          }
+        }
+        if($request->instagram){
+          $instagram = Homepage::where('key', 'instagram')->first();
+          if($instagram){
+            $instagram->value = $request->instagram;
+            $instagram->toggle = (boolean)$request->instagramtoggle;
+            $instagram->save();
+          }else{
+            $instagram = new Homepage;
+            $instagram->key = 'instagram';
+            $instagram->value = $request->instagram;
+            $instagram->toggle = (boolean)$request->instagramtoggle;
+            $instagram->save();
+          }
+        }
+        if($request->linkedin){
+          $linkedin = Homepage::where('key', 'linkedin')->first();
+          if($linkedin){
+            $linkedin->value = $request->linkedin;
+            $linkedin->toggle = (boolean)$request->linkedintoggle;
+            $linkedin->save();
+          }else{
+            $linkedin = new Homepage;
+            $linkedin->key = 'linkedin';
+            $linkedin->value = $request->linkedin;
+            $linkedin->toggle = (boolean)$request->linkedintoggle;
+            $linkedin->save();
+          }
+        }
+        if($request->youtube){
+          $youtube = Homepage::where('key', 'youtube')->first();
+          if($youtube){
+            $youtube->value = $request->youtube;
+            $youtube->toggle = (boolean)$request->youtubetoggle;
+            $youtube->save();
+          }else{
+            $youtube = new Homepage;
+            $youtube->key = 'youtube';
+            $youtube->value = $request->youtube;
+            $youtube->toggle = (boolean)$request->youtubetoggle;
+            $youtube->save();
+          }
+        }
+        if($request->whatsapp){
+          $whatsapp = Homepage::where('key', 'whatsapp')->first();
+          if($whatsapp){
+            $whatsapp->value = $request->whatsapp;
+            $whatsapp->toggle = (boolean)$request->whatsapptoggle;
+            $whatsapp->save();
+          }else{
+            $whatsapp = new Homepage;
+            $whatsapp->key = 'whatsapp';
+            $whatsapp->value = $request->whatsapp;
+            $whatsapp->toggle = (boolean)$request->whatsapptoggle;
+            $whatsapp->save();
+          }
+        }
+        return redirect()->back()->with('success', 'Saved!');
+
+    }
+
 }

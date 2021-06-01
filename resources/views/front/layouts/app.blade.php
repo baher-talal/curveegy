@@ -79,37 +79,55 @@
 
               <div class="footer-grid-info">
                 <div class="row">
+                  @if (setting('address1')->toggle)
                   <div class="col-xl-1 col-1 p-0">
                     <i class="fa fa-map-marker i_icons"></i>
                   </div>
 
                   <div class="col-xl-11 col-11 p-0">
-                    <p>{{$address}}</p>
+                    <p>{{setting('address1')->value}}</p>
+                  </div>
+                  @endif
+
+                  @if (setting('address2')->toggle)
+                  <div class="col-xl-1 col-1 p-0">
+                    <i class="fa fa-map-marker i_icons"></i>
                   </div>
 
+                  <div class="col-xl-11 col-11 p-0">
+                    <p>{{setting('address2')->value}}</p>
+                  </div>
+                  @endif
+
+                  @if (setting('phone1')->toggle)
                   <div class="col-xl-1 col-1 p-0">
                     <i class="fa fa-phone i_icons"></i>
                   </div>
 
                   <div class="col-xl-11 col-11 p-0">
-                    <a href="tel:+{{$phone}}">{{$phone}}</a>
+                    <a href="tel:+{{setting('phone1')->value}}">{{setting('phone1')->value}}</a>
+                  </div>
+                  @endif
+
+                  @if (setting('phone2')->toggle)
+                  <div class="col-xl-1 col-1 p-0">
+                    <i class="fa fa-phone i_icons"></i>
                   </div>
 
+                  <div class="col-xl-11 col-11 p-0">
+                    <a href="tel:+{{setting('phone2')->value}}">{{setting('phone2')->value}}</a>
+                  </div>
+                  @endif
+
+                  @if (setting('mail')->toggle)
                   <div class="col-xl-1 col-1 p-0">
                     <i class="fa fa-envelope-o i_icons"></i>
                   </div>
 
                   <div class="col-xl-11 col-11 p-0">
-                    <a class="text-lowercase" href="mailto:{{$mail}}">{{$mail}}</a>
+                    <a class="text-lowercase" href="mailto:{{setting('mail')->value}}">{{setting('mail')->value}}</a>
                   </div>
-
-                  <div class="col-xl-1 col-1 p-0">
-                    <i class="fa fa-globe i_icons"></i>
-                  </div>
-
-                  <div class="col-xl-11 col-11 p-0">
-                    <a class="text-lowercase" href="{{$website}}">{{$website}}</a>
-                  </div>
+                  @endif
 
                   <div class="col-xl-12">
                     <button type="button" class="location_btn btn text-capitalize" data-toggle="modal" data-target="#exampleModalCenter">@lang('front.location')</button>
@@ -139,23 +157,36 @@
             </div>
           </div>
 
-          <div class="col-md-4 col-lg-4 col-xl-4 col-12 footer-grid">
-            <div class="foot-top-w3">
-              <div class="footer-grid-heading">
-                <h4>@lang('front.follow')</h4>
-              </div>
-              <div class="social">
-                <ul>
-                  <li><a href="https://wa.me/+201005721414"><i class="fa fa-whatsapp"></i></a></li>
-                  <li><a href="https://www.facebook.com/Curve-104326978133886/"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="https://www.instagram.com/curve.realestateco/?igshid=18yvkdv78idlf"><i class="fa fa-instagram"></i></a></li>
-                  <!-- <li><a href="#"><i class="fa fa-linkedin"></i></a></li> -->
-                  <!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
-                </ul>
-              </div>
+        <div class="col-md-4 col-lg-4 col-xl-4 col-12 footer-grid">
+          <div class="foot-top-w3">
+            <div class="footer-grid-heading">
+              <h4>@lang('front.follow')</h4>
+            </div>
+            <div class="social">
+              <ul>
+                @if (setting('whatsapp')->toggle)
+                <li><a href="{{setting('whatsapp')->value}}"><i class="fa fa-whatsapp"></i></a></li>
+                @endif
+                @if (setting('facebook')->toggle)
+                <li><a href="{{setting('facebook')->value}}"><i class="fa fa-facebook"></i></a></li>
+                @endif
+                @if (setting('twitter')->toggle)
+                <li><a href="{{setting('twitter')->value}}"><i class="fa fa-twitter"></i></a></li>
+                @endif
+                @if (setting('instagram')->toggle)
+                <li><a href="{{setting('instagram')->value}}"><i class="fa fa-instagram"></i></a></li>
+                @endif
+                @if (setting('linkedin')->toggle)
+                <li><a href="{{setting('linkedin')->value}}"><i class="fa fa-linkedin"></i></a></li>
+                @endif
+                @if (setting('youtube')->toggle)
+                <li><a href="{{setting('youtube')->value}}"><i class="fa fa-youtube"></i></a></li>
+                @endif
+              </ul>
             </div>
           </div>
-          <div class="clearfix"> </div>
+        </div>
+        <div class="clearfix"> </div>
 
         </div>
       </div>

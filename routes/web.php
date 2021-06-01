@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Homepage;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,17 +27,20 @@ Route::prefix('dashboard')->group(function () {
 
     Route::get('headervideo', [App\Http\Controllers\Dashboard\HomePageController::class, 'headervideo']);
     Route::post('headervideoStore', [App\Http\Controllers\Dashboard\HomePageController::class, 'headervideoStore']);
-    
+
     Route::get('cards', [App\Http\Controllers\Dashboard\HomePageController::class, 'cards']);
     Route::post('cardsStore', [App\Http\Controllers\Dashboard\HomePageController::class, 'cardsStore']);
     Route::get('cardsEdit', [App\Http\Controllers\Dashboard\HomePageController::class, 'cardsEdit']);
     Route::post('cardsDelete', [App\Http\Controllers\Dashboard\HomePageController::class, 'cardsDelete']);
-    
+
     Route::post('newsletterStore', [App\Http\Controllers\Dashboard\HomePageController::class, 'newsletterStore']);
     Route::post('landing', [App\Http\Controllers\Dashboard\HomePageController::class, 'landing']);
 
     Route::get('footer', [App\Http\Controllers\Dashboard\HomePageController::class, 'footer']);
     Route::post('footer', [App\Http\Controllers\Dashboard\HomePageController::class, 'footerStore']);
+
+    Route::get('socialMedia', [App\Http\Controllers\Dashboard\HomePageController::class, 'socialMedia']);
+    Route::post('socialMedia', [App\Http\Controllers\Dashboard\HomePageController::class, 'postSocialMedia']);
 
 });
 
@@ -45,3 +49,9 @@ Route::prefix('dashboard')->group(function () {
 Route::get('/', [App\Http\Controllers\Front\FrontController::class, 'index']);
 Route::get('/landing/{id}', [App\Http\Controllers\Front\FrontController::class, 'landing'])->name('landing');
 Route::get('/lang/{lang}', [App\Http\Controllers\Front\FrontController::class, 'language'])->name('language');
+
+
+function setting($key)
+{
+  return optional(Homepage::where('key', $key)->first());
+}
