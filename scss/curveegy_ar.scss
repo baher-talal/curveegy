@@ -342,7 +342,7 @@ main {
 /*********End Footer *********/
 
 /* Start Media Query */
-@media (min-width: 320px) and (max-width: 359.9px) {
+@media (min-width: 1px) and (max-width: 359.9px) {
   header {
     height: 9vh;
 
@@ -847,6 +847,167 @@ main {
 }
 
 @media (min-width: 411px) and (max-width: 414px) {
+  header {
+    height: 9vh;
+
+    .head_logo {
+      img {
+        left: 77%;
+      }
+    }
+
+    .toggle_lang {
+      right: 25%;
+    }
+  }
+
+  main {
+    .w3ls-banner {
+      .banner-text {
+        padding: 3% 0;
+        width: 99%;
+
+        .flexslider {
+          .flex-direction-nav {
+            display: none;
+          }
+
+          .flex-control-nav {
+            bottom: -16%;
+          }
+        }
+
+        h2,
+        h3 {}
+
+        h5 {}
+      }
+    }
+
+    .dFlex {
+
+      &:nth-child(odd),
+      &:nth-child(even) {
+        justify-content: unset;
+        display: block;
+        margin: 10% 0;
+
+        figure {
+          min-width: 100%;
+          margin: 0;
+
+          &.effect-julia {
+            img {
+              height: 300px;
+            }
+          }
+
+          figcaption {
+            padding: 1em;
+
+            .more_desc {
+              p {
+                width: 85%;
+              }
+            }
+          }
+        }
+      }
+
+      .read_more {
+        top: 94%;
+        left: 15%;
+      }
+    }
+  }
+
+  .w3-agile-footer {
+    .footer-grids {
+      .foot-top-w3 {
+        border-left: none;
+
+        &.borderBottom {
+          border-bottom: 1px solid $blackCol;
+          margin-bottom: 4%;
+        }
+
+        .footer-grid-heading {
+          text-align: center;
+        }
+
+        .w3-agileits-subscribe-form {
+          form {
+            .btn1 {
+              margin-bottom: 4%;
+            }
+          }
+        }
+
+        .social {
+          ul {
+            text-align: center;
+            margin-bottom: 4%;
+          }
+        }
+      }
+    }
+  }
+
+  .copy-w3right {
+    p {
+      letter-spacing: 1px;
+      font-size: 11px;
+    }
+  }
+
+  .modalImg {
+    .myModal {
+      .modal-dialog {
+        .modal-content {
+          .modal-body {
+            .btn_download {
+              width: 35%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .landing_page {
+    .form_landing {
+      width: 90%;
+    }
+
+    .landing_desc {
+      .about_pro {
+        font-size: 19px;
+      }
+
+      .title_pro {
+        padding-right: 3%;
+      }
+
+      .landing_desc_p {
+        padding: 0% 2%;
+      }
+    }
+
+    .landing_img {
+      width: 100%;
+
+      img {
+        margin-bottom: 0.75%;
+      }
+    }
+  }
+
+  #return-to-top {
+    left: 88%;
+  }
+}
+
+@media (min-width: 415px) and (max-width: 450px) {
   header {
     height: 9vh;
 

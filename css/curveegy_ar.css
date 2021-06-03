@@ -109,7 +109,7 @@ main figure.effect-julia:hover p {
 }
 /*********End Footer *********/
 /* Start Media Query */
-@media (min-width: 320px) and (max-width: 359.9px) {
+@media (min-width: 1px) and (max-width: 359.9px) {
   header {
     height: 9vh;
   }
@@ -408,6 +408,100 @@ main figure.effect-julia:hover p {
   }
 }
 @media (min-width: 411px) and (max-width: 414px) {
+  header {
+    height: 9vh;
+  }
+  header .head_logo img {
+    left: 77%;
+  }
+  header .toggle_lang {
+    right: 25%;
+  }
+
+  main .w3ls-banner .banner-text {
+    padding: 3% 0;
+    width: 99%;
+  }
+  main .w3ls-banner .banner-text .flexslider .flex-direction-nav {
+    display: none;
+  }
+  main .w3ls-banner .banner-text .flexslider .flex-control-nav {
+    bottom: -16%;
+  }
+  main .dFlex:nth-child(odd), main .dFlex:nth-child(even) {
+    justify-content: unset;
+    display: block;
+    margin: 10% 0;
+  }
+  main .dFlex:nth-child(odd) figure, main .dFlex:nth-child(even) figure {
+    min-width: 100%;
+    margin: 0;
+  }
+  main .dFlex:nth-child(odd) figure.effect-julia img, main .dFlex:nth-child(even) figure.effect-julia img {
+    height: 300px;
+  }
+  main .dFlex:nth-child(odd) figure figcaption, main .dFlex:nth-child(even) figure figcaption {
+    padding: 1em;
+  }
+  main .dFlex:nth-child(odd) figure figcaption .more_desc p, main .dFlex:nth-child(even) figure figcaption .more_desc p {
+    width: 85%;
+  }
+  main .dFlex .read_more {
+    top: 94%;
+    left: 15%;
+  }
+
+  .w3-agile-footer .footer-grids .foot-top-w3 {
+    border-left: none;
+  }
+  .w3-agile-footer .footer-grids .foot-top-w3.borderBottom {
+    border-bottom: 1px solid #000;
+    margin-bottom: 4%;
+  }
+  .w3-agile-footer .footer-grids .foot-top-w3 .footer-grid-heading {
+    text-align: center;
+  }
+  .w3-agile-footer .footer-grids .foot-top-w3 .w3-agileits-subscribe-form form .btn1 {
+    margin-bottom: 4%;
+  }
+  .w3-agile-footer .footer-grids .foot-top-w3 .social ul {
+    text-align: center;
+    margin-bottom: 4%;
+  }
+
+  .copy-w3right p {
+    letter-spacing: 1px;
+    font-size: 11px;
+  }
+
+  .modalImg .myModal .modal-dialog .modal-content .modal-body .btn_download {
+    width: 35%;
+  }
+
+  .landing_page .form_landing {
+    width: 90%;
+  }
+  .landing_page .landing_desc .about_pro {
+    font-size: 19px;
+  }
+  .landing_page .landing_desc .title_pro {
+    padding-right: 3%;
+  }
+  .landing_page .landing_desc .landing_desc_p {
+    padding: 0% 2%;
+  }
+  .landing_page .landing_img {
+    width: 100%;
+  }
+  .landing_page .landing_img img {
+    margin-bottom: 0.75%;
+  }
+
+  #return-to-top {
+    left: 88%;
+  }
+}
+@media (min-width: 415px) and (max-width: 450px) {
   header {
     height: 9vh;
   }
