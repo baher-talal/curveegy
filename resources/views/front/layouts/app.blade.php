@@ -146,9 +146,9 @@
               </div>
               <div class="social">
                 <ul>
-                  <li><a href="https://wa.me/+201005721414"><i class="fa fa-whatsapp"></i></a></li>
-                  <li><a href="https://www.facebook.com/Curve-104326978133886/"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="https://www.instagram.com/curve.realestateco/?igshid=18yvkdv78idlf"><i class="fa fa-instagram"></i></a></li>
+                  <li><a href="https://wa.me/+201000000000"><i class="fa fa-whatsapp"></i></a></li>
+                  <li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a></li>
                   <!-- <li><a href="#"><i class="fa fa-linkedin"></i></a></li> -->
                   <!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
                 </ul>
@@ -166,7 +166,8 @@
   <!-- copy rights start here -->
   <div class="copy-w3right">
     <div class="container_views">
-      <p>© 2020 Curve Egy. All Rights Reserved | Powered by <a class="text-capitalize" href="http://www.ideagroupegypt.com/">idea group</a> </p>
+      {{-- <p>© 2020 Curve Egy. All Rights Reserved | Powered by <a class="text-capitalize" href="http://www.ideagroupegypt.com/">idea group</a> </p> --}}
+      <p>© 2024 Curve Egy. All Rights Reserved | Powered by Baher & Yousef</p>
     </div>
   </div>
 
